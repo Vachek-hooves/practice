@@ -32,8 +32,14 @@
             <input type="radio" id="female" name="gender" value="Female">
             <br>
             
-            <label for="text">Country</label>
-            <input type="number" step="1">
+            <label for="country_list">Country</label>
+            <select name="country" id="country_list">
+                <option value="Ukraine">Ukraine</option>
+                <option value="Poland">Poland</option>
+                <option value="Germany">Germany</option>
+                <option value="Switzerland">Switzerland</option>
+            </select>
+
             <label for="text">City</label>
             <input type="text"><br>
 
@@ -59,7 +65,7 @@
 
         <div>
             <h2>Profile</h2>
-            <img src="image/📷 Image.png" alt="profile_photo">
+            <img src="image/📷Image.png" alt="profile_photo">
             <input type="file">
             
             <br>
@@ -70,15 +76,22 @@
 
             <br>
             <label for="Country">Country</label>
-            <input type="number" id="Country">
+            <select name="country_list" id="country">
+                <option value="Ukraine">Ukraine</option>
+                <option value="Poland">Poland</option>
+                <option value="Germany">Germany</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Romania">Romania</option>
+            </select>
+            
             <label for="City">City</label>
-            <input type="text" id="City">
+            <input type="select" id="City">
 
             <br>
             <label for="Zip_Code">Zip Code</label>
-            <input type="number" id="Zip_Code">
-            <label for="phone">Phone number</label>
-            <input type="text" id="phone">
+            <input type="text" id="Zip_Code">
+            <label for="telephone">Phone number</label>
+            <input type="tel" id="telephone">
 
             <br>
             <button type="button">Update</button>
