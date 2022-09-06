@@ -9,31 +9,31 @@
 </head>
 <body>
     
-    <form action="" method="GET">
+    <form class="account" action="" method="GET">
         <div>
             <h2>Create an Account</h2>
 
             <label for="text">First Name</label>
             <label for="text">Last Name</label>
 
-            <input type="text" name="Name">
-            <input type="text" name="Surname">
+            <input class="round_border" type="text" name="Name">
+            <input class="round_border" type="text" name="Surname">
 
 
-            <br><br><br>
+            <br>
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+            <input class="round_border" type="email" id="email" name="email" required>
             <p>We'll never share you emai with anyone else</p>
             
-            <br><br><br>
-            <input type="radio" id="male" name="gender" value="Male">
+            <br>
             <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="Male">
             <label for="female">Famale</label>
             <input type="radio" id="female" name="gender" value="Female">
             <br>
             
             <label for="country_list">Country</label>
-            <select name="country" id="country_list">
+            <select class="country_border" name="country" id="country_list">
                 <option value="Ukraine"selected >Ukraine</option>
                 <option value="Poland">Poland</option>
                 <option value="Germany">Germany</option>
@@ -41,9 +41,11 @@
             </select>
 
             <label for="text">City</label>
-            <input type="text"><br>
-
-            <button type="button">Sign Up</button><br>
+            <input class="round_border" type="text">
+            
+            <br><br>
+            <button type="button">Sign Up</button>
+            <br>
 
             <div>
                 <p>
@@ -61,22 +63,22 @@
 
         </div>
     </form>
-    <form action="" method="put">
+    <form class="profile" action="" method="put">
 
         <div>
             <h2>Profile</h2>
             <img src="../Lesson 4 (forms)/image/📷 Image.png" alt="profile_photo">
             <input type="file">
             
-            <br>
+            <br><br>
             <label for="text">Name</label>
-            <input type="text" id="text">
+            <input class="round_border" type="text" id="text">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input class="round_border" type="email" id="email" name="email" required>
 
-            <br>
+            <br><br>
             <label for="Country">Country</label>
-            <select name="country_list" id="country">
+            <select class="country_border" name="country_list" id="country">
                 <option value="Germany">Germany</option>
                 <option value="Ukraine" selected>Ukraine</option>
                 <option value="Poland">Poland</option>
@@ -85,16 +87,18 @@
             </select>
             
             <label for="City">City</label>
-            <input type="select" id="City">
+            <input class="round_border" type="select" id="City">
 
-            <br>
+            <br><br>
             <label for="Zip_Code">Zip Code</label>
-            <input type="text" id="Zip_Code">
-            <label for="telephone">Phone number</label>
-            <input type="tel" id="telephone">
+            <input class="round_border" type="text" id="Zip_Code">
+            <label  for="telephone">Phone number</label>
+            <input class="round_border" type="tel" id="telephone">
 
             <br>
             <button type="button">Update</button>
+            
+            
 
 
         </div>
