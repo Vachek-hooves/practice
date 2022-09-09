@@ -1,0 +1,26 @@
+body{
+    width: 1440px;
+    height: 4421px;
+}
+
+.home{
+    text-align: center;
+    font-size: 18px;
+
+}
+
+#first_screen{
+    margin-left: 235px;
+    margin-right: 235px;
+    
+   
+}
+h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.aboutme{
+    margin-left: 235px;
+    margin-right: 235px;
+}
