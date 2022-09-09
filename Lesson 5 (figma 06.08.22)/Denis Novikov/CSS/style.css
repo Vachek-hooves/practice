@@ -1,28 +1,36 @@
 
 
 body{
-    
     width: 1440px;
     height: 4421px;
-    
-
 }
 
-.home{
-    margin-top: 25px;
+.header{
+    width: 1440px;
+    height: 80px;
     text-align: center;
-    font-size: 18px;
-    font-weight: 400;
+}
 
+.menu{
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 40px;
+    padding-bottom: 0px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .first_screen{
+    width: 970px;
+    height: 500px;
     margin-left: 235px;
     margin-right: 235px;
     
    
 }
 h1{
+    margin-top: 0px;
+    margin-bottom: 50px;
     line-height: 65px;
     font-size: 48px;
     font-weight: 700;
@@ -31,12 +39,46 @@ h1{
 
 /* ABOUT ME*/
 
-.aboutme{
+.contaboutme{
     width: 970px;
     height: 500px;
-    text-align: center;
     margin-left: 235px;
     margin-right: 235px;
+}
+
+#AM{
+    text-align: center;
+    margin: 0px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 34px;    
+}
+
+.AMP{
+    font-size: 18px;
+    margin-left: 235px;
+    margin-right: 235px;
+}
+.AMP1{
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.AMP2{
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    padding: 0px 40px 0px 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.AMP3{
+    width: 320px;
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 
@@ -59,9 +101,10 @@ h1{
 }
 
 .remark{
+    font-style: normal;
+    font-size: 18px;
     margin: 0px;
     text-align: center;
-    font-size: 18px;
     padding-top: 20px;
     padding-bottom: 50px;
 }
@@ -72,55 +115,16 @@ h1{
     height: 230px;
     float: left;
     text-align: center;
-    padding-left: 95px;
-    
+    padding-left: 95px;   
 }
 
 .ps{
     padding-left: 0px;
 }
 
-
-
-/*
-.skillcontainer{
-    max-width: 970px;
-    max-height: 560px;
-    vertical-align:middle;
-    
+.star{
+    margin: 0px;
+    padding-top: 60px;
 }
 
 
-
-.skillheader{
-    text-align: center;
-    
-}
-
-.ps{
-    max-width: 170px;
-    max-height: 230px;
-    padding-right: 800px;
-    vertical-align:middle;
-    
-}
-
-.ai{
-    padding-left: 265px;
-    padding-right: 530px;
-    vertical-align:middle;
-}
-
-.ae{
-    padding-left: 530px;
-    padding-right: 265px;
-    vertical-align:middle;
-}
-
-.figma{
-    padding-bottom: 100px;
-    padding-right: 0px;
-    padding-left: 800px;
-    
-}
-/*
