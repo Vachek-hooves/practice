@@ -9,6 +9,8 @@ body{
     width: 1440px;
     height: 80px;
     text-align: center;
+    margin-top: 5px;
+    margin-bottom: 25px;
 }
 
 .menu{
@@ -122,9 +124,11 @@ h1{
     padding-left: 0px;
 }
 
+
 .star{
     margin: 0px;
     padding-top: 60px;
+    
+    
 }
-
 
