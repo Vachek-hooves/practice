@@ -1,16 +1,26 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 18px;
+}
 
 body{
     width: 1440px;
     height: 4421px;
+    font-weight: 400;
+    /*font-size: 18px;*/
+    line-height: 25px;
 }
 
 .header{
-    width: 1440px;
-    height: 80px;
+    font-size: 18px;
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px
 }
 
 .menu{
@@ -87,6 +97,9 @@ h1{
 
 
 /*SKILL*/
+div p{
+    padding-bottom: 60px;
+}
 
 .skillcontainer{
     max-width: 970px;
@@ -115,9 +128,9 @@ h1{
 .productlist{
     width: 170px;
     height: 230px;
-    float: left;
+    display: inline-block;
     text-align: center;
-    padding-left: 95px;   
+    padding-left: 90px;   
 }
 
 .ps{
@@ -125,10 +138,6 @@ h1{
 }
 
 
-.star{
-    margin: 0px;
-    padding-top: 60px;
-    
-    
-}
+
+/* PORTFOLIO */
 
