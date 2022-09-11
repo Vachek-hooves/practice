@@ -157,17 +157,37 @@ div p{
     font-size: 34px;
 }
 
-.portfolio p{
+/*.portfolio p{
     margin-bottom: 70px;
     margin-top: 40px;
 }
+*/
 
 .fashionlink {
     max-width: 200px;
-    margin: 0px 385px 0px 385px;
+    margin: 40px 385px 70px 385px;
+}
+.reeboklink{
+    margin: 40px 385px 70px 385px;
+}
+
+/*.portfolio .braun{
+    margin-bottom: 100px;
+}
+*/
+.braunlink{
+    margin: 40px 355px 100px 355px;
 }
 
 
 
 /*FOOTER*/
 
+footer{
+    block-size:  970px;;
+    width: 970px;
+    height: 400px;
+    text-align: center;
+    margin: 0px 235px 0px 235px;
+    padding-top: 100px;
+}
