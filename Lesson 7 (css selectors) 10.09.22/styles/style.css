@@ -1,0 +1,73 @@
+*{
+    font-family:'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+header div p{
+    display:block;
+    
+    
+}
+
+.firstp{
+    padding: 20px 270px 4px 248px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 0px;
+
+}
+
+header{
+    text-align: center;
+    color: #FF8984;
+    width: 800px;
+    height: 80px;
+    background-color: #4A4F56;
+}
+
+main{
+    width: 800px;
+    height: 510px;
+    background-color: #88839E;
+}
+
+.pickles{
+    width: 534px;
+    height: 45px;
+
+}
+.apples{
+    width: 534px;
+    height: 45px;
+
+}
+.oranges{
+    width: 534px;
+    height: 45px;
+}
+
+
+.plates{
+    width: 534px;
+    height: 45px;
+}
+
+.benton{
+    width: 534px;
+    height: 45px;
+}
+
+.sake{
+    width: 534px;
+    height: 45px;
+}
+
+
+section div p{   
+    width: 534px;
+    height: 45px;
+    background-color: #4A4F56;
+}
