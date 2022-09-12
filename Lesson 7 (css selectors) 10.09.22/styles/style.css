@@ -34,6 +34,24 @@ main{
     background-color: #88839E;
 }
 
+
+/*LIST*/
+
+section div{
+    margin: 0px 130px 0px 130px;
+} 
+
+section div form label{
+    display: contents;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+section div form input{
+    margin-top: 15px;
+}
+
 .pickles{
     width: 534px;
     height: 45px;
