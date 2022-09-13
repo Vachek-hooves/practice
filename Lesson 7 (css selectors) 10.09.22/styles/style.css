@@ -5,6 +5,10 @@
 
 }
 
+html{
+    width: 790px;
+    
+}
 
 header div p{
     display:block;
@@ -28,9 +32,10 @@ header{
     background-color: #4A4F56;
 }
 
+
 main{
     width: 800px;
-    height: 510px;
+    
     background-color: #88839E;
 }
 
@@ -55,8 +60,16 @@ section div form input{
 .pickles{
     width: 534px;
     height: 45px;
-
 }
+
+
+section div form:hover{
+    background-color:#625E77;
+}
+input:active+label{
+    color: #7A7593;
+}
+
 .apples{
     width: 534px;
     height: 45px;
@@ -83,9 +96,20 @@ section div form input{
     height: 45px;
 }
 
-
-section div p{   
+.bon{
+    color: #FF8984;;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px
+    display: inline-block;
+    padding: 12px 0px 12px 0px;
+    text-align: center;
+    display: inline-block;
+}
+section div p{  
+    margin-top: 45px;
+    margin-bottom: 45px;
+    text-align: center; 
     width: 534px;
-    height: 45px;
     background-color: #4A4F56;
 }
