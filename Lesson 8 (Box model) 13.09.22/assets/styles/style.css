@@ -10,8 +10,8 @@
 
 nav{
     
-    max-width: 1200px;
-    max-height: 46px;
+    width: 1200px;
+    height: 46px;
     margin: 17px 120px;
     
 }
@@ -30,7 +30,8 @@ a{
 div a:first-of-type{
     margin-left: 0px;
 }
-div button{
+ 
+header div button{
     background-color: #FF9900;
     border-radius: 4px;
     color: #fff;
@@ -53,23 +54,28 @@ div button:last-of-type{
 
 /* HUGS */
 section{
-    margin: 70px 120px 120px 120px;
     width: 1200px;
     height: 495px;
+    margin: 70px 120px 120px 120px;
+    
     
 }
 
 h1{
     width: 500px;
     height: 110px;
+    margin-bottom: 30px;
+    margin-top: 70px;
     font-weight: 700;
     font-size: 44px;
     line-height: 54px;
 }
 
+
 section p{
     width: 500px;
     height: 91px;
+    margin-bottom: 167px;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -79,7 +85,31 @@ section p{
     display: inline-block;
 }
 
-.get{
+
+section div button{
+    background-color: #FF9900;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
     width: 180px;
     height: 50px;
+}
+
+.get{
+    position: relative;
+    bottom: 150px;
+    right: 30px;
+}
+
+.firstdiv{
+    width: 495px;
+    height: 301px;
+    margin-bottom: 97px;
+}
+
+
+
+.hugsimg{
+    margin-left: 56px;
 }
