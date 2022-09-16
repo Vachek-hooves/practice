@@ -270,6 +270,12 @@ h4{
     width: 1200px;
     height: 520px;
 }
+
+.checkbox{
+    width: 505px;
+    height: 52px;
+}
+
 article{
     margin: 70px 0px 70px 125px;
     width: 505px;
