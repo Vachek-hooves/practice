@@ -6,14 +6,17 @@
 
 }
 
+/*HEADER*/
+
 nav{
+    
     max-width: 1200px;
     max-height: 46px;
     margin: 17px 120px;
     
 }
 
-div img{
+header div img{
     margin-right: 198px;
 }
 
@@ -48,114 +51,35 @@ div button:last-of-type{
 
 
 
-
-
-
-
-/*nav{
-    margin-left: 120px;
-    margin-right: 120px;
-    max-width: 1200px;
-    height: 46px;
-    margin-bottom: 50px;
-    display: inline-block;
-}
-*/
-
-/*.small-logo{
-    width: 200px;
-    height: 32px;
+/* HUGS */
+section{
+    margin: 70px 120px 120px 120px;
+    width: 1200px;
+    height: 495px;
+    
 }
 
-.links{
-    text-align: center;
+h1{
+    width: 500px;
+    height: 110px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
 }
 
-.buttons{
-    text-align: end;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-}
-/*
-.links{
-    width: 352px;
-    height: 28;
-    text-align: center;
-}
-
-form{
-    display: inline;;
-}
-
-
-
-.hug{
-    max-width: 1200px;
-    max-height: 495px;
-}
-
-
-/*
-main p{
+section p{
     width: 500px;
     height: 91px;
+    font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    padding-top: 30px;
-}*/
-/*
-main button{
+}
+
+.hugs{
+    display: inline-block;
+}
+
+.get{
     width: 180px;
     height: 50px;
-    
-}*/
-
-/*img{
-    position: relative;
-    left: 556px;
-    bottom: 300px;
-    width: 644px;
-    height: 495px;
-}*/
-
-/*
-h2{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    text-align: center;
-    width: 540px;
-    height: 88px;
-    margin: 100px 450px 0px 450px;
-}*/
-
-/*
-.superpower{
-    position: relative;
-    display: flex; 
-    width: 1200px;
-    height: 495px;
-    flex-direction: row;
-    display: flex;
-    width: 1200px;
-    height: 495px;
-}*/
+}
