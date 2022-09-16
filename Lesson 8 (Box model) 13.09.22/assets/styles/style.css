@@ -1,23 +1,50 @@
 *{
+    font-family: 'Montserrat', sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 
 }
 
-.upperbar{
+nav{
     max-width: 1200px;
     max-height: 46px;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin: 17px 120px;
+    
 }
 
 div img{
-    padding-right: 142px;
+    margin-right: 198px;
 }
 
+a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-left: 20px;
+}
 
+div a:first-of-type{
+    margin-left: 0px;
+}
+div button{
+    background-color: #FF9900;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    width: 110px;
+    height: 46px;
+}
 
+div button:first-of-type{
+    margin-left: 174px;
+ }
+
+div button:last-of-type{
+    margin-left: 32px;
+}
 
 
 
