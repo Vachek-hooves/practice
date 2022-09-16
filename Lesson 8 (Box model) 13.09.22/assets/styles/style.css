@@ -124,3 +124,11 @@ section div button{
 .hugsimg{
     margin-left: 56px;
 }
+
+/* TOOLS */
+
+.tools{
+    width: 1440px;
+    height: 510px;
+    background: url("../assets/img/section tools/bg.png");
+}
