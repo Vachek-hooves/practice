@@ -59,7 +59,7 @@ div button:last-of-type{
 
 
 /* HUGS */
-section{
+.superpower{
     width: 1200px;
     height: 495px;
     margin: 70px 120px 120px 120px;
@@ -129,9 +129,15 @@ section div button{
 /* TOOLS */
 
 .tools{
+    margin-top: 100px;
+    margin-bottom: 100px;
     width: 1440px;
     height: 510px;
+    padding-left: 120px;
     background-image: url(../img/section-tools/bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
 
 
 }
@@ -155,7 +161,6 @@ section div button{
     align-items: flex-start;
     padding: 0px;
     gap: 30px;
-    margin-top: 50px;
     margin-bottom: 70px;
     margin-left: 40px;
     width: 270px;
@@ -184,9 +189,9 @@ section div button{
     margin-left: 0px;
 }
 
-.tools div:last-of-type{
+/*.tools div:last-of-type{
     margin-right: 110px;
-}
+}*/
 
 #signupnow{
     font-family: 'Poppins';
@@ -203,11 +208,14 @@ section div button{
     height: 50px;
 }
 
-/*Design */
+/*PROFESSIONALS */
 
 .professionals{
+    margin-top: 100px;
+    margin-bottom: 100px;
     width: 525px;
     height: 535px;
+    margin-left: 120px;
     display: flex;
 }
 
@@ -264,7 +272,8 @@ h4{
 /* PRODUCT MANAGER*/
 
 .blueguylogo{
-    
+    margin-left: 120px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: row-reverse;
     width: 1200px;
@@ -284,6 +293,8 @@ article{
 
 /*MARKETES*/
 .marketes{
+    margin-left: 120px;
+    margin-bottom: 100px;
     display: flex;
     width: 1200px;
     
