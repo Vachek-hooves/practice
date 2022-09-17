@@ -315,3 +315,40 @@ article{
 .guyyellow{
     margin-left: 171px;
 }
+
+/* FOOTER */
+
+.footer{
+    width: 1200px;
+    height: 209px;
+    margin: 70px 120px 70px;
+    
+}
+
+.line{
+    width: 1440px;
+    margin-bottom: 70px;
+}
+
+footer img{
+    margin-right: 130px;
+}
+
+.footer{
+    display: flex;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+.stuff{
+    display: flex;
+    flex-direction: column;
+}
+
+.signin{
+    display: flex;
+    flex-direction: column;
+}
