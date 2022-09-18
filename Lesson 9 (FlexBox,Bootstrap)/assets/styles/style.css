@@ -1,0 +1,427 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/*HEADER*/
+
+
+header{
+    width: 1440px;
+    height: 80px;
+}
+nav{
+    
+    width: 1200px;
+    height: 46px;
+    margin: 17px 120px;
+    
+}
+
+header div img{
+    margin-right: 198px;
+}
+
+a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-left: 20px;
+}
+
+div a:first-of-type{
+    margin-left: 0px;
+}
+ 
+header div button{
+    background-color: #FF9900;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    width: 110px;
+    height: 46px;
+}
+
+div button:first-of-type{
+    margin-left: 174px;
+ }
+
+div button:last-of-type{
+    margin-left: 32px;
+}
+
+
+
+/* HUGS */
+.superpower{
+    width: 1200px;
+    height: 495px;
+    margin: 70px 120px 120px 120px;
+    
+    
+}
+
+h1{
+    width: 500px;
+    height: 110px;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    color: #2F281E;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+}
+
+
+section .hugs p{
+    width: 500px;
+    height: 91px;
+    margin-bottom: 167px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.hugs{
+    display: inline-block;
+}
+
+
+section div button{
+    font-family: 'Poppins';
+    font-style: normal;
+    background-color: #FF9900;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    width: 180px;
+    height: 50px;
+}
+
+.get{
+    
+    border-radius: 4px;
+    border: none;
+    position: relative;
+    bottom: 150px;
+    right: 30px;
+}
+
+.firstdiv{
+    width: 495px;
+    height: 301px;
+    margin-bottom: 97px;
+}
+
+
+
+.hugsimg{
+    margin-left: 56px;
+}
+
+/* TOOLS */
+
+.tools{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 1440px;
+    height: 510px;
+    padding-left: 120px;
+    background-image: url(../img/section-tools/bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+
+
+}
+
+.tool-header{
+    width: 539px;
+    height: 88px;
+    margin: 0px 451px 50px 331px;
+    color: #2F281E;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+}
+
+
+
+.tools div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    margin-bottom: 70px;
+    margin-left: 40px;
+    width: 270px;
+    height: 175px;
+    display: inline-block;
+}
+.tools p.head{
+    color: #2F281E;
+    margin: 30px 0px 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.tools p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.tools div:first-of-type{
+    margin-left: 0px;
+}
+
+/*.tools div:last-of-type{
+    margin-right: 110px;
+}*/
+
+#signupnow{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    line-height: 24px;
+    margin-left: 515px;
+    background-color: #FF9900;
+    border-radius: 4px;
+    width: 180px;
+    height: 50px;
+}
+
+/*PROFESSIONALS */
+
+.professionals{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 525px;
+    height: 535px;
+    margin-left: 120px;
+    display: flex;
+}
+
+.beforeheading{
+    margin-top: 20px;
+}
+
+.design{
+    color:#2F281E;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    width: 395px;
+    height: 44px;
+    margin-bottom: 20px;
+}
+.defines{
+    width: 518px;
+    height: 78px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+    margin-bottom: 40px;
+
+}
+
+h4{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+.aboutstyle{
+    width: 516px;
+    height: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+    margin-bottom: 30px;
+}
+
+.guyred{
+    margin-left: 113px;
+}
+
+/* PRODUCT MANAGER*/
+
+.blueguylogo{
+    margin-left: 120px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    height: 520px;
+}
+
+.checkbox{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.space{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.checkbox p{
+    margin-left: 30px;
+    
+}
+
+/*.checkbox{
+    width: 505px;
+    height: 52px;
+}*/
+
+/*.checkbox p{
+    width: 440px;
+    margin-left: 65px;
+}*/
+
+
+
+article{
+    margin: 70px 0px 70px 125px;
+    width: 505px;
+    height: 424px;
+}
+
+/*MARKETES*/
+.marketes{
+    margin-left: 120px;
+    margin-bottom: 100px;
+    display: flex;
+    width: 1200px;
+    
+}
+.abovemarketes{
+    margin-top: 40px;
+}
+
+.marketesheader{
+    color:#2F281E;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    width: 395px;
+    height: 44px;
+    margin-bottom: 20px;
+}
+.guyyellow{
+    margin-left: 171px;
+}
+
+/* FOOTER */
+
+.footer{
+    width: 1200px;
+    height: 209px;
+    margin: 70px 120px 70px;
+    
+}
+
+.line{
+    width: 1440px;
+    margin-bottom: 70px;
+}
+
+footer img{
+    margin-right: 130px;
+}
+
+.footer{
+    display: flex;
+}
+
+.links, .stuff{
+    width: 135px;
+    height: 209px;
+    margin-right: 130px;
+    display: flex;
+    flex-direction: column;
+}
+/*
+.stuff{
+    display: flex;
+    flex-direction: column;
+}*/
+
+.signin{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+footer h3{
+    width: 255px;
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #2F281E;
+    margin-bottom: 25px;
+}
+
+footer a{
+    width: 133px;
+    height: 26px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+    margin-left: 0px;
+    margin-top: 15px;
+}
+
+footer a:first-of-type{
+    margin-top: 0px;
+}
+
+#footerbutton{
+    margin: 25px 160px 0px 0px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    line-height: 24px;
+    background-color: #FF9900;
+    border-radius: 4px;
+    width: 180px;
+    height: 50px;
+}
+
+input[type="tel"]{
+    width: 340px;
+    height: 50px;
+    opacity: 0.5;
+}
