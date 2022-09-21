@@ -19,8 +19,12 @@
     border: 1px;
 }
 
+.toplogo{
+    display: flex;
+    align-items: center;
+}
 
-.logo{
+.ml-135{
     margin-left: 135px;
 }
 
@@ -35,6 +39,10 @@
 }
 .mb-40{
     margin-bottom: 40px;
+}
+
+.mt-40{
+    margin-top: 40px;
 }
 
 .headersize{
@@ -56,6 +64,7 @@
     list-style-type: none;
 }
 .tel{
+    width: 130px;
     display: flex;
     align-items: center;
     margin-left: 246px;
@@ -147,4 +156,21 @@
     width: 384px;
     display: flex;
     flex-direction: column;
+}
+
+.blue-link:hover{
+    color: #18B5DC;
+}
+
+.callback{
+    background-color: white;
+    padding: 10px 19.5px;
+}
+button:hover{
+    background-color: #18B5DC;
+    color: white;
+    border: hidden;
+}
+bluesquare:hover{
+    background-color: #18B5DC;
 }
