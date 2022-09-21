@@ -3,3 +3,148 @@
     margin: 0px;
     padding: 0px;
 }
+
+.textdecoration{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #3C3C3C;
+    margin-top: 28px;
+    margin-bottom: 28px;   
+}
+.border{
+    border: 1px;
+}
+
+
+.logo{
+    margin-left: 135px;
+}
+
+.ml-30{
+    margin-left: 30px;
+}
+.margin-left-link{
+    margin-left: 206px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+
+.headersize{
+    width: 1440px;
+    height: 80px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.links{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+.tel{
+    display: flex;
+    align-items: center;
+    margin-left: 246px;
+    margin-right: 136px
+}
+
+/*MAIN */
+
+
+.main-container{
+    width: 1440px;
+    height: 833px;
+}
+
+.users-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 135px;
+    margin-right: 135px;
+}
+.about{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #646464;
+}
+
+.h1{
+    width: 356px;
+    height: 58px;
+    margin-top: 150px;
+    margin-left: 536px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    color: #3C3C3C;
+}
+
+.loremtext{
+    width: 570px;
+    height: 42px;
+    margin-top: 40px;
+    margin-left: 435px;
+    margin-bottom: 60px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #3C3C3C;
+}
+
+.h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #282528;
+}
+
+/*FOOTER */
+
+.dimension{
+    width: 1440px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.img-bottom{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.icon-container{
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content{
+    width: 384px;
+    display: flex;
+    flex-direction: column;
+}
