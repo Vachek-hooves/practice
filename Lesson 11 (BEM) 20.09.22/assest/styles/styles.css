@@ -189,13 +189,15 @@ button:hover{
 }
 
 .overlay{
-    position: relative;
-    bottom: 337px;
+    position: fixed;
+    top: 0;
+    margin-top: 431px;
     background-color: #18B5DC;
     height: 270px;
     width: 270px;
     opacity: 0;
 }
+
 
 
 
