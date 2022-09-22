@@ -22,6 +22,7 @@
 .toplogo{
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .ml-135{
@@ -51,6 +52,7 @@
 }
 
 .menu{
+    height: 80px;
     display: flex;
     justify-content: space-around;
     
@@ -189,18 +191,38 @@ button:hover{
 }
 
 .overlay{
-    position: fixed;
+    position: absolute;
     top: 0;
-    margin-top: 431px;
+    margin-top: 430px;
     background-color: #18B5DC;
     height: 270px;
     width: 270px;
     opacity: 0;
 }
 
-
-
-
 .employee:hover .overlay{
+    opacity: 1;
+}
+
+.overlay-icon{
+    position: absolute;
+    top: 0;
+    margin-top: 1097px;
+    opacity: 0;
+    
+}
+
+.lin:hover .overlay-icon{
+    opacity: 1;
+}
+
+.icon-after{
+    position: absolute;
+    top: 0;
+    margin-top: 112px;
+    opacity: 0;
+}
+
+.icon-before:hover .icon-after{
     opacity: 1;
 }
