@@ -221,8 +221,19 @@ button:hover{
     top: 0;
     margin-top: 112px;
     opacity: 0;
+    
 }
 
 .icon-before:hover .icon-after{
     opacity: 1;
+}
+
+.clearance{
+    display: flex;
+    justify-content: center;
+}
+
+.fbicon{
+    margin-left: 4px;
+    margin-right: 4px;
 }
