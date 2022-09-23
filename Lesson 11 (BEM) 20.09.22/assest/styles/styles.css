@@ -113,27 +113,28 @@
     padding-bottom: 150px;
 }
 
-.users-container{
-    background: #F6F6F6;
+.main__block{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 135px;
     margin-right: 135px;
 }
-.about{
+/*
+.user__position{
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 22px;
     color: #646464;
 }
+*/
 
-.h1{
+.main__heading{
+    /*margin-left: 500px;
     width: 356px;
-    height: 58px;
-    
-    margin-left: 536px;
+    height: 58px;*/
+    align-items: center;
     text-align: center;
     font-weight: 700;
     font-size: 34px;
@@ -141,7 +142,7 @@
     color: #3C3C3C;
 }
 
-.loremtext{
+.main__text{
     width: 570px;
     height: 42px;
     margin-top: 40px;
@@ -155,26 +156,43 @@
     color: #3C3C3C;
 }
 
-.h2{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    color: #282528;
+.main__user{
+    display: flex;
+    flex-direction: column;
 }
-.icon-after{
-    position: ;
-    top: 0;
-    margin-top: ;
-    opacity: .5;
-    
+.main__user:hover .user__overlay{
+    opacity: 1;
 }
-.employee:hover .overlay{
-    opacity: .5;
+.user__overlay{
+    position: absolute;
+    background-color: #18B5DC;
+    height: 270px;
+    width: 270px;
+    opacity: 0;
+}
+.user__bg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
-.icon-before:hover .icon-after{
-    opacity: .5;
+
+.user__link{
+    display: flex;
 }
+
+.user__link-active{
+    position: absolute;
+    opacity: 0;
+}
+
+.user__link:hover .user__link-active{
+    opacity: 1;
+}
+
+
 
 /* FOOTER arrangement */
 
@@ -236,27 +254,8 @@
     border: hidden;
 }
 
-.bluebg{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly
-}
-
-
-
-.overlay{
-    position: ;
-    top: 0;
-    margin-top: ;
-    background-color: #18B5DC;
-    height: 270px;
-    width: 270px;
-    opacity: .5;
-}
-
-
 .icon__block{
+    
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -274,12 +273,5 @@
     opacity: 1;
 }
 
-
-
-/*.clearance{
-    display: flex;
-    justify-content: center;
-}
-*/
 
 
