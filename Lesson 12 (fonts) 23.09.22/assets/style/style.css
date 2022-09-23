@@ -1,0 +1,44 @@
+*{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+
+
+.header__container{
+    width: 1440px;
+    height: 80px;
+}
+
+.header__nav{
+    width: 1200px;
+    height: 54px;
+    display: flex;
+}
+
+.header__description{
+    display: flex;
+}
+
+
+/*MAIN*/
+
+.main{
+    width: 1200px;
+    height: 2225px;
+}
+
+.main__block{
+    margin: 0px 120px 70px;
+}
+
+.main__heading{
+    margin-bottom: 40px;
+}
+
+.main__text{
+    justify-content: space-between;
+}
