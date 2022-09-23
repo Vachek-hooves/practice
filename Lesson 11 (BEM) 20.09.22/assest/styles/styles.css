@@ -4,7 +4,8 @@
     padding: 0px;
 }
 
-.textdecoration{
+.link__decoration{
+    display: flex;
     text-decoration: none;
     font-style: normal;
     font-weight: 600;
@@ -13,31 +14,64 @@
     text-transform: uppercase;
     color: #3C3C3C;
     margin-top: 28px;
-    margin-bottom: 28px;   
-}
-.border{
-    border: 1px;
+    margin-bottom: 28px;
+    
 }
 
-.toplogo{
+.nav__links li+li{
+    margin-left: 30px;
+}
+
+
+.ml-206{
+    margin-left: 206px;
+}
+
+.link__decoration:hover{
+    color: #18B5DC;
+    }
+.nav__links{
+    display: inline-flex;
+    align-items: center;
+}
+
+.links__list{
+    height: 22px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.button{
+    background-color: white;
+    padding: 10px 19.5px;
+}
+
+/*.border{
+    border: 1px;
+}
+*/
+
+.nav__logo{
     display: flex;
     align-items: center;
+    
+}
+
+.mb{
     margin-bottom: 10px;
 }
 
-.ml-135{
-    margin-left: 135px;
-}
 
-.ml-30{
-    margin-left: 30px;
-}
-.margin-left-link{
-    margin-left: 206px;
-}
+
+
+
 .mb-20{
     margin-bottom: 20px;
 }
+
 .mb-40{
     margin-bottom: 40px;
 }
@@ -46,26 +80,22 @@
     margin-top: 40px;
 }
 
-.headersize{
+.header-container{
     width: 1440px;
     height: 80px;
 }
 
-.menu{
+.header__nav{
     height: 80px;
     display: flex;
     justify-content: space-around;
+    margin-left: 135px;
     
 }
 
-.links{
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-}
-.tel{
+
+
+.nav__button{
     width: 130px;
     display: flex;
     align-items: center;
@@ -131,49 +161,76 @@
     line-height: 22px;
     color: #282528;
 }
+.icon-after{
+    position: ;
+    top: 0;
+    margin-top: ;
+    opacity: .5;
+    
+}
+.employee:hover .overlay{
+    opacity: .5;
+}
+
+.icon-before:hover .icon-after{
+    opacity: .5;
+}
 
 /* FOOTER arrangement */
 
-.dimension{
-    width: 1440px;
-    height: 260px;
+.footer-container{
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    
+    justify-content: space-between;
+        
+}
+
+.logoml{
+    margin-left: 635px;
+}
+
+.listml{
+    margin-top: 28px;
+    margin-bottom: 28px;
+    margin-left:528px;
 }
 
 
-.img-bottom{
+/*.img-bottom{
     text-align: center;
     margin-top: 40px;
 }
+*/
 
-.icon-container{
+/*.icon-container{
     display: flex;
     width: 250px;
     justify-content: space-around;
     align-items: center;
-}
+}*/
 
-.content{
+/*.content{
     width: 384px;
     display: flex;
     flex-direction: column;
 }
+*/
 
-.blue-link:hover{
-    color: #18B5DC;
+
+.footer-icon{
+    margin-left: 595px;
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.callback{
-    background-color: white;
-    padding: 10px 19.5px;
+.footer-icon .icon__block+.icon__block{
+    margin-left: 10px;
 }
 
-
-button:hover{
+.button:hover{
     background-color: #18B5DC;
     color: white;
     border: hidden;
@@ -186,54 +243,43 @@ button:hover{
     justify-content: space-evenly
 }
 
-.icons{
-    width: 134px;
-}
+
 
 .overlay{
-    position: absolute;
+    position: ;
     top: 0;
-    margin-top: 430px;
+    margin-top: ;
     background-color: #18B5DC;
     height: 270px;
     width: 270px;
-    opacity: 0;
+    opacity: .5;
 }
 
-.employee:hover .overlay{
-    opacity: 1;
+
+.icon__block{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.overlay-icon{
-    position: absolute;
-    top: 0;
-    margin-top: 1097px;
-    opacity: 0;
-    
-}
 
-.lin:hover .overlay-icon{
-    opacity: 1;
-}
-
-.icon-after{
-    position: absolute;
-    top: 0;
-    margin-top: 112px;
+.icon__overlay{
+    position:absolute;
     opacity: 0;
     
 }
 
-.icon-before:hover .icon-after{
+.icon__block:hover .icon__overlay{
     opacity: 1;
 }
 
-.clearance{
+
+
+/*.clearance{
     display: flex;
     justify-content: center;
 }
+*/
 
-.fbicon{
-    margin-left: 4px;
-    margin-right: 4px;
-}
+
