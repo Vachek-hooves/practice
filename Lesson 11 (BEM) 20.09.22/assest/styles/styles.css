@@ -3,7 +3,15 @@
     margin: 0px;
     padding: 0px;
 }
+
+.body{
+    width: 1440px;
+    height: 1173px;
+}
 /* HEADER*/
+
+
+
 .link__decoration{
     display: flex;
     text-decoration: none;
@@ -121,6 +129,10 @@
     color: #3C3C3C;
 }
 
+.user__name{
+    margin-top: 20px;
+}
+
 .main__user{
     display: flex;
     flex-direction: column;
@@ -155,7 +167,6 @@
 
 .user__link:hover .user__link-active{
     opacity: 1;
-    
 }
 
 
