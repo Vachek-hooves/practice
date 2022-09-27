@@ -20,6 +20,7 @@
     --ml535: 535px;
     --pl10: 10px;
     --pos: sticky;
+    --ml100: 100px;
     
 
 
@@ -76,7 +77,9 @@
 
 }
 
-
+/*.header__nav-block-second{
+    margin-left: var(--ml100);
+}
 
 /*MAIN*/
 
@@ -95,8 +98,6 @@
     background-repeat: no-repeat;
     background-position: top 150px right 260px;
     background-attachment: fixed;
-    
-    
 
 }
 
