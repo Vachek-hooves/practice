@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/style.css">
     <title>Lesson 13 position</title>
 
@@ -50,15 +50,15 @@
     </header>
 
 
-    <main class="main">
+    <main class="main main__background">
 
 
         <nav class="main__nav">
-            <aside class="main-link">
-                <h2 class="main__heading main__heading-set">INTRODUCTION</h2>
-                <h2 class="main__heading main__heading-set">core components</h2>
-                <h2 class="main__heading main__heading-set">react fundamentals</h2>
-                <h2 class="main__heading main__heading-set">handling text input</h2>
+            <aside class="main__link">
+                <a href="#intro" class="main__link-decor"><h2 class="main__heading main__heading-set"> INTRODUCTION </h2></a>
+                <a href="#core" class="main__link-decor"> <h2 class="main__heading main__heading-set">CORE CONPONENTS</h2></a>
+                <a href="#react" class="main__link-decor"> <h2 class="main__heading main__heading-set">REACT FUNDAMENTALS</h2></a>
+                <a href="#handling" class="main__link-decor"> <h2 class="main__heading main__heading-set">HEADING TEXT INPUT</h2></a>
             </aside>
         </nav>
         
@@ -71,7 +71,7 @@
                             <img src="./assets/img/main/divider.png" alt="devider" class="main__devider">
                         
                         <div class="main__heading-style">
-                            <h2 class="main__heading">
+                            <h2 class="main__heading" id="intro">
                                 INTRODUCTION 
                             </h2>
                             <p class="main__chapter">
@@ -93,7 +93,7 @@
                     <div class="main__block-sup">
                         <img src="./assets/img/main/divider.png" alt="devider" class="main__devider">
                         <div class="main__heading-style">
-                            <h2 class="main__heading">
+                            <h2 class="main__heading" id="core">
                                 core components
                             </h2>
                             <p class="main__chapter">
@@ -120,7 +120,7 @@
                 <div class="main__block-sup">
                     <img src="./assets/img/main/divider.png" alt="devider" class="main__devider">
                     <div class="main__heading-style">
-                        <h2 class="main__heading">
+                        <h2 class="main__heading" id="react">
                             react fundamentals
                         </h2>
                         <p class="main__chapter">
@@ -178,7 +178,7 @@
                 <div class="main__block-sup">
                     <img src="./assets/img/main/divider.png" alt="devider" class="main__devider">
                     <div class="main__heading-style">
-                        <h2 class="main__heading">
+                        <h2 class="main__heading" id="handling">
                             handling text input
                         </h2>
                         <p class="main__chapter">
@@ -199,7 +199,7 @@
                     For example, let's say that as the user 
                     types, you're translating their words into
                     a different language. In this new language, 
-                    every single word is written the same way: 🍕. 
+                    every single word is written the same way:🍕. 
                     So the sentence "Hello there Bob" would be 
                     translated as "🍕 🍕".
                 </p>
