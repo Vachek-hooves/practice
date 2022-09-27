@@ -77,9 +77,6 @@
 
 }
 
-/*.header__nav-block-second{
-    margin-left: var(--ml100);
-}
 
 /*MAIN*/
 
@@ -93,10 +90,10 @@
 }
 
 .main__background{
-    
+    width: 1440px;
     background: url(../img/header/bg-picture.png);
     background-repeat: no-repeat;
-    background-position: top 150px right 260px;
+    background-position: left 810px top 150px;
     background-attachment: fixed;
 
 }
