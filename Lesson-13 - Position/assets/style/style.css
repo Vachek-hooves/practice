@@ -141,7 +141,7 @@
 .main__heading-set{
     width: 385px;
     height: 58px;
-    border-bottom: 1px black solid;
+    border-bottom: 1px #BDBDBD solid;
     margin-bottom: var(--mb70);
     text-decoration: none;
     color: #000000;
@@ -182,7 +182,6 @@
 
 .main__text{
     width: 785px;
-    
     font-family: 'PT Sans';
     font-style: normal;
     font-weight: 400;
