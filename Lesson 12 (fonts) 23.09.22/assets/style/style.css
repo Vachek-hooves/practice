@@ -24,7 +24,11 @@
     margin-right: var(--mr10);
 }
 
-
+.description__first,
+.description__slash,
+.description__second{
+    font-family: 'Staatliches';
+}
 
 .header__container{
     width: 1440px;
@@ -84,24 +88,20 @@
     display: flex;
 }
 
-.main__chapter{
-    vertical-align: super;
-    font-size: x-small;
-    
-      
-}
+
 .main__chapter{
     font-family: 'Farro';
     font-weight: 300;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.04em;
     color: #000000;
+    margin-left: 10px;
 }
 
 .main__heading{
     margin-bottom: 40px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Francois One';
     font-weight: 600;
     font-size: 36px;
     line-height: 48px;
