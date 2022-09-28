@@ -19,7 +19,113 @@
     margin: 120px 135px;
 }
 
-.gallery{
+.gallery-grid{
+    
+    display: grid;
     width: 1170px;
     height: 1170px;
+    grid-template-columns: 370px 770px;
+    grid-template-rows: repeat(3, 370px);
+    grid-gap: 30px;
+
+   
+}
+.france{
+    grid-area: 1/1/2/2;
+}
+.street{
+    grid-area: 2/2/1/4;
+}
+.back-yard{
+    justify-self: flex-start;
+}
+.italia{
+    justify-self: flex-end;
+}
+.night-street{
+    grid-area: 3/1/4/2;
+}
+.bridge{
+    grid-area: 3/2/4/3;
+}
+
+
+.nature-container{
+    width:1170px;
+    height: 1570px;
+    margin: 120px 135px;
+}
+
+.nature-grid{
+    Width:1170px;
+    Height:1570px;
+    display: grid;
+    grid-template-columns: 370px 770px;
+    grid-template-rows: 370px 770px 370px;
+    grid-gap: 30px;
+}
+
+.mountain{
+    grid-area: 1/1/2/2;
+}
+.sea{
+    grid-area: 1/2/2/3;
+}
+.rocks{
+    grid-area: 2/1/3/2;
+}
+.sunset{
+    grid-area: 2/2/3/3;
+    justify-self: flex-end;
+}
+.flowers{
+    grid-area: 3/1/4/2;
+}
+.tree{
+    grid-area: 3/2/4/3;
+    justify-self: flex-end;
+}
+
+.people-container{
+    width:1170px;
+    height: 2095px;
+    margin: 120px 135px;
+}
+.people-grid{
+    Width:1170px;
+    Height: 2095px;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(5,370px);
+    grid-gap:30px;
+}
+.dress{
+    grid-area: 1/1/2/2;
+}
+.yellow{
+    grid-area: 1/2/3/3;
+}
+.black{
+    grid-area: 1/3/2/4;
+}
+.side{
+    grid-area: 2/1/2/3;
+}
+.orange{
+    grid-area: 2/3/4/4;
+}
+.bad{
+    grid-area: 3/1/5/2;
+}
+.glasses{
+    grid-area: 3/2/4/3;
+}
+.team{
+    grid-area: 4/2/5/4;
+}
+.front{
+    grid-area: 5/1/6/3;
+}
+.grass{
+    grid-area: 5/3/6/4;
 }
