@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_container{
+    width: 1440px;
+    height: 5565px;
+}
+:root{
+    --gap-left: 30px;
+    
+
+}
+
+.cities{
+    width:1170px;
+    height: 1295px;
+    margin: 120px 135px;
+}
+
+.gallery{
+    width: 1170px;
+    height: 1170px;
+}
