@@ -3,14 +3,22 @@
     padding: 0px;
 }
 
+div img{
+    border-radius: 20px;
+}
+
 .main_container{
     width: 1440px;
     height: 5565px;
 }
 :root{
     --gap-left: 30px;
-    
 
+}
+
+.heading{
+    font-family: 'Delius Unicase', cursive;
+    margin: 120px 314px 80px 312px;
 }
 
 .cities{
@@ -24,7 +32,7 @@
     display: grid;
     width: 1170px;
     height: 1170px;
-    grid-template-columns: 370px 770px;
+    grid-template-columns: repeat(3, 370px);
     grid-template-rows: repeat(3, 370px);
     grid-gap: 30px;
 
@@ -37,16 +45,17 @@
     grid-area: 2/2/1/4;
 }
 .back-yard{
-    justify-self: flex-start;
+    grid-area: 2/1/3/3;
+    
 }
 .italia{
-    justify-self: flex-end;
+    grid-area: 2/3/3/4;
 }
 .night-street{
     grid-area: 3/1/4/2;
 }
 .bridge{
-    grid-area: 3/2/4/3;
+    grid-area: 3/2/4/4;
 }
 
 
@@ -60,8 +69,8 @@
     Width:1170px;
     Height:1570px;
     display: grid;
-    grid-template-columns: 370px 770px;
-    grid-template-rows: 370px 770px 370px;
+    grid-template-columns: repeat(3,370px);
+    grid-template-rows: repeat(4, 370px);
     grid-gap: 30px;
 }
 
@@ -69,21 +78,21 @@
     grid-area: 1/1/2/2;
 }
 .sea{
-    grid-area: 1/2/2/3;
+    grid-area: 1/2/2/4;
 }
 .rocks{
-    grid-area: 2/1/3/2;
+    grid-area: 2/1/4/3;
 }
 .sunset{
-    grid-area: 2/2/3/3;
-    justify-self: flex-end;
+    grid-area: 2/3/4/4;
+    
 }
 .flowers{
-    grid-area: 3/1/4/2;
+    grid-area: 4/1/5/3;
 }
 .tree{
-    grid-area: 3/2/4/3;
-    justify-self: flex-end;
+    grid-area: 4/3/5/4;
+    
 }
 
 .people-container{
