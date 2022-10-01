@@ -1,0 +1,17 @@
+*, ::before, ::after {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  line-height: 10px;
+}
+
+body {
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1170;
+  margin: 0 auto;
+}/*# sourceMappingURL=general.css.map */
