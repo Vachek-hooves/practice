@@ -3,6 +3,8 @@
     padding: 100px 0;
     margin: 100px 0;
 
+    @include container;
+
     &,
     &__title{
         text-align: center;
