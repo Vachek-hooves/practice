@@ -1,0 +1,29 @@
+.banner{
+    background-color: $grey;
+    padding: 100px 0;
+    margin: 100px 0;
+
+    &,
+    &__title{
+        text-align: center;
+    }
+    &__title{
+        margin-bottom: 40px;
+        color: $red;
+    }
+
+    &__text{
+        color: $white;
+
+        &--bold{
+            font-weight: bold;
+        }
+
+        &--underline{
+            text-decoration: underline;
+        }
+        b {
+            color: $red;
+        }
+    }
+}

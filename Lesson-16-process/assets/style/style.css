@@ -1,0 +1,24 @@
+.banner {
+  background-color: grey;
+  padding: 100px 0;
+  margin: 100px 0;
+}
+.banner, .banner__title {
+  text-align: center;
+}
+.banner__title {
+  margin-bottom: 40px;
+  color: red;
+}
+.banner__text {
+  color: #fff;
+}
+.banner__text--bold {
+  font-weight: bold;
+}
+.banner__text--underline {
+  text-decoration: underline;
+}
+.banner__text b {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
