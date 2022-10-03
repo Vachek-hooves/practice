@@ -4,14 +4,15 @@
     padding: 0px;
 }
 
-.heart__container{
+.heart__container,
+.diamond__container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
     width: fit-content;
     height: fit-content;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .card__block {
