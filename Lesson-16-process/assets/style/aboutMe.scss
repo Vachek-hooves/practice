@@ -2,13 +2,13 @@
     background-color: $alice;
     margin: 100px;
     padding: 100px;
-
+}
 
 
     /*@extend .banner;*/
 
     $__container {
-        //@extend .container   
+         
         @include container;
     }
 
@@ -17,6 +17,3 @@
         background-color: $purple;
     }
 
-
-
-}
