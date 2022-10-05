@@ -19,9 +19,30 @@
         position:absolute;
     }
     & .bottom__square1{
-        border-left: solid 1px;
-        border-top: solid 1px;
+        border-left: $border;
+        border-top: $border;
         top: 0;
+        left: 0;
+        color: $gold;
+    }
+    & .bottom__square2{
+        border-top: $border;
+        border-right: $border;
+        top: 0;
+        right: 0;
+        color: $gold;
+    }
+    & .bottom__square3{
+        border-right: $border;
+        border-bottom: $border;
+        right: 0;
+        bottom: 0;
+        color: $gold;
+    }
+    & .bottom__square4{
+        border-bottom: $border;
+        border-left: $border;
+        bottom: 0;
         left: 0;
         color: $gold;
     }

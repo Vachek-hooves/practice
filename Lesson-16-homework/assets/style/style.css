@@ -1,6 +1,7 @@
 /* fonts*/
 /* color*/
 /* dimensions*/
+/*position*/
 *, ::before, ::after {
   margin: 0px;
   padding: 0px;
@@ -44,7 +45,7 @@ main {
   text-align: center;
 }
 .box__head .box__header p {
-  color: gold;
+  color: #FFCC00;
   font-family: "Open Sans", sans-serif;
   font-weight: 900;
   font-size: 60px;
@@ -85,5 +86,26 @@ main {
   border-top: solid 1px;
   top: 0;
   left: 0;
-  color: gold;
+  color: #FFCC00;
+}
+.box__bottom .bottom__square2 {
+  border-top: solid 1px;
+  border-right: solid 1px;
+  top: 0;
+  right: 0;
+  color: #FFCC00;
+}
+.box__bottom .bottom__square3 {
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+  right: 0;
+  bottom: 0;
+  color: #FFCC00;
+}
+.box__bottom .bottom__square4 {
+  border-bottom: solid 1px;
+  border-left: solid 1px;
+  bottom: 0;
+  left: 0;
+  color: #FFCC00;
 }/*# sourceMappingURL=style.css.map */
