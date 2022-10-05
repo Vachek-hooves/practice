@@ -1,50 +1,82 @@
 .box__bottom{
     @include box-size(1030px,560px);
     margin: $Oauto;
+    margin-top: 40px;
+    display: flex;
+    
+
 
     & .bottom__left{
         @include box-size(430px,430px);
         position: relative;
+        margin-top: 65px;
+
+        & .left__img{
+            padding: 15px;
+        }
+    
+        & .left__square1,
+        .left__square2,
+        .left__square3,
+        .left__square4{
+            @include box-size(100px,100px);
+            position:absolute;
+        }
+        & .left__square1{
+            border-left: $border;
+            border-top: $border;
+            top: 0;
+            left: 0;
+            color: $gold;
+        }
+        & .left__square2{
+            border-top: $border;
+            border-right: $border;
+            top: 0;
+            right: 0;
+            color: $gold;
+        }
+        & .left__square3{
+            border-right: $border;
+            border-bottom: $border;
+            right: 0;
+            bottom: 0;
+            color: $gold;
+        }
+        & .left__square4{
+            border-bottom: $border;
+            border-left: $border;
+            bottom: 0;
+            left: 0;
+            color: $gold;
+        }
 
     }
-    & .bottom__img{
-        padding: 15px;
+    
+
+    & .bottom__devider{
+        margin: 0px 85px;
     }
 
-    & .bottom__square1,
-    .bottom__square2,
-    .bottom__square3,
-    .bottom__square4{
-        @include box-size(100px,100px);
-        position:absolute;
+    & .bottom__right{
+        @include box-size(430px,420px);
+        position: relative;
+        margin-top: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .right__name h2{
+            @include subtitle(900,36px,42px,center);
+            font-family: $roboto;
+            color: $grey;
+            height: 34px;
+            margin-bottom: 30px;
+        }
+
+
     }
-    & .bottom__square1{
-        border-left: $border;
-        border-top: $border;
-        top: 0;
-        left: 0;
-        color: $gold;
-    }
-    & .bottom__square2{
-        border-top: $border;
-        border-right: $border;
-        top: 0;
-        right: 0;
-        color: $gold;
-    }
-    & .bottom__square3{
-        border-right: $border;
-        border-bottom: $border;
-        right: 0;
-        bottom: 0;
-        color: $gold;
-    }
-    & .bottom__square4{
-        border-bottom: $border;
-        border-left: $border;
-        bottom: 0;
-        left: 0;
-        color: $gold;
-    }
+
+
 
 }

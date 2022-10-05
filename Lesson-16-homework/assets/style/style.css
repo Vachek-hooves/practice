@@ -46,7 +46,7 @@ main {
 }
 .box__head .box__header p {
   color: #FFCC00;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", normal;
   font-weight: 900;
   font-size: 60px;
   line-height: 66px;
@@ -64,48 +64,73 @@ main {
   width: 1030px;
   height: 560px;
   margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
 }
 .box__bottom .bottom__left {
   width: 430px;
   height: 430px;
   position: relative;
+  margin-top: 65px;
 }
-.box__bottom .bottom__img {
+.box__bottom .bottom__left .left__img {
   padding: 15px;
 }
-.box__bottom .bottom__square1,
-.box__bottom .bottom__square2,
-.box__bottom .bottom__square3,
-.box__bottom .bottom__square4 {
+.box__bottom .bottom__left .left__square1,
+.box__bottom .bottom__left .left__square2,
+.box__bottom .bottom__left .left__square3,
+.box__bottom .bottom__left .left__square4 {
   width: 100px;
   height: 100px;
   position: absolute;
 }
-.box__bottom .bottom__square1 {
+.box__bottom .bottom__left .left__square1 {
   border-left: solid 1px;
   border-top: solid 1px;
   top: 0;
   left: 0;
   color: #FFCC00;
 }
-.box__bottom .bottom__square2 {
+.box__bottom .bottom__left .left__square2 {
   border-top: solid 1px;
   border-right: solid 1px;
   top: 0;
   right: 0;
   color: #FFCC00;
 }
-.box__bottom .bottom__square3 {
+.box__bottom .bottom__left .left__square3 {
   border-right: solid 1px;
   border-bottom: solid 1px;
   right: 0;
   bottom: 0;
   color: #FFCC00;
 }
-.box__bottom .bottom__square4 {
+.box__bottom .bottom__left .left__square4 {
   border-bottom: solid 1px;
   border-left: solid 1px;
   bottom: 0;
   left: 0;
   color: #FFCC00;
+}
+.box__bottom .bottom__devider {
+  margin: 0px 85px;
+}
+.box__bottom .bottom__right {
+  width: 430px;
+  height: 420px;
+  position: relative;
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box__bottom .bottom__right .right__name h2 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  font-family: "Roboto", normal;
+  color: #666666;
+  height: 34px;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */
