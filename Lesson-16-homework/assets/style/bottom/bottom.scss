@@ -18,7 +18,8 @@
         & .left__square1,
         .left__square2,
         .left__square3,
-        .left__square4{
+        .left__square4
+        {                
             @include box-size(100px,100px);
             position:absolute;
         }
