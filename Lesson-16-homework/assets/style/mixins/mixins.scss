@@ -4,3 +4,8 @@
     line-height: $lh;
     text-align: $ta;
 }
+@mixin box-size ($w,$h) {
+    width: $w;
+    height: $h;
+    
+}

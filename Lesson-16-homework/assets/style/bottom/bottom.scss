@@ -1,0 +1,29 @@
+.box__bottom{
+    @include box-size(1030px,560px);
+    margin: $Oauto;
+
+    & .bottom__left{
+        @include box-size(430px,430px);
+        position: relative;
+
+    }
+    & .bottom__img{
+        padding: 15px;
+    }
+
+    & .bottom__square1,
+    .bottom__square2,
+    .bottom__square3,
+    .bottom__square4{
+        @include box-size(100px,100px);
+        position:absolute;
+    }
+    & .bottom__square1{
+        border-left: solid 1px;
+        border-top: solid 1px;
+        top: 0;
+        left: 0;
+        color: $gold;
+    }
+
+}

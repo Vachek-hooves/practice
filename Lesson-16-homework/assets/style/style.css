@@ -1,5 +1,6 @@
 /* fonts*/
 /* color*/
+/* dimensions*/
 *, ::before, ::after {
   margin: 0px;
   padding: 0px;
@@ -56,4 +57,33 @@ main {
 }
 .box__head .box__fire {
   display: flex;
+}
+
+.box__bottom {
+  width: 1030px;
+  height: 560px;
+  margin: 0 auto;
+}
+.box__bottom .bottom__left {
+  width: 430px;
+  height: 430px;
+  position: relative;
+}
+.box__bottom .bottom__img {
+  padding: 15px;
+}
+.box__bottom .bottom__square1,
+.box__bottom .bottom__square2,
+.box__bottom .bottom__square3,
+.box__bottom .bottom__square4 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+.box__bottom .bottom__square1 {
+  border-left: solid 1px;
+  border-top: solid 1px;
+  top: 0;
+  left: 0;
+  color: gold;
 }/*# sourceMappingURL=style.css.map */
