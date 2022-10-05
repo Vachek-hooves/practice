@@ -113,6 +113,7 @@
             @include box-size(430px,116px);
             @include subtitle(500,14px,24px,center);
             font-family: $raleway;
+            color: $textcolor;
             margin-bottom: 20px;
 
         }
