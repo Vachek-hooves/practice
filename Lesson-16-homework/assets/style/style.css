@@ -15,7 +15,45 @@ body {
   height: 1000px;
 }
 
+main {
+  width: 1440px;
+  height: 1000px;
+}
+
 .container {
-  max-width: 1170;
+  width: 1170px;
+  height: 757px;
+  margin: 121px 135px 122px;
+}
+
+.box__head {
+  max-width: 450px;
+  height: 157px;
   margin: 0 auto;
+}
+.box__head .box__slogan h2 {
+  color: #898F8F;
+  height: 24px;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+.box__head .box__header p {
+  color: gold;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 66px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.box__head .fire__img {
+  padding: 0px 5px;
+}
+.box__head .box__fire {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

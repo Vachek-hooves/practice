@@ -1,0 +1,28 @@
+.box__head{
+    max-width: 450px;
+    height: 157px;
+    margin: 0 auto;
+    & .box__slogan h2{
+        color: $h2;
+        height: 24px;
+        font-family: $raleway;
+        font-style: normal;
+        margin-bottom: 15px;
+        @include subtitle (500,18px,24px,center);
+        
+    }
+
+    & .box__header p{
+        color: $gold;
+        font-family: $roboto;
+        @include subtitle (900,60px,66px,center);
+        padding-bottom: 40px;
+         
+    }
+    & .fire__img{
+        padding: 0px 5px;
+    }
+    & .box__fire {
+        display: flex;
+    }
+}

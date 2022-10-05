@@ -1,0 +1,8 @@
+.box__head {
+  max-width: 450px;
+  height: 157px;
+  margin: 0 auto;
+}
+.box__head .team__slogan h2 {
+  text-transform: capitalize;
+}/*# sourceMappingURL=bar.css.map */

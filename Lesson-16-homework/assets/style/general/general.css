@@ -13,7 +13,13 @@ body {
   height: 1000px;
 }
 
+main {
+  width: 1440px;
+  height: 1000px;
+}
+
 .container {
-  width: 1170;
-  margin: 0 auto;
+  width: 1170px;
+  height: 757px;
+  margin: 121px 135px 122px;
 }/*# sourceMappingURL=general.css.map */

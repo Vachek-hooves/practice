@@ -1,0 +1,6 @@
+@mixin subtitle ($fw,$fz,$lh,$ta){
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    text-align: $ta;
+}
