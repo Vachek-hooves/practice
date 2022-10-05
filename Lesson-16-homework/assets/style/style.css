@@ -151,6 +151,20 @@ main {
   width: 135px;
   height: 30px;
   margin-bottom: 50px;
+  color: #666666;
+}
+.box__bottom .bottom__right .right__social .social__facebook,
+.box__bottom .bottom__right .right__social .social__twitter,
+.box__bottom .bottom__right .right__social .social__google,
+.box__bottom .bottom__right .right__social .social__linkedin {
+  width: 30px;
+  height: 30px;
+  border: solid 2px;
+  border-radius: 50%;
+  border-color: #CCCCCC;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .box__bottom .bottom__right .right__text {
   width: 430px;
