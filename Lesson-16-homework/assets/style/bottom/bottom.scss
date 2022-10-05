@@ -97,7 +97,7 @@
             .social__twitter,
             .social__google,
             .social__linkedin{
-                @include  box-size (30px,30px);                     
+                @include  box-size (30px,27px);                     
                 border: solid 2px;
                 border-radius: 50%;
                 border-color: $lightgrey;
