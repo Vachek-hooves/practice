@@ -150,6 +150,8 @@ main {
 .box__bottom .bottom__right .right__social {
   width: 135px;
   height: 30px;
+  display: flex;
+  gap: 5px;
   margin-bottom: 50px;
   color: #666666;
 }
@@ -174,7 +176,7 @@ main {
   line-height: 24px;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .box__bottom .bottom__right .right__devider {
   display: flex;
