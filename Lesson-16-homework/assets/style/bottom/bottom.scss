@@ -72,7 +72,54 @@
             color: $grey;
             height: 34px;
             margin-bottom: 30px;
+            
         }
+        & .right__line{
+            text-align: center;
+            
+        }
+        & .right__prof{
+            font-family: $raleway;
+            margin-top: 30px;
+            @include subtitle(400,24px,36px,center);
+            color: $grey;
+            margin-bottom: 30px;
+        }
+        & .right__social{
+            @include box-size(135px,30px);
+            margin-bottom: 50px;
+        }
+        & .right__text{
+            @include box-size(430px,116px);
+            @include subtitle(500,14px,24px,center);
+            font-family: $raleway;
+            margin-bottom: 30px;
+
+        }
+        & .right__devider{
+            display: flex;
+            gap: 5px;
+            margin-bottom: 25px;
+        }
+        & .right__link{
+            @include box-size(118px,24px);
+            border: $border;
+            border-color: $gold;
+            color: $grey;
+            padding: 5px 10px;
+            text-transform: capitalize;
+            text-align: center;
+            text-decoration: none;
+            
+        }
+        
+        & .right__link-decor{
+            font-family: $opensans;
+            @include subtitle(700,14px,14px,center);
+            text-decoration: none;
+            color: $grey;
+        }
+
 
 
     }
