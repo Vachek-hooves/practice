@@ -25,6 +25,26 @@
 .main__content{
     max-width: 1440px;
     margin: 90px 0px;
+    position: relative;
 
-    
+    & .blog__h2{
+        @include subtitle(400,48px,64px,none);
+        font-family: $redhat;
+        color:$black;
+        margin-left: 135px;
+        margin-right: 1065px;
+        
+    }
+
+    & .blog__box{
+        @include max (1170px);
+        display: flex;
+        padding-left: 135px;
+    }
+     & .blog__article{
+        @include box-size (450px,300px);
+        margin: 85px 120px 85px 30px;
+     }
+
+
 }

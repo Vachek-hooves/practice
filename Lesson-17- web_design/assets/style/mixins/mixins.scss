@@ -4,11 +4,13 @@
     line-height: $lh;
     text-align: $ta;
 }
+
+@mixin max ($mw){
+    max-width: $mw;
+}
+
 @mixin box-size ($w,$h) {
     width: $w;
     height: $h;
 }
 
-@mixin latterspace (){
-    
-}
