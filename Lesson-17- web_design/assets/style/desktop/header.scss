@@ -1,9 +1,44 @@
 .header{
     max-width: 1440px;
+    height: 100px;
+    
 
-      & .header__logo{
+
+
+    & .header__container{
+        @include box-size(1170px,20px);
+        padding: 40px 135px;
+        display:flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
         
-      }
+        & .header__logo{
+            margin-right: 428px;
+        }
+
+        
+
+        & .header__menu{
+            @include box-size(500px,18px);
+            display:inline-flex;
+            gap:42px;
+            margin-right: 42px;
+            
+            & .link__decor{
+                text-decoration: none;
+                color:$black
+            }
+            
+        }
+
+        & .header__search{
+            
+        }
+
+        
+    } 
 }
 
 

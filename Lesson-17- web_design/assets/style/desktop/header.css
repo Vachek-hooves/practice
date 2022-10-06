@@ -1,3 +1,6 @@
 .header {
   max-width: 1440px;
+}
+.header .header__container {
+  @in;
 }/*# sourceMappingURL=header.css.map */
