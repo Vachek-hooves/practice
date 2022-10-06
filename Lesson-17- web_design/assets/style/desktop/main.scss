@@ -1,0 +1,30 @@
+.main__first{
+    @include box-size(1440px,600px);
+    
+
+    & .main__bg{
+        position: relative;
+    }
+
+    & .main__heading{
+        position: absolute;
+        left: 135px;
+        top: 100px;
+    }
+
+    & .main__manifest{
+        @include box-size(770px,120px);
+        @include subtitle (600,48px,64px,left);
+        letter-spacing: 0.05em;
+        font-family: $redhat;
+        color: $black;
+        
+    }
+}
+
+.main__content{
+    max-width: 1440px;
+    margin: 90px 0px;
+
+    
+}

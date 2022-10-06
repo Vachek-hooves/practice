@@ -3,7 +3,8 @@
 /* SEMANTIC COLORS*/
 /*TYPE FACES*/
 body {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -33,4 +34,33 @@ body {
 .header .header__container .header__menu .link__decor {
   text-decoration: none;
   color: #000000;
+}
+
+.main__first {
+  width: 1440px;
+  height: 600px;
+}
+.main__first .main__bg {
+  position: relative;
+}
+.main__first .main__heading {
+  position: absolute;
+  left: 135px;
+  top: 100px;
+}
+.main__first .main__manifest {
+  width: 770px;
+  height: 120px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: left;
+  letter-spacing: 0.05em;
+  font-family: "Red Hat Display", sans-serif;
+  color: #000000;
+}
+
+.main__content {
+  max-width: 1440px;
+  margin: 90px 0px;
 }/*# sourceMappingURL=style.css.map */
