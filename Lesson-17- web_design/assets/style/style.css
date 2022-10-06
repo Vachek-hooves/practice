@@ -1,6 +1,9 @@
 body {
-  width: 1440px;
   margin: 0 auto;
+}
+
+.header {
+  max-width: 1440px;
 }
 
 @media (max-width: 1440px) {
