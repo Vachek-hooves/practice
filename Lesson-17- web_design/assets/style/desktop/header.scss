@@ -3,9 +3,6 @@
     height: 100px;
     
     
-
-
-
     & .header__container{
         @include box-size(1170px,20px);
         padding: 40px 135px;
@@ -28,8 +25,7 @@
             margin-right: 42px;
             
             & .link__decor{
-                text-decoration: none;
-                color:$black
+                @extend %linkdecor;
             }
             
         }

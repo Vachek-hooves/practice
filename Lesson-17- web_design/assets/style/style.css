@@ -1,10 +1,15 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
 /* BASE COLORS*/
 /*GREY SHADES */
 /* SEMANTIC COLORS*/
 /*TYPE FACES*/
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 .header {
@@ -31,11 +36,6 @@ body {
   gap: 42px;
   margin-right: 42px;
 }
-.header .header__container .header__menu .link__decor {
-  text-decoration: none;
-  color: #000000;
-}
-
 .main__first {
   width: 1440px;
   height: 600px;
@@ -84,4 +84,79 @@ body {
   width: 450px;
   height: 300px;
   margin: 85px 120px 85px 30px;
+}
+.main__content .blog__article .text__about {
+  margin: 0px;
+}
+.main__content .blog__article .text__arrow {
+  position: relative;
+}
+.main__content .blog__article .arrow__hover {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.1em;
+}
+.main__content .blog__article .text__link-hover {
+  opacity: 0;
+}
+.main__content .blog__article .text__link:hover .text__link-hover {
+  opacity: 1;
+  position: absolute;
+}
+.main__content .blog__article .text__link:hover .text__link-hover .text__arrow {
+  display: none;
+}
+.main__content .blog__article .blog__lower {
+  max-width: 1170px;
+  display: flex;
+  padding-left: 135px;
+}
+.main__content .blog__lower {
+  max-width: 1170px;
+  padding-left: 135px;
+  display: flex;
+}
+
+.main__content .blog__article .text__name {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #7B7B7B;
+}
+
+.main__content .blog__article .text__head {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.main__content .blog__article .text__date {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #7B7B7B;
+}
+
+.main__content .blog__article .text__about {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.05em;
+  color: #565656;
+}
+
+.header .header__container .header__menu .link__decor, .main__content .blog__article .arrow__hover {
+  text-decoration: none;
+  color: #000000;
 }/*# sourceMappingURL=style.css.map */

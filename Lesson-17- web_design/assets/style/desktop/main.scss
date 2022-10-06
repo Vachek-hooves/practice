@@ -44,7 +44,62 @@
      & .blog__article{
         @include box-size (450px,300px);
         margin: 85px 120px 85px 30px;
-     }
+
+        & .text__name{
+            @extend %textname;
+        }
+        & .text__head{
+            @extend %texthead;
+        }
+        & .text__date{
+            @extend %textdate;
+        }
+        & .text__about{
+            @extend %textabout;
+            margin: 0px;
+            
+        }
+
+        & .text__arrow{
+            position: relative;
+
+        }
+        & .arrow__hover{
+            @extend %linkdecor;
+            font-family: $lato;
+            letter-spacing: 0.1em;
+        }
+
+        & .text__link-hover{
+            opacity: 0;
+            
+        }
+        
+        & .text__link:hover .text__link-hover{
+            opacity: 1;
+            position: absolute;
+
+            & .text__arrow{
+                display: none;
+            }
+            
+        }
+
+        & .blog__lower{
+            @include max (1170px);
+            display: flex;
+            padding-left: 135px;
+
+        }
+        
+
+    }
+    & .blog__lower{
+        @include max (1170px);
+        padding-left: 135px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
 
 
 }
