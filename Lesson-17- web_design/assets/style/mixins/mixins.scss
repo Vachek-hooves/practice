@@ -14,3 +14,7 @@
     height: $h;
 }
 
+@mixin sizepercent ($w,$wc){
+    width: $w / $wc * 100%;
+    
+}

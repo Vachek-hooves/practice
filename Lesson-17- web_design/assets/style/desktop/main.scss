@@ -1,15 +1,20 @@
 .main__first{
-    @include box-size(1440px,600px);
+    width: 100%;
+    margin: 0 auto;
+    
     
 
     & .main__bg{
+        width: 100%;
         position: relative;
     }
 
     & .main__heading{
         position: absolute;
-        left: 135px;
-        top: 100px;
+        padding-left: 135px;
+        top: 170px;
+        
+        
     }
 
     & .main__manifest{
@@ -23,10 +28,10 @@
 }
 
 .main__content{
-    max-width: 1440px;
-    margin: 90px 0px;
+    // margin: 90px 0px;
     position: relative;
 
+    
     & .blog__h2{
         @include subtitle(400,48px,64px,none);
         font-family: $redhat;
@@ -37,12 +42,15 @@
     }
 
     & .blog__box{
-        @include max (1170px);
+        // @include max (1170px);
+        @include sizepercent (1170px,1440px);
         display: flex;
-        padding-left: 135px;
+        margin: 0 auto;
+        // padding-left: 135px;
     }
      & .blog__article{
-        @include box-size (450px,300px);
+        // @include box-size (450px,300px);
+        @include sizepercent (450px,1440px);
         margin: 85px 120px 85px 30px;
 
         & .text__name{
@@ -56,7 +64,7 @@
         }
         & .text__about{
             @extend %textabout;
-            margin: 0px;
+            margin: 0 auto;
             
         }
 
@@ -87,12 +95,13 @@
 
     }
     & .blog__lower{
-        @include max (1170px);
-        padding-left: 135px;
-        display: flex;
+        @include sizepercent (1170px,1440px);
+        // display: flex;
         flex-direction: row-reverse;
-        margin-top: 50px;
+        // margin-top: 50px;
+        margin: 0 auto;
     }
 
 
 }
+

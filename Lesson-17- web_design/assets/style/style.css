@@ -1,4 +1,5 @@
 body {
+  max-width: 1440px;
   margin: 0px auto;
   padding: 0px;
 }
@@ -8,17 +9,17 @@ body {
 /* SEMANTIC COLORS*/
 /*TYPE FACES*/
 body {
+  max-width: 1440px;
   margin: 0px auto;
   padding: 0px;
 }
 
 .header {
-  max-width: 1440px;
-  height: 100px;
+  width: 100%;
+  margin: 0 auto;
 }
 .header .header__container {
-  width: 1170px;
-  height: 20px;
+  width: 81.25%;
   padding: 40px 135px;
   display: flex;
   flex-direction: row;
@@ -27,7 +28,7 @@ body {
   justify-content: center;
 }
 .header .header__container .header__logo {
-  margin-right: 428px;
+  padding-right: 428px;
 }
 .header .header__container .header__menu {
   width: 500px;
@@ -41,16 +42,17 @@ body {
 }
 
 .main__first {
-  width: 1440px;
-  height: 600px;
+  width: 100%;
+  margin: 0 auto;
 }
 .main__first .main__bg {
+  width: 100%;
   position: relative;
 }
 .main__first .main__heading {
   position: absolute;
-  left: 135px;
-  top: 100px;
+  padding-left: 135px;
+  top: 170px;
 }
 .main__first .main__manifest {
   width: 770px;
@@ -65,8 +67,6 @@ body {
 }
 
 .main__content {
-  max-width: 1440px;
-  margin: 90px 0px;
   position: relative;
 }
 .main__content .blog__h2 {
@@ -80,17 +80,16 @@ body {
   margin-right: 1065px;
 }
 .main__content .blog__box {
-  max-width: 1170px;
+  width: 81.25%;
   display: flex;
-  padding-left: 135px;
+  margin: 0 auto;
 }
 .main__content .blog__article {
-  width: 450px;
-  height: 300px;
+  width: 31.25%;
   margin: 85px 120px 85px 30px;
 }
 .main__content .blog__article .text__about {
-  margin: 0px;
+  margin: 0 auto;
 }
 .main__content .blog__article .text__arrow {
   position: relative;
@@ -110,11 +109,9 @@ body {
   display: none;
 }
 .main__content .blog__lower {
-  max-width: 1170px;
-  padding-left: 135px;
-  display: flex;
+  width: 81.25%;
   flex-direction: row-reverse;
-  margin-top: 50px;
+  margin: 0 auto;
 }
 
 .header .header__container .header__menu .link__decor {
