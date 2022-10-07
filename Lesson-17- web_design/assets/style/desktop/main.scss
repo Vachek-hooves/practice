@@ -85,20 +85,13 @@
             
         }
 
-        & .blog__lower{
-            @include max (1170px);
-            display: flex;
-            padding-left: 135px;
-
-        }
-        
-
     }
     & .blog__lower{
         @include max (1170px);
         padding-left: 135px;
         display: flex;
         flex-direction: row-reverse;
+        margin-top: 50px;
     }
 
 

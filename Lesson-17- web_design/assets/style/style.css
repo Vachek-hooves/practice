@@ -1,5 +1,5 @@
 body {
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px;
 }
 
@@ -8,7 +8,7 @@ body {
 /* SEMANTIC COLORS*/
 /*TYPE FACES*/
 body {
-  margin: 0px;
+  margin: 0px auto;
   padding: 0px;
 }
 
@@ -36,6 +36,10 @@ body {
   gap: 42px;
   margin-right: 42px;
 }
+.header .header__container .header__menu .link__decor {
+  text-decoration: none;
+}
+
 .main__first {
   width: 1440px;
   height: 600px;
@@ -105,15 +109,23 @@ body {
 .main__content .blog__article .text__link:hover .text__link-hover .text__arrow {
   display: none;
 }
-.main__content .blog__article .blog__lower {
-  max-width: 1170px;
-  display: flex;
-  padding-left: 135px;
-}
 .main__content .blog__lower {
   max-width: 1170px;
   padding-left: 135px;
   display: flex;
+  flex-direction: row-reverse;
+  margin-top: 50px;
+}
+
+.header .header__container .header__menu .link__decor {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .main__content .blog__article .text__name {
@@ -129,7 +141,7 @@ body {
 .main__content .blog__article .text__head {
   font-family: "Red Hat Display";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 23px;
   line-height: 166%;
   letter-spacing: 0.1em;
@@ -156,7 +168,7 @@ body {
   color: #565656;
 }
 
-.header .header__container .header__menu .link__decor, .main__content .blog__article .arrow__hover {
+.main__content .blog__article .arrow__hover {
   text-decoration: none;
   color: #000000;
 }/*# sourceMappingURL=style.css.map */

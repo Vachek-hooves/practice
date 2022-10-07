@@ -2,7 +2,7 @@
     max-width: 1440px;
     height: 100px;
     
-    
+
     & .header__container{
         @include box-size(1170px,20px);
         padding: 40px 135px;
@@ -25,7 +25,8 @@
             margin-right: 42px;
             
             & .link__decor{
-                @extend %linkdecor;
+                @extend %headerlink;
+                text-decoration: none;
             }
             
         }
