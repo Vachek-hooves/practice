@@ -119,6 +119,11 @@ body {
   align-items: center;
 }
 
+.main__post {
+  width: 81.25%;
+  margin: 0 auto;
+  display: flex;
+}
 .header .header__container .header__menu .link__decor {
   font-family: "Lato";
   font-style: normal;
@@ -140,7 +145,7 @@ body {
   color: #7B7B7B;
 }
 
-.main__content .blog__article .text__head {
+.main__content .blog__article .text__head, .main__post .post__h2 {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 600;

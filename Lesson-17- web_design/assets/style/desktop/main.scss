@@ -112,6 +112,17 @@
         
     }
 
+}
+
+.main__post{
+    @include sizepercent (1170px,1440px);
+    margin: 0 auto;
+    display: flex;
+
+    & .post__h2{
+        @extend %texthead;
+    }
+
 
 }
 
