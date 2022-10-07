@@ -28,32 +28,40 @@
 }
 
 .main__content{
+    @include sizepercent (1170px,1440px);
+    margin: 0 auto;
+    margin-top: 90px;
     // margin: 90px 0px;
-    position: relative;
+    // position: relative;
 
     
     & .blog__h2{
         @include subtitle(400,48px,64px,none);
         font-family: $redhat;
         color:$black;
-        margin-left: 135px;
-        margin-right: 1065px;
+        // margin-left: 135px;
+        // margin-right: 1065px;
         
     }
 
     & .blog__box{
         // @include max (1170px);
-        @include sizepercent (1170px,1440px);
+        // @include sizepercent (1296px,1440px);
+        width: 100%;
         display: flex;
-        margin: 0 auto;
-        // padding-left: 135px;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        margin: 0px;
+        padding-bottom: 50px;
+        
     }
-     & .blog__article{
+    & .blog__article{
         // @include box-size (450px,300px);
-        @include sizepercent (450px,1440px);
-        margin: 85px 120px 85px 30px;
-
-        & .text__name{
+        @include sizepercent (450px,1170px);
+        // margin: 85px 120px 85px 30px;
+        
+         & .text__name{
             @extend %textname;
         }
         & .text__head{
@@ -65,7 +73,7 @@
         & .text__about{
             @extend %textabout;
             margin: 0 auto;
-            
+
         }
 
         & .text__arrow{
@@ -95,11 +103,13 @@
 
     }
     & .blog__lower{
-        @include sizepercent (1170px,1440px);
-        // display: flex;
+        
+        width: 100%;
+        display: flex;
         flex-direction: row-reverse;
-        // margin-top: 50px;
-        margin: 0 auto;
+        gap: 30px;
+        align-items: center;
+        
     }
 
 

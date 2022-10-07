@@ -67,7 +67,9 @@ body {
 }
 
 .main__content {
-  position: relative;
+  width: 81.25%;
+  margin: 0 auto;
+  margin-top: 90px;
 }
 .main__content .blog__h2 {
   font-weight: 400;
@@ -76,17 +78,18 @@ body {
   text-align: none;
   font-family: "Red Hat Display", sans-serif;
   color: #000000;
-  margin-left: 135px;
-  margin-right: 1065px;
 }
 .main__content .blog__box {
-  width: 81.25%;
+  width: 100%;
   display: flex;
-  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  margin: 0px;
+  padding-bottom: 50px;
 }
 .main__content .blog__article {
-  width: 31.25%;
-  margin: 85px 120px 85px 30px;
+  width: 38.4615384615%;
 }
 .main__content .blog__article .text__about {
   margin: 0 auto;
@@ -109,9 +112,11 @@ body {
   display: none;
 }
 .main__content .blog__lower {
-  width: 81.25%;
+  width: 100%;
+  display: flex;
   flex-direction: row-reverse;
-  margin: 0 auto;
+  gap: 30px;
+  align-items: center;
 }
 
 .header .header__container .header__menu .link__decor {
