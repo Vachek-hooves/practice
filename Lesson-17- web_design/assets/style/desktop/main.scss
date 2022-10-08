@@ -61,7 +61,7 @@
         @include sizepercent (450px,1170px);
         // margin: 85px 120px 85px 30px;
         
-         & .text__name{
+        & .text__name{
             @extend %textname;
         }
         & .text__head{
@@ -117,12 +117,29 @@
 .main__post{
     @include sizepercent (1170px,1440px);
     margin: 0 auto;
-    display: flex;
+    
 
     & .post__h2{
         @extend %texthead;
     }
 
+    & 
+    .content__lamp
+    {
+        display: flex;
+        position: absolute
 
+        
+    }
+
+    & .text__name{
+        @extend %textname;
+    }
+    & .text__head{
+        @extend %texthead;
+    }
+    & .text__date{
+        @extend %textdate;
+    }
 }
 
