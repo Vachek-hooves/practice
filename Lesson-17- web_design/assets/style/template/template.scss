@@ -48,6 +48,26 @@
     color: #565656;
 }
 
+%textheading{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+%infoheader{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
 %linkdecor{
     text-decoration: none;
     color: #000000;

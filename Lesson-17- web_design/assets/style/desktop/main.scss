@@ -120,26 +120,104 @@
     
 
     & .post__h2{
-        @extend %texthead;
+        @extend %textheading;
+    }
+    & .content__aligment{
+        display: flex;
+        gap:30px;
+        padding-bottom: 90px;
     }
 
     & 
-    .content__lamp
-    {
-        display: flex;
-        position: absolute
+    .content__lamp,
+    .content__arrow,
+    .content__roof{
 
-        
+        & .text__name{
+            @extend %textname;
+        }
+        & .text__head{
+            @extend %texthead;
+        }
+        & .text__date{
+            @extend %textdate;
+        }
     }
 
-    & .text__name{
-        @extend %textname;
-    }
-    & .text__head{
-        @extend %texthead;
-    }
-    & .text__date{
-        @extend %textdate;
+    & 
+    .content__lamp,
+    .content__arrow,
+    .content__roof{
+        @include sizepercent (370px,1170px);
     }
 }
 
+.main__popular{
+    @include sizepercent (1170px,1440px);
+    margin: 0 auto;
+
+    & .popular__header-aligment{
+        display: flex;
+
+        & .popular__h2{
+            @extend %textheading;
+        }
+    
+    }
+
+    & .popular__aligment{
+        display: flex;
+        @include sizepercent (570px,1170px);
+        gap: 30px;
+    }
+
+    & .popular__mentor,
+    .popular__creative{
+        & .text__name{
+            @extend %textname;
+        }
+        & .text__head{
+            @extend %texthead;
+        }
+        & .text__date{
+            @extend %textdate;
+        }
+        & .text__about{
+            @extend %textabout;
+        }
+    }
+
+
+    & .popular__button{
+        text-align: center;
+
+        & .popular__link{
+            @extend %linkdecor;
+        }
+    }
+}
+
+.main__info{
+    @include sizepercent (1170px,1440px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 230px;
+
+    & .info__about,
+    .info__text{
+        @include sizepercent (470px,1170px);
+    }
+
+    & .text__about{
+        @extend %infoheader;
+        color: $black
+    }
+    & .info__text{
+        // display:flex;
+        @include text (Lato,normal,400,19px,32px,0.005em);
+        color: $black
+        
+    }
+
+}

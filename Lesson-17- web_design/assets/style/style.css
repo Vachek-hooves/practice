@@ -122,8 +122,57 @@ body {
 .main__post {
   width: 81.25%;
   margin: 0 auto;
+}
+.main__post .content__aligment {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 90px;
+}
+.main__post .content__lamp,
+.main__post .content__arrow,
+.main__post .content__roof {
+  width: 31.6239316239%;
+}
+
+.main__popular {
+  width: 81.25%;
+  margin: 0 auto;
+}
+.main__popular .popular__header-aligment {
   display: flex;
 }
+.main__popular .popular__aligment {
+  display: flex;
+  width: 48.7179487179%;
+  gap: 30px;
+}
+.main__popular .popular__button {
+  text-align: center;
+}
+.main__info {
+  width: 81.25%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 230px;
+}
+.main__info .info__about,
+.main__info .info__text {
+  width: 40.1709401709%;
+}
+.main__info .text__about {
+  color: #000000;
+}
+.main__info .info__text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.005em;
+  color: #000000;
+}
+
 .header .header__container .header__menu .link__decor {
   font-family: "Lato";
   font-style: normal;
@@ -135,7 +184,10 @@ body {
   color: #000000;
 }
 
-.main__content .blog__article .text__name {
+.main__content .blog__article .text__name, .main__post .content__lamp .text__name,
+.main__post .content__arrow .text__name,
+.main__post .content__roof .text__name, .main__popular .popular__mentor .text__name,
+.main__popular .popular__creative .text__name {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -145,7 +197,10 @@ body {
   color: #7B7B7B;
 }
 
-.main__content .blog__article .text__head, .main__post .post__h2 {
+.main__content .blog__article .text__head, .main__post .content__lamp .text__head,
+.main__post .content__arrow .text__head,
+.main__post .content__roof .text__head, .main__popular .popular__mentor .text__head,
+.main__popular .popular__creative .text__head {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 600;
@@ -155,7 +210,10 @@ body {
   color: #000000;
 }
 
-.main__content .blog__article .text__date {
+.main__content .blog__article .text__date, .main__post .content__lamp .text__date,
+.main__post .content__arrow .text__date,
+.main__post .content__roof .text__date, .main__popular .popular__mentor .text__date,
+.main__popular .popular__creative .text__date {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -165,7 +223,8 @@ body {
   color: #7B7B7B;
 }
 
-.main__content .blog__article .text__about {
+.main__content .blog__article .text__about, .main__popular .popular__mentor .text__about,
+.main__popular .popular__creative .text__about {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
@@ -175,7 +234,27 @@ body {
   color: #565656;
 }
 
-.main__content .blog__article .arrow__hover {
+.main__post .post__h2, .main__popular .popular__header-aligment .popular__h2 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.main__info .text__about {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.main__content .blog__article .arrow__hover, .main__popular .popular__button .popular__link {
   text-decoration: none;
   color: #000000;
 }/*# sourceMappingURL=style.css.map */

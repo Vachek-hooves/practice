@@ -5,6 +5,16 @@
     text-align: $ta;
 }
 
+@mixin text ($ff,$fs,$fw,$fz,$lh,$ls){
+    font-family: $ff;
+    font-style: $fs;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    letter-spacing: $ls;
+    
+}
+
 @mixin max ($mw){
     max-width: $mw;
 }
@@ -16,5 +26,4 @@
 
 @mixin sizepercent ($w,$wc){
     width: $w / $wc * 100%;
-    
 }
