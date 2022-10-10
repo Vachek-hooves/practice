@@ -1,15 +1,15 @@
-.main__first{
+.main{
     width: 100%;
     margin: 0 auto;
     
     
 
-    & .main__bg{
+    &__bg{
         width: 100%;
         position: relative;
     }
 
-    & .main__heading{
+    &__heading{
         position: absolute;
         padding-left: 135px;
         top: 170px;
@@ -17,7 +17,7 @@
         
     }
 
-    & .main__manifest{
+    &__manifest{
         @include box-size(770px,120px);
         @include subtitle (600,48px,64px,left);
         letter-spacing: 0.05em;
