@@ -1,8 +1,100 @@
 body {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0px 5px;
 }
 
-body {
-  background-color: aqua;
+.header {
+  display: flex;
+  max-width: 1170px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.container__h1 {
+  margin-top: 38px;
+}
+
+.container-project__text {
+  max-width: 570px;
+}
+
+.container-user {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+.container-user__text {
+  max-width: 1170px;
+}
+
+.container-initial {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+.container-initial__text {
+  max-width: 1170px;
+}
+
+.container-final {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin: 90px 0px;
+}
+.container-final__text {
+  max-width: 1170px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin: 0px 33px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0px 10px;
+  }
+}
+/* COLORS*/
+.header {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5em;
+  color: #000000;
+}
+
+.container__h1 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.container-project__h2, .container-user__h2, .container-initial__h2, .container-final__h2 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.container-project__text, .container-user__text, .container-initial__text, .container-final__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: #565656;
 }/*# sourceMappingURL=style.css.map */
