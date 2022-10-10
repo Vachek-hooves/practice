@@ -1,0 +1,67 @@
+.footer{
+    width: 100%;
+    background-color: $greyfooter;
+    position: relative;
+
+    &__arrangement{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__header{
+        @include sizepercent(375px,1440px);
+        padding-left: 135px;
+        
+
+        & .footer__h2{
+            @extend %footerh2; 
+        }
+    
+        & .footer__contacts{
+            @include sizepercent(202px,370px);
+            @extend %contacts;
+        }
+
+    }
+
+    
+
+    &__icons{
+        @include sizepercent (270px,1440px);
+        display: flex;
+        gap: 23px;
+        padding-right: 135px;
+        
+
+
+        & .footer__instagram-svg,
+        .footer__facebook-svg,
+        .footer__twitter-svg,
+        .footer__linkedin-svg
+        {
+            width: 50px;
+            height: 50px;
+            border: solid 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $grey500;
+            
+        }
+        
+    }
+
+    &__bottom{
+        bottom: 30px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        &-text{
+            @extend %footertext;
+
+        }
+    }
+
+}
