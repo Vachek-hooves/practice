@@ -15,7 +15,6 @@ body {
 }
 
 .footer {
-  width: 100%;
   background-color: #F4F4F4;
   position: relative;
 }
@@ -56,35 +55,81 @@ body {
   justify-content: center;
 }
 .header {
-  width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 1440px) {
+  .header .main {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .header .main {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .header .main {
+    max-width: none;
+  }
 }
 .header .header__container {
   width: 81.25%;
   padding: 40px 135px;
   display: flex;
-  flex-direction: row;
-  text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .header .header__container .header__logo {
-  padding-right: 428px;
+  padding: 0px 10px;
+}
+.header .header__container .header__box {
+  display: flex;
+  gap: 84px;
 }
 .header .header__container .header__menu {
   width: 500px;
   height: 18px;
   display: inline-flex;
   gap: 42px;
-  margin-right: 42px;
 }
 .header .header__container .header__menu .link__decor {
   text-decoration: none;
 }
+@media screen and (max-width: 1440px) {
+  .header .header {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .header {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .header .header {
+    margin: 5px;
+  }
+}
 
 .main {
-  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
+  padding: 0px 5px;
+}
+@media (max-width: 1440px) {
+  .main .main {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .main .main {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .main .main {
+    max-width: none;
+  }
 }
 .main__first {
   width: 100%;
@@ -133,10 +178,7 @@ body {
   padding-bottom: 50px;
 }
 .main__content .blog__article {
-  width: 38.4615384615%;
-}
-.main__content .blog__article .text__about {
-  margin: 0 auto;
+  max-width: 450px;
 }
 .main__content .blog__article .text__arrow {
   position: relative;
@@ -161,6 +203,7 @@ body {
   flex-direction: row-reverse;
   gap: 30px;
   align-items: center;
+  margin-left: 5px;
 }
 
 .main__post {
