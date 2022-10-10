@@ -97,4 +97,44 @@ body {
   line-height: 32px;
   letter-spacing: 0.05em;
   color: #565656;
+}
+
+.footer__contacts {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.footer__h2 {
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.footer {
+  max-width: 1440px;
+  background-color: #F4F4F4;
+}
+.footer__position {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__header {
+  max-width: 375px;
+  padding-left: 135px;
+}
+.footer__h2 {
+  margin: 30px 0px;
+}
+.footer__contacts {
+  width: 205px;
 }/*# sourceMappingURL=style.css.map */
