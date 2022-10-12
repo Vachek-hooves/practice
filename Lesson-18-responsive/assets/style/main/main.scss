@@ -338,6 +338,13 @@
     @media (max-width:770px){
         &__text{
             max-width: 700px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 32px;
+            letter-spacing: 0.1em;
+            color: #565656;
         }
     }
 
