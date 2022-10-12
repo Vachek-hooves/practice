@@ -1,8 +1,8 @@
-@mixin subtitle ($fw,$fz,$lh,$ta){
+@mixin subtitle ($fw,$fz,$lh,){
     font-weight: $fw;
     font-size: $fz;
     line-height: $lh;
-    text-align: $ta;
+    
 }
 
 @mixin text ($ff,$fs,$fw,$fz,$lh,$ls){
@@ -24,6 +24,6 @@
     height: $h;
 }
 
-@mixin sizepercent ($w,$wc){
+@mixin sizepercent ($w, $wc){
     width: $w / $wc * 100%;
 }

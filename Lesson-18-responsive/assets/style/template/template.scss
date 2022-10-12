@@ -1,4 +1,4 @@
-%header{
+ %header{
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -9,12 +9,31 @@
 
 }
 
-%h1{
+%h1desc{
     font-family: 'Red Hat Display';
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
     line-height: 64px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+%h1tablet{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+%h1mobile{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 50px;
     letter-spacing: 0.05em;
     color: #000000;
 }

@@ -1,32 +1,133 @@
-.header{
-    @extend %header;
-    display: flex;
-    max-width: 1170px;
-    // padding-left: 135px;
-}
-
 .container{
     max-width: 1170px;
     margin: 0 auto;
-    
+    margin: 0px 135px 0px 135px;
 
     &__h1{
-        @extend %h1;
-        margin-top: 38px;
+
+        // @extend %h1desc;
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 0.05em;
+        color: #000000;
+        margin-top: 38px;   
+
     }
+    
+    @media (max-width:770px){
+        &__h1{
+            // @extend %h1tablet;
+            font-family: 'Red Hat Display';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 33px;
+            line-height: 50px;
+            letter-spacing: 0.05em;
+            color: #000000;
+        }
+    }
+
+    @media (max-width:426px){
+        &__h1{
+            // @extend %h1mobile;
+            font-family: 'Red Hat Display';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 50px;
+            letter-spacing: 0.05em;
+            color: #000000;
+            
+        }
+    }
+    
+}
+
+@media (max-width:770px){
+    .container{
+        margin: 0px 34px 0px 33px;
+    }
+}
+
+@media (max-width:426px){
+    .container{
+        margin: 0px 10px 0px 10px;
+    }
+}
+
+
+.header{
+    // @include subtitle (400,16px,150%);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    font-family: Lato;
+    color: black;
+    display: flex;
+    max-width: 1170px;
     
 }
 
 .container-project{
+    width: 570px;
+    
     &__h2{
-        @extend %h2;
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: #000000;
+        // @extend %h2;
     }
 
     &__text{
         max-width: 570px;
-        @extend %text;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: #565656;
+
+    }
+    @media (max-width:770px){
+        &__text{
+            max-width: 700px;
+        }
+    }
+    @media (max-width:426px){
+        &__text{
+            max-width: 300px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 0.05em;
+            color: #565656;
+
+        }
     }
 }
+
+@media (max-width:770px){
+    .container{
+        margin: 0px 34px 0px 33px;
+    }
+}
+
+@media (max-width:426px){
+    .container{
+        margin: 0px 10px 0px 10px;
+    }
+} 
+
 
 .container-user{
     max-width: 1170px;
@@ -34,11 +135,42 @@
     margin-top: 90px;
 
     &__h2{
-        @extend %h2;
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: #000000;
     }
     &__text{
         max-width: 1170px;
-        @extend %text;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: #565656;
+    }
+
+    @media (max-width:770px){
+        &__text{
+            max-width: 700px;
+        }
+    }
+    @media (max-width:426px){
+        &__text{
+            max-width: 300px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 0.05em;
+            color: #565656;
+
+        }
     }
 }
 
@@ -48,11 +180,44 @@
     margin-top: 90px;
 
     &__h2{
-        @extend %h2;
+        // @extend %h2;
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: #000000;
     }
     &__text{
         max-width: 1170px;
-        @extend %text;
+        // @extend %text;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: #565656;
+    }
+
+    @media (max-width:770px){
+        &__text{
+            max-width: 700px;
+        }
+    }
+    @media (max-width:426px){
+        &__text{
+            max-width: 300px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 0.05em;
+            color: #565656;
+
+        }
     }
 }
 
@@ -62,26 +227,29 @@
     margin: 90px 0px;
 
     &__h2{
-        @extend %h2;
+        // @extend %h2;
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 166%;
+        letter-spacing: 0.1em;
+        color: #000000;
     }
     &__text{
         max-width: 1170px;
-        @extend %text;
+        // @extend %text;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 32px;
+        letter-spacing: 0.05em;
+        color: #565656;
     }
 }
 
 
 
 
-@media screen and (max-width:1024px){
-    .container{
-        margin: 0px 33px;
-    }
-}
-
-@media screen and (max-width:768px){
-    .container{
-        margin: 0px 10px;
-    }
-}
 
