@@ -1,7 +1,6 @@
 .container {
   max-width: 1170px;
-  margin: 0 auto;
-  margin: 0px 135px 0px 135px;
+  margin: 0px 135px;
 }
 .container__h1 {
   font-family: "Red Hat Display";

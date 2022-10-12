@@ -4,10 +4,13 @@ body {
   margin: 0 auto;
 }
 
+* {
+  margin: 0;
+}
+
 .container {
   max-width: 1170px;
-  margin: 0 auto;
-  margin: 0px 135px 0px 135px;
+  margin: 0px 135px;
 }
 .container__h1 {
   font-family: "Red Hat Display";
@@ -324,7 +327,6 @@ body {
 .footer {
   max-width: 1440px;
   background-color: #F4F4F4;
-  margin: 0px;
   max-height: 300px;
 }
 .footer__position {
