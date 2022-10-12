@@ -103,6 +103,17 @@
         // @extend %h2;
     }
 
+    @media (max-width:770px){
+        &__h2{
+            margin-bottom: 50px;
+        }
+    }
+    @media (max-width:426px){
+        &__h2{
+            margin-bottom: 40px;
+        }
+    }
+
     &__text{
         max-width: 570px;
         font-family: 'Lato';
@@ -162,6 +173,20 @@
         letter-spacing: 0.1em;
         color: #000000;
     }
+
+    @media (max-width:770px){
+        &__h2{
+            margin-bottom: 50px;
+        }
+    }
+    @media (max-width:426px){
+        &__h2{
+            margin-bottom: 40px;
+        }
+    }
+
+
+
     &__text{
         max-width: 1170px;
         font-family: 'Lato';
@@ -193,10 +218,22 @@
     }
 }
 
+@media (max-width:770px){
+    .container-user{
+        margin: 70px 0px 70px 0px;
+    }
+}
+
+@media (max-width:426px){
+    .container-user{
+        margin: 70px 0px 70px 0px;
+    }
+} 
+
 .container-initial{
     max-width: 1170px;
     margin: 0 auto;
-    margin-top: 90px;
+    
 
     &__h2{
         // @extend %h2;
@@ -204,10 +241,24 @@
         font-style: normal;
         font-weight: 600;
         font-size: 28px;
-        line-height: 166%;
+        // line-height: 166%;
         letter-spacing: 0.1em;
         color: #000000;
     }
+
+    @media (max-width:770px){
+        &__h2{
+            margin-bottom: 50px;
+        }
+    }
+    @media (max-width:426px){
+        &__h2{
+            margin-bottom: 40px;
+        }
+    }
+
+
+
     &__text{
         max-width: 1170px;
         // @extend %text;
@@ -235,11 +286,14 @@
             line-height: 32px;
             letter-spacing: 0.05em;
             color: #565656;
-            margin-top: 70px;
+            
 
         }
     }
 }
+
+
+
 
 .container-final{
     max-width: 1170px;
@@ -256,6 +310,18 @@
         letter-spacing: 0.1em;
         color: #000000;
     }
+
+    @media (max-width:770px){
+        &__h2{
+            margin-bottom: 50px;
+        }
+    }
+    @media (max-width:426px){
+        &__h2{
+            margin-bottom: 40px;
+        }
+    }
+
     &__text{
         max-width: 1170px;
         // @extend %text;
@@ -288,6 +354,17 @@
         }
     }
 }
+@media (max-width:770px){
+    .container-final{
+        margin: 70px 0px 70px 0px;
+    }
+}
+
+@media (max-width:426px){
+    .container-final{
+        margin: 70px 0px 70px 0px;
+    }
+} 
 
 
 

@@ -90,6 +90,16 @@ body {
   letter-spacing: 0.1em;
   color: #000000;
 }
+@media (max-width: 770px) {
+  .container-project__h2 {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 426px) {
+  .container-project__h2 {
+    margin-bottom: 40px;
+  }
+}
 .container-project__text {
   max-width: 570px;
   font-family: "Lato";
@@ -142,6 +152,16 @@ body {
   letter-spacing: 0.1em;
   color: #000000;
 }
+@media (max-width: 770px) {
+  .container-user__h2 {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 426px) {
+  .container-user__h2 {
+    margin-bottom: 40px;
+  }
+}
 .container-user__text {
   max-width: 1170px;
   font-family: "Lato";
@@ -170,19 +190,37 @@ body {
   }
 }
 
+@media (max-width: 770px) {
+  .container-user {
+    margin: 70px 0px 70px 0px;
+  }
+}
+@media (max-width: 426px) {
+  .container-user {
+    margin: 70px 0px 70px 0px;
+  }
+}
 .container-initial {
   max-width: 1170px;
   margin: 0 auto;
-  margin-top: 90px;
 }
 .container-initial__h2 {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
-  line-height: 166%;
   letter-spacing: 0.1em;
   color: #000000;
+}
+@media (max-width: 770px) {
+  .container-initial__h2 {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 426px) {
+  .container-initial__h2 {
+    margin-bottom: 40px;
+  }
 }
 .container-initial__text {
   max-width: 1170px;
@@ -209,7 +247,6 @@ body {
     line-height: 32px;
     letter-spacing: 0.05em;
     color: #565656;
-    margin-top: 70px;
   }
 }
 
@@ -226,6 +263,16 @@ body {
   line-height: 166%;
   letter-spacing: 0.1em;
   color: #000000;
+}
+@media (max-width: 770px) {
+  .container-final__h2 {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 426px) {
+  .container-final__h2 {
+    margin-bottom: 40px;
+  }
 }
 .container-final__text {
   max-width: 1170px;
@@ -255,6 +302,16 @@ body {
   }
 }
 
+@media (max-width: 770px) {
+  .container-final {
+    margin: 70px 0px 70px 0px;
+  }
+}
+@media (max-width: 426px) {
+  .container-final {
+    margin: 70px 0px 70px 0px;
+  }
+}
 /* COLORS*/
 /*  FONT FAMILY*/
 .footer__contacts {

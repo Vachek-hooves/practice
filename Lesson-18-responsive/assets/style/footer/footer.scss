@@ -23,11 +23,48 @@
         @extend %contacts;
     }
 
-    &__icons{
-        @include sizepercent (270px,1440px);
+    
+    
+    &__instagram{
+        width: 50px;
+        height: 50px;
+        border: solid 2px;
         display: flex;
-        gap: 23px;
-        padding-right: 135px;
+        justify-content: center;
+        align-items: center;
+        color: $grey500;
+    }
+
+
+    &__bottom{
+        bottom: 30px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        &-text{
+            @extend %footertext;
+
+        }
     }
 
 }
+&__icons{
+    @include sizepercent (270px,1440px);
+    display: flex;
+    gap: 23px;
+    padding-right: 135px;
+
+    &__instagram{
+        width: 50px;
+        height: 50px;
+        border: solid 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $grey500;
+    }
+
+    
+}
+
