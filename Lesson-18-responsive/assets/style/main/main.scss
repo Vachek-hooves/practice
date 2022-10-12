@@ -4,7 +4,6 @@
     margin: 0px 135px 0px 135px;
 
     &__h1{
-
         // @extend %h1desc;
         font-family: 'Red Hat Display';
         font-style: normal;
@@ -14,6 +13,7 @@
         letter-spacing: 0.05em;
         color: #000000;
         margin-top: 38px;   
+        margin: 38px 0px 70px 0px;
 
     }
     
@@ -27,6 +27,7 @@
             line-height: 50px;
             letter-spacing: 0.05em;
             color: #000000;
+            margin: 50px 0px 50px 0px;
         }
     }
 
@@ -40,6 +41,7 @@
             line-height: 50px;
             letter-spacing: 0.05em;
             color: #000000;
+            margin: 18px 0px 40px 0px;
             
         }
     }
@@ -61,18 +63,34 @@
 
 .header{
     // @include subtitle (400,16px,150%);
+    font-family: 'Lato';
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    font-family: Lato;
-    color: black;
-    display: flex;
+    letter-spacing: 0.5em;
+    color: #000000;
     max-width: 1170px;
     
+
+}
+
+@media (max-width:770px){
+    .container{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.5em;
+        color: #000000;
+        
+    }
 }
 
 .container-project{
     width: 570px;
+    margin-top: 90px;
     
     &__h2{
         font-family: 'Red Hat Display';
@@ -112,19 +130,20 @@
             letter-spacing: 0.05em;
             color: #565656;
 
+
         }
     }
 }
 
 @media (max-width:770px){
-    .container{
-        margin: 0px 34px 0px 33px;
+    .container-project{
+        margin: 90px 0px 70px 0px;
     }
 }
 
 @media (max-width:426px){
-    .container{
-        margin: 0px 10px 0px 10px;
+    .container-project{
+        margin: 70px 0px 70px 0px;
     }
 } 
 
@@ -216,6 +235,7 @@
             line-height: 32px;
             letter-spacing: 0.05em;
             color: #565656;
+            margin-top: 70px;
 
         }
     }
@@ -246,6 +266,26 @@
         line-height: 32px;
         letter-spacing: 0.05em;
         color: #565656;
+    }
+
+    @media (max-width:770px){
+        &__text{
+            max-width: 700px;
+        }
+    }
+
+    @media (max-width:426px){
+        &__text{
+            max-width: 300px;
+            font-family: 'Lato';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 0.05em;
+            color: #565656;
+
+        }
     }
 }
 
