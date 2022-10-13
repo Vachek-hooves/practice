@@ -4,8 +4,8 @@
     margin: 0px 135px;
 
     &__h1{
-        font-family: $redhat;
-        @include subtitle(600,48px,64px,0.05em);
+        // font-family: $redhat;
+        // @include subtitle(600,48px,64px,0.05em);
         color: $black;
         margin-top: 38px;   
         margin: 38px 0px 70px 0px;
@@ -56,6 +56,7 @@
     letter-spacing: 0.5em;
     color: #000000;
     max-width: 1170px;
+    padding-top: 38px;
     
 
 }
