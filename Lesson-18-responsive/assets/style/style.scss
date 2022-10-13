@@ -1,6 +1,4 @@
 @import 'general/general.scss';
-@import 'main/main.scss';
-@import 'mixins/mixins.scss';
 @import 'varia/varia.scss';
-@import 'template/template.scss';
-@import 'footer/footer.scss';
+@import 'mixins/mixins.scss';
+@import 'main/main.scss', 'footer/footer.scss';

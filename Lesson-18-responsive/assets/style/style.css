@@ -2,19 +2,21 @@ body {
   max-width: 1440px;
   padding: 0px;
   margin: 0 auto;
+  font-family: "Lato", sans-serif;
 }
 
 * {
   margin: 0;
 }
 
+/* COLORS*/
+/*  FONT FAMILY*/
 .container {
   max-width: 1170px;
   margin: 0px 135px;
 }
 .container__h1 {
-  font-family: "Red Hat Display";
-  font-style: normal;
+  font-family: "Red Hat Display" sans-serif;
   font-weight: 600;
   font-size: 48px;
   line-height: 64px;
@@ -25,25 +27,22 @@ body {
 }
 @media (max-width: 770px) {
   .container__h1 {
-    font-family: "Red Hat Display";
-    font-style: normal;
     font-weight: 600;
     font-size: 33px;
     line-height: 50px;
     letter-spacing: 0.05em;
+    font-family: "Red Hat Display" sans-serif;
     color: #000000;
     margin: 50px 0px 50px 0px;
   }
 }
 @media (max-width: 426px) {
   .container__h1 {
-    font-family: "Red Hat Display";
-    font-style: normal;
+    font-family: "Red Hat Display" sans-serif;
     font-weight: 600;
     font-size: 30px;
     line-height: 50px;
     letter-spacing: 0.05em;
-    color: #000000;
     margin: 18px 0px 40px 0px;
   }
 }
@@ -59,7 +58,8 @@ body {
   }
 }
 .header {
-  font-family: "Lato";
+  height: 100px;
+  font-family: "Lato" sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -71,7 +71,7 @@ body {
 
 @media (max-width: 770px) {
   .container {
-    font-family: "Lato";
+    font-family: "Lato" sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -322,8 +322,6 @@ body {
     margin: 70px 0px 70px 0px;
   }
 }
-/* COLORS*/
-/*  FONT FAMILY*/
 .footer {
   max-width: 1440px;
   background-color: #F4F4F4;

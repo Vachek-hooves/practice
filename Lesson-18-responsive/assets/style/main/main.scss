@@ -4,14 +4,9 @@
     margin: 0px 135px;
 
     &__h1{
-        // @extend %h1desc;
-        font-family: 'Red Hat Display';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 64px;
-        letter-spacing: 0.05em;
-        color: #000000;
+        font-family: $redhat;
+        @include subtitle(600,48px,64px,0.05em);
+        color: $black;
         margin-top: 38px;   
         margin: 38px 0px 70px 0px;
 
@@ -19,14 +14,9 @@
     
     @media (max-width:770px){
         &__h1{
-            // @extend %h1tablet;
-            font-family: 'Red Hat Display';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 33px;
-            line-height: 50px;
-            letter-spacing: 0.05em;
-            color: #000000;
+            @include subtitle(600,33px,50px,0.05em);
+            font-family: $redhat;
+            color: $black;
             margin: 50px 0px 50px 0px;
         }
     }
@@ -34,13 +24,8 @@
     @media (max-width:426px){
         &__h1{
             // @extend %h1mobile;
-            font-family: 'Red Hat Display';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 30px;
-            line-height: 50px;
-            letter-spacing: 0.05em;
-            color: #000000;
+            font-family: $redhat;
+            @include subtitle(600,30px,50px,0.05em);
             margin: 18px 0px 40px 0px;
             
         }
@@ -62,8 +47,8 @@
 
 
 .header{
-    // @include subtitle (400,16px,150%);
-    font-family: 'Lato';
+    height: 100px;
+    font-family: $lato;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -77,7 +62,7 @@
 
 @media (max-width:770px){
     .container{
-        font-family: 'Lato';
+        font-family:$lato;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
