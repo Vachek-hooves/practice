@@ -5,7 +5,7 @@
   margin: 0px 135px;
 }
 .container__h1 {
-  font-family: "Red Hat Display" sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   font-weight: 600;
   font-size: 48px;
   line-height: 64px;
@@ -13,7 +13,7 @@
   color: #000000;
   color: #000000;
   margin-top: 38px;
-  margin: 38px 0px 70px 0px;
+  margin: 0px 0px 70px 0px;
 }
 @media (max-width: 770px) {
   .container__h1 {
@@ -21,14 +21,14 @@
     font-size: 33px;
     line-height: 50px;
     letter-spacing: 0.05em;
-    font-family: "Red Hat Display" sans-serif;
+    font-family: "Red Hat Display", sans-serif;
     color: #000000;
     margin: 50px 0px 50px 0px;
   }
 }
 @media (max-width: 426px) {
   .container__h1 {
-    font-family: "Red Hat Display" sans-serif;
+    font-family: "Red Hat Display", sans-serif;
     font-weight: 600;
     font-size: 30px;
     line-height: 50px;
@@ -48,9 +48,9 @@
   }
 }
 .header {
+  display: flex;
+  align-items: center;
   height: 100px;
-  font-family: "Lato" sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -59,9 +59,14 @@
   max-width: 1170px;
 }
 
+@media (max-width: 426px) {
+  .header {
+    height: 60px;
+  }
+}
 @media (max-width: 770px) {
   .container {
-    font-family: "Lato" sans-serif;
+    font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -71,7 +76,7 @@
   }
 }
 .container-project {
-  width: 570px;
+  max-width: 570px;
   margin-top: 90px;
 }
 .container-project__h2 {
@@ -82,6 +87,7 @@
   line-height: 166%;
   letter-spacing: 0.1em;
   color: #000000;
+  margin-bottom: 50px;
 }
 @media (max-width: 770px) {
   .container-project__h2 {
@@ -91,12 +97,11 @@
 @media (max-width: 426px) {
   .container-project__h2 {
     margin-bottom: 40px;
+    font-size: 26px;
   }
 }
 .container-project__text {
   max-width: 570px;
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 400;
   font-size: 19px;
   line-height: 32px;
@@ -106,13 +111,15 @@
 @media (max-width: 770px) {
   .container-project__text {
     max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 @media (max-width: 426px) {
   .container-project__text {
     max-width: 300px;
-    font-family: "Lato";
-    font-style: normal;
+    min-height: 350px;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
@@ -123,6 +130,7 @@
 
 @media (max-width: 770px) {
   .container-project {
+    max-width: 700px;
     margin: 90px 0px 70px 0px;
   }
 }
@@ -137,13 +145,13 @@
   margin-top: 90px;
 }
 .container-user__h2 {
-  font-family: "Red Hat Display";
-  font-style: normal;
+  font-family: "Red Hat Display", sans-serif;
   font-weight: 600;
   font-size: 28px;
   line-height: 166%;
   letter-spacing: 0.1em;
   color: #000000;
+  margin-bottom: 50px;
 }
 @media (max-width: 770px) {
   .container-user__h2 {
@@ -156,9 +164,13 @@
   }
 }
 .container-user__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 90px;
+  min-height: 190px;
   max-width: 1170px;
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 400;
   font-size: 19px;
   line-height: 32px;
@@ -173,8 +185,8 @@
 @media (max-width: 426px) {
   .container-user__text {
     max-width: 300px;
-    font-family: "Lato";
-    font-style: normal;
+    min-height: 460px;
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
@@ -232,9 +244,11 @@
 }
 @media (max-width: 426px) {
   .container-initial__text {
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 300px;
-    font-family: "Lato";
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
@@ -291,13 +305,12 @@
 }
 @media (max-width: 426px) {
   .container-final__text {
+    letter-spacing: 0.1em;
     max-width: 300px;
-    font-family: "Lato";
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
     color: #565656;
   }
 }
