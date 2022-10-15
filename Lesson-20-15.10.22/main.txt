@@ -7,5 +7,10 @@
     @for $i from  1 through 8{
         &--#{$i} {
             width: 10px * 10;
-        }    }
+        }   
+     }
+}
+
+.blue{
+    background-color: $blue;
 }
