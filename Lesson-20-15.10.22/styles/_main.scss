@@ -1,0 +1,11 @@
+.width{
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: aquamarine;
+    
+    
+    @for $i from  1 through 8{
+        &--#{$i} {
+            width: 10px * 10;
+        }    }
+}
