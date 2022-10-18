@@ -1,5 +1,15 @@
 .header{
     // background-color: aquamarine;
     // margin: 0 auto;
-    background: url(../);
+    // background: url(./img/1920/HeaderBackground.png);
+    height: 862px;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &__h1{
+        
+        color: white;
+        margin: 0 auto;
+    }
 }
+
