@@ -12,7 +12,7 @@
 <body>
     <main class="project">
         <header class="project-header header">
-            <div class="header-logo">
+            <div class="header__logo">
                 <svg width="45" height="36" viewBox="0 0 45 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="15.5" width="18.3099" height="20" rx="9.15493" fill="#9C69E2"/>
                     <rect x="26.5493" y="0.5" width="18.3099" height="35" rx="9.15493" fill="#F063B8"/>
@@ -20,10 +20,10 @@
             </div>
             <div class="header__links">
                 <div class="header__nav">
-                <a href="">About</a>
-                <a href="">Help</a>
-                <a href="">Features</a>
-                <a href="">Sign up</a>
+                    <a href="">About</a>
+                    <a href="">Help</a>
+                    <a href="">Features</a>
+                    <a href="">Sign up</a>
                 </div>
                 <div class="header__demo">
                     <a href="#">Request Demo</a>
@@ -46,7 +46,13 @@
                 </div>
             </div>
             <div class="screen__img">
-                <img src="./assets/img/first-screen-img.png" alt="screen img">
+                <picture class="scree__img__set">
+                    <source media="(min-width: 1200px)" type="image/webp" srcset="./assets/img/desktop/first-screen-img.png">
+                    <source media="(min-width: 600px)" type="image/webp" srcset="./assets/img/tablet/first-screen-img.png">
+                    <source media="(min-width: 320px)" type="image/webp" srcset="./assets/img/mobile/first-screen-img.png">
+                    <img src="./assets/img/desktop/first-screen-img.png" alt="screen img">
+                </picture>
+                
             </div>
         </section>
         

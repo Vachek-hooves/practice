@@ -15,12 +15,46 @@
         max-width: 601px;
         padding-bottom: 50px;
     }
+    @media screen and (max-width: 1024px){
+        &__h1{
+            font-size: 40px;
+        }
+    }
+    @media screen and (max-width: 768px){
+        &__h1{
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+    }
+    @media screen and (max-width: 426px){
+        &__h1{
+            text-align: center;
+        }
+    }
 
     &__text{
         @include font(500,18px,160%);
         font-family: $mon;
         max-width: 370px;
         padding-bottom: 50px;
+    }
+    @media screen and (max-width: 1024px){
+        &__text{
+            font-size: 15px;
+            max-width: 330px;
+            padding-bottom: 15px;
+        }
+    }
+    @media screen and (max-width: 768px){
+        &__text{
+            font-size: 12px;
+            max-width: 242px;
+        }
+    }
+    @media screen and (max-width: 426px){
+        &__text{
+            max-width: 375px;
+        }
     }
 
     &__button{
@@ -38,11 +72,56 @@
        
 
     }
+    @media screen and (max-width: 768px){
+        &__button{
+            top: 378px;
+            position: absolute;
+            width: 660px;
+            height: 42px;
+        }
+    }
+    @media screen and (max-width: 426px){
+        &__button{
+            width: 375px;
+        }
+    }
 
     &__img{
         margin-top: 82px;
         position: absolute;
         right: 0;
         top: 0;
+    }
+    @media screen and (max-width: 768px){
+        &__img{
+            margin-top: 68px;
+            
+        }
+    }
+    @media screen and (max-width: 426px){
+        &__img{
+            margin-top: 172px;
+            
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .screen{
+        max-width: 880px;
+        padding-top: 40px;
+    }
+}
+@media screen and (max-width: 768px){
+    .screen{
+        max-width: 660px;
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 426px){
+    .screen{
+        max-width: 375px;
+        margin: 0 auto;
+        padding-top: 20px;
     }
 }

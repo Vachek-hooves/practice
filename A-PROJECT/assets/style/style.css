@@ -1,4 +1,5 @@
 /* COLORS*/
+/*button*/
 main {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -8,21 +9,117 @@ main {
 }
 
 * {
+  text-decoration: none;
   padding: 0;
   margin: 0;
 }
 
 .header {
   max-width: 1170px;
+  height: 100px;
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
   margin: 0 auto;
+  align-items: center;
+}
+.header__logo {
+  padding-right: 120px;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .header__logo {
+    max-width: 510px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .header__logo {
+    padding: 0;
+  }
 }
 .header__links {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  .header__links {
+    max-width: 710px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__links {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .header__links {
+    position: absolute;
+    margin: 0px 10px;
+  }
+}
+.header__nav {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #4B5D68;
+  display: flex;
+  justify-content: space-between;
+  width: 348px;
+}
+@media screen and (max-width: 426px) {
+  .header__nav {
+    flex-direction: column;
+    margin-left: 10px;
+  }
+}
+.header__demo {
+  width: 210px;
+  height: 60px;
+  border-radius: 50px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: #9C69E2;
+}
+@media screen and (max-width: 426px) {
+  .header__demo {
+    width: 100px;
+    height: 95px;
+    border-radius: 32px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-color: #9C69E2;
+    margin-right: 10px;
+  }
 }
 
+@media screen and (max-width: 1024px) {
+  .header {
+    max-width: 890px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 560px;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 426px) {
+  .header {
+    margin-top: 10px;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
 .screen {
   max-width: 1170px;
   margin: 0 auto;
@@ -41,6 +138,22 @@ main {
   max-width: 601px;
   padding-bottom: 50px;
 }
+@media screen and (max-width: 1024px) {
+  .screen__h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .screen__h1 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .screen__h1 {
+    text-align: center;
+  }
+}
 .screen__text {
   font-weight: 500;
   font-size: 18px;
@@ -48,6 +161,24 @@ main {
   font-family: "Montserrat", sans-serif;
   max-width: 370px;
   padding-bottom: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .screen__text {
+    font-size: 15px;
+    max-width: 330px;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .screen__text {
+    font-size: 12px;
+    max-width: 242px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .screen__text {
+    max-width: 375px;
+  }
 }
 .screen__button {
   align-items: center;
@@ -62,9 +193,52 @@ main {
   text-decoration: none;
   color: #FFFFFF;
 }
+@media screen and (max-width: 768px) {
+  .screen__button {
+    top: 378px;
+    position: absolute;
+    width: 660px;
+    height: 42px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .screen__button {
+    width: 375px;
+  }
+}
 .screen__img {
   margin-top: 82px;
   position: absolute;
   right: 0;
   top: 0;
+}
+@media screen and (max-width: 768px) {
+  .screen__img {
+    margin-top: 68px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .screen__img {
+    margin-top: 172px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .screen {
+    max-width: 880px;
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .screen {
+    max-width: 660px;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .screen {
+    max-width: 375px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
