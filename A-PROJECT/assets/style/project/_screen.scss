@@ -1,0 +1,48 @@
+.screen{
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 100px;
+
+    &.screen-arrange{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__h1{
+        font-family: $work;
+        @include font(700,55px,165%);
+        max-width: 601px;
+        padding-bottom: 50px;
+    }
+
+    &__text{
+        @include font(500,18px,160%);
+        font-family: $mon;
+        max-width: 370px;
+        padding-bottom: 50px;
+    }
+
+    &__button{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        @include buttonsize (210px,60px);
+        background-color: $button;
+        border-radius: 50px;
+
+        &__link{
+            text-decoration: none;
+            color:$btext ;
+        }
+       
+
+    }
+
+    &__img{
+        margin-top: 82px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
