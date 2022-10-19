@@ -106,7 +106,7 @@ main {
 }
 @media screen and (max-width: 768px) {
   .header {
-    max-width: 560px;
+    max-width: 600px;
     justify-content: space-evenly;
   }
 }
@@ -231,8 +231,9 @@ main {
 }
 @media screen and (max-width: 768px) {
   .screen {
-    max-width: 660px;
+    max-width: 712px;
     padding-top: 20px;
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 426px) {
@@ -244,7 +245,46 @@ main {
 }
 .weare {
   max-width: 1170px;
+  max-height: 560px;
   margin: 0 auto;
   position: relative;
   margin-top: 100px;
+  background-color: #FDE8F5;
+}
+.weare__box {
+  padding: 75px 70px;
+  display: flex;
+  flex-direction: row;
+  gap: 130px;
+}
+@media screen and (max-width: 1024px) {
+  .weare__box {
+    gap: 50px;
+    padding: 30px;
+  }
+}
+.weare__h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  font-family: "Work Sans", sans-serif;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 1024px) {
+  .weare__h2 {
+    padding-bottom: 18px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .weare {
+    max-width: 880px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .weare {
+    max-width: 768px;
+    top: 200px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,52 @@
 .weare{
     max-width: 1170px;
+    max-height: 560px;
     margin: 0 auto;
     position: relative;
     margin-top: 100px;
+    background-color: $pink;
+
+
+    &__box{
+        padding: 75px 70px;
+        display: flex;
+        flex-direction: row;
+        gap: 130px;
+    }
+    @media screen and (max-width: 1024px){
+        &__box{
+            gap: 50px;
+            padding: 30px;
+        }
+    }
+
+    &__h2{
+        @include font(700,40px,130%);
+        font-family: $work;
+        padding-bottom: 40px;
+        
+    }
+    @media screen and (max-width: 1024px){
+        &__h2{
+            padding-bottom: 18px;
+            text-align: center;
+        
+        }
+    }
+
 }
+
+@media screen and (max-width: 1024px){
+    .weare{
+        max-width: 880px;
+        
+    }
+}
+@media screen and (max-width: 768px){
+    .weare{
+        max-width: 768px;
+        // position: relative;
+        top: 200px;
+    }
+}
+
