@@ -1,5 +1,5 @@
 /* COLORS*/
-/*button*/
+/*CARDS COLOR*/
 main {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -251,6 +251,7 @@ main {
   position: relative;
   margin-top: 100px;
   background-color: #FDE8F5;
+  border-radius: 50px;
 }
 .weare__box {
   padding: 75px 70px;
