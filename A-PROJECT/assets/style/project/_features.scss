@@ -2,7 +2,7 @@
     max-width: 1183px;
     margin: 0 auto;
     margin-top: 120px;
-    position: relative;
+    // position: relative;
 
     &__banner{
         max-width: 772px;
@@ -32,10 +32,14 @@
     max-width: 570px;
     max-height: 400px;
     
-
+    &__size{
+        margin: 0 auto;
+        max-width: 230px;
+        max-height: 276px;
+    }
     &__box{
         margin-top: 82px;
-        // position: relative;
+        position: relative;
         display: flex;
         flex-direction: row-reverse;
 
@@ -46,24 +50,36 @@
         background-color: $databg;
         border-radius: 50px;
     }
-    &__size{
-        margin: 0 auto;
-        max-width: 230px;
-    }
-    &__name{
-        background-color: $databg;
+
+    &__h2{
         @include font(400,24px,130%);
-        font-family:$work;
-        margin-top: 62px
+        // font-family:$work;
+        margin: 62px 0px 20px;
+        z-index: 5;
+      
     }
     &__text{
         @include font(400,16px,160%);
-        margin: 20px 0px;
+        height: 180px;
+        color: #4B5D68;
+        z-index: 4;
     }
     &__link{
+        @include font(700,16px,130%);
         width: 137px;
         height: 27px;
         color: $datalink;
         border: 1px solid hidden;
+    }
+    &__vector{
+        position: absolute;
+        top: 20px;
+        right: 50px;
+
+    }
+    &__img{
+        position: absolute;
+        bottom: 110px;
+        left: 10px;
     }
 }
