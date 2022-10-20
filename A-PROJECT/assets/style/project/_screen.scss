@@ -18,6 +18,7 @@
     @media screen and (max-width: 1024px){
         &__h1{
             font-size: 40px;
+            padding-bottom: 30px;
         }
     }
     @media screen and (max-width: 768px){
@@ -34,7 +35,6 @@
 
     &__text{
         @include font(500,18px,160%);
-        font-family: $mon;
         max-width: 370px;
         padding-bottom: 50px;
     }
@@ -53,7 +53,8 @@
     }
     @media screen and (max-width: 426px){
         &__text{
-            max-width: 375px;
+            max-width: 416px;
+            text-align: center;
         }
     }
 
@@ -76,13 +77,13 @@
         &__button{
             top: 378px;
             position: absolute;
-            width: 660px;
+            width: 712px;
             height: 42px;
         }
     }
     @media screen and (max-width: 426px){
         &__button{
-            width: 375px;
+            width: 416px;
         }
     }
 
@@ -116,12 +117,12 @@
     .screen{
         max-width: 712px;
         padding-top: 20px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 }
 @media screen and (max-width: 426px){
     .screen{
-        max-width: 375px;
+        max-width: 426px;
         margin: 0 auto;
         padding-top: 20px;
     }

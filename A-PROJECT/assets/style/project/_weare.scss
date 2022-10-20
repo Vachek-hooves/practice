@@ -19,11 +19,17 @@
             padding: 30px;
         }
     }
+    @media screen and (max-width: 426px){
+        &__box{
+            gap: 10px;
+            padding: 10px;
+        }
+    }
 
     &__h2{
         @include font(700,40px,130%);
         font-family: $work;
-        padding-bottom: 40px;
+        padding: 40px 0px;
         
     }
     @media screen and (max-width: 1024px){
@@ -31,6 +37,26 @@
             padding-bottom: 18px;
             text-align: center;
         
+        }
+    }
+    @media screen and (max-width: 768px){
+        &__h2{
+            font-size: 20px;
+        }
+    }
+
+    &__text{
+        @include font(500,18px,160%);
+        // font-family: $mon;
+    }
+    @media screen and (max-width: 1024px){
+        &__text{
+            font-size: 15px;
+        }
+    }
+    @media screen and (max-width: 1024px){
+        &__text{
+            font-size: 12px;
         }
     }
 
@@ -45,7 +71,12 @@
 @media screen and (max-width: 768px){
     .weare{
         max-width: 768px;
-        // position: relative;
+        top: 200px;
+    }
+}
+@media screen and (max-width: 426px){
+    .weare{
+        max-width: 416px;
         top: 200px;
     }
 }
