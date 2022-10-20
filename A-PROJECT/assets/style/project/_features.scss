@@ -3,35 +3,35 @@
     margin: 0 auto;
     margin-top: 120px;
 
-    &__banner{
-        max-width: 772px;
-        margin: 0 auto;
-        text-align: center;
-
+}
+@media screen and (max-width: 1024px){
+    .features{
+        max-width: 880px;
     }
-
-    &__group1{
-        max-width: 1183px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 43px;
-    }
-    &__group2{
-        margin-top: 50px;
-        max-width: 1183px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-
 }
 
+@media screen and (max-width: 768px){
+    .features{
+        margin-top: 226px;
+        max-width: 768px;
+        
+    }
+}
+
+
+// @media screen and (max-width: 426px){
+//     .weare{
+//         max-width: 416px;
+//         top: 200px;
+//     }
+// }
+
 .bunner{
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
     padding-bottom: 82px;
+
     &__h2{
         @include font(700,40px,100%);
         margin-bottom: 50px;
@@ -41,27 +41,19 @@
 
     &__text{
         @include font (500,18px,136%);
-        // max-width: 638px;
         color: $text;
     }
 }
+
+
 .card{
     
     &__size{
         margin: 0 auto;
-        max-width: 230px;
+        max-width: 234px;
         max-height: 276px;
     }
-    &__box,
-    &__hours,
-    &__print,
-    &__security{
-        width: 570px;
-        position: relative;
-        display: flex;
-        flex-direction: row-reverse;
-
-    }
+    
     &__data{
         width: 400px;
         height: 400px;
@@ -72,14 +64,19 @@
     &__h2{
         @include font(400,24px,130%);
         margin: 62px 0px 20px;
-        z-index: 5;
+        color: $header;
+
       
     }
     &__text{
-        @include font(400,16px,160%);
+
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
         height: 180px;
         color: #4B5D68;
-        z-index: 4;
+
     }
     &__link{
         @include font(700,16px,130%);
@@ -88,15 +85,5 @@
         color: $datalink;
         border: 1px solid hidden;
     }
-    &__vector{
-        position: absolute;
-        top: 20px;
-        right: 50px;
 
-    }
-    &__img{
-        position: absolute;
-        bottom: 110px;
-        right: 340px;
-    }
 }

@@ -88,6 +88,11 @@
             width: 416px;
         }
     }
+    @media screen and (max-width: 320px){
+        &__button{
+            width: 318px;
+        }
+    }
 
     &__img{
         margin-top: 82px;

@@ -1,0 +1,61 @@
+.features{
+    &__group1{
+        max-width: 1183px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 43px;
+    }
+    @media screen and (max-width: 768px){
+        &__group1{
+            max-width: 768px;
+            flex-direction: column;
+        }
+    }
+}
+
+.card{
+    &__box,
+    &__hours{
+        width: 570px;
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    @media screen and (max-width: 768px){
+        &__box,&__hours{
+            margin-right: 168px;
+            // margin-top: 10px;
+        }
+    }
+
+    &__datavector{
+        position: absolute;
+        top: 20px;
+        right: 50px;
+    }
+    &__hoursvector{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    
+    &__dataimg{
+        position: absolute;
+        bottom: 110px;
+        right: 340px;
+    }
+    &__hoursimg{
+        position: absolute;
+        bottom: 110px;
+        right: 329px;
+    }
+    @media screen and (max-width: 768px){
+        &__dataimg,&__hoursimg{
+            right:40px;
+            bottom: 20px;
+        }
+    }
+}

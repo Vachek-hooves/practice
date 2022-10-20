@@ -1,7 +1,7 @@
 /* COLORS*/
 /*CARDS COLOR*/
 main {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-size: 18px;
   max-width: 1600px;
   padding: 0;
@@ -214,6 +214,11 @@ main {
     width: 416px;
   }
 }
+@media screen and (max-width: 320px) {
+  .screen__button {
+    width: 318px;
+  }
+}
 .screen__img {
   margin-top: 82px;
   position: absolute;
@@ -336,30 +341,22 @@ main {
   margin: 0 auto;
   margin-top: 120px;
 }
-.features__banner {
-  max-width: 772px;
+
+@media screen and (max-width: 1024px) {
+  .features {
+    max-width: 880px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features {
+    margin-top: 226px;
+    max-width: 768px;
+  }
+}
+.bunner {
+  max-width: 680px;
   margin: 0 auto;
   text-align: center;
-}
-.features__group1 {
-  max-width: 1183px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 43px;
-}
-.features__group2 {
-  margin-top: 50px;
-  max-width: 1183px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-}
-
-.bunner {
   padding-bottom: 82px;
 }
 .bunner__h2 {
@@ -379,14 +376,8 @@ main {
 
 .card__size {
   margin: 0 auto;
-  max-width: 230px;
+  max-width: 234px;
   max-height: 276px;
-}
-.card__box, .card__hours, .card__print, .card__security {
-  width: 570px;
-  position: relative;
-  display: flex;
-  flex-direction: row-reverse;
 }
 .card__data {
   width: 400px;
@@ -399,15 +390,15 @@ main {
   font-size: 24px;
   line-height: 130%;
   margin: 62px 0px 20px;
-  z-index: 5;
+  color: #212353;
 }
 .card__text {
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
   height: 180px;
   color: #4B5D68;
-  z-index: 4;
 }
 .card__link {
   font-weight: 700;
@@ -418,13 +409,112 @@ main {
   color: #212353;
   border: 1px solid hidden;
 }
-.card__vector {
+
+.features__group1 {
+  max-width: 1183px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 43px;
+}
+@media screen and (max-width: 768px) {
+  .features__group1 {
+    max-width: 768px;
+    flex-direction: column;
+  }
+}
+
+.card__box, .card__hours {
+  width: 570px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 768px) {
+  .card__box, .card__hours {
+    margin-right: 168px;
+  }
+}
+.card__datavector {
   position: absolute;
   top: 20px;
   right: 50px;
 }
-.card__img {
+.card__hoursvector {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.card__dataimg {
   position: absolute;
   bottom: 110px;
   right: 340px;
+}
+.card__hoursimg {
+  position: absolute;
+  bottom: 110px;
+  right: 329px;
+}
+@media screen and (max-width: 768px) {
+  .card__dataimg, .card__hoursimg {
+    right: 40px;
+    bottom: 20px;
+  }
+}
+
+.features__group2 {
+  margin-top: 50px;
+  max-width: 1183px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .features__group2 {
+    max-width: 768px;
+    flex-direction: column;
+  }
+}
+
+.card__print, .card__security {
+  width: 570px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 768px) {
+  .card__print, .card__security {
+    margin-right: 168px;
+  }
+}
+.card__printvector {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.card__securevector {
+  position: absolute;
+  right: 90px;
+  top: 20px;
+}
+.card__printimg {
+  position: absolute;
+  bottom: 110px;
+  right: 325px;
+  height: 180px;
+}
+.card__securityimg {
+  position: absolute;
+  bottom: 110px;
+  right: 340px;
+  height: 180px;
+}
+@media screen and (max-width: 768px) {
+  .card__printimg, .card__securityimg {
+    right: 40px;
+    top: 274px;
+  }
 }/*# sourceMappingURL=style.css.map */
