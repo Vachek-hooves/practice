@@ -26,7 +26,13 @@
                     <a href="">Sign up</a>
                 </div>
                 <div class="header__demo">
-                    <a href="#">Request Demo</a>
+                    <a href="#">
+                        Request Demo
+                        <svg class="header__demo__arrow" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 15L21 8L15 1" stroke="#9C69E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 8H1" stroke="#9C69E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
             
@@ -84,17 +90,44 @@
         </section>
         <section class="features">
             <div class="features__container">
-                <div class="features__banner">
-                    <h2>Features</h2>
-                    <p>Some of the features and advantages that we 
+                <div class="features__banner bunner">
+                    <h2 class="bunner__h2">Features</h2>
+                    <p class="bunner__text">Some of the features and advantages that we 
                         provide for those of you who store data in this Data Warehouse.
                     </p>
                 </div>
-                <div class="features__cards">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="features__cards card">
+                    <div class="card__box">
+                        <div class="card__data">
+                            <h3 class="card__name">
+                                Search Data
+                            </h3>
+                            <p class="card__text">
+                                Don’t worry if your data is very large, the Data 
+                                Warehoue provides a search engine, 
+                                which is useful for making it easier to find data 
+                                effectively saving time.
+                            </p>
+                            <a href="#">
+                                Learn more
+                                <svg class="header__demo__arrow" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 15L21 8L15 1" stroke="#9C69E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21 8H1" stroke="#9C69E2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+    
+                            </a>
+                        </div>
+                        <div class="card__img">
+                            <picture>
+                                <source media="(min-width: 768px)" type="image/webp" srcset="./assets/img/features/data.png">
+                                <source media="(min-width: 426px)" type="image/webp" srcset="./assets/img/features/datamob.png">
+                                <img src="./assets/img/features/data.png" alt="data img">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="card__hours"></div>
+                    <div class="card__print"></div>
+                    <div class="card__security"></div>
 
                 </div>
             </div>
