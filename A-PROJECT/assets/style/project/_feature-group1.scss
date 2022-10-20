@@ -13,6 +13,11 @@
             flex-direction: column;
         }
     }
+    @media screen and (max-width: 425px){
+        &__group1{
+            gap: 10px;
+        }
+    }
 }
 
 .card{

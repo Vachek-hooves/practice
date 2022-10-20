@@ -424,6 +424,11 @@ main {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 425px) {
+  .features__group1 {
+    gap: 10px;
+  }
+}
 
 .card__box, .card__hours {
   width: 570px;
@@ -476,6 +481,12 @@ main {
   .features__group2 {
     max-width: 768px;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 425px) {
+  .features__group2 {
+    gap: 10px;
+    margin-top: 10px;
   }
 }
 
