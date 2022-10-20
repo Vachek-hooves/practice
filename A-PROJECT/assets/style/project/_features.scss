@@ -2,17 +2,68 @@
     max-width: 1183px;
     margin: 0 auto;
     margin-top: 120px;
+    position: relative;
 
     &__banner{
-        max-width: 638px;
-        // align-items: center;
+        max-width: 772px;
         margin: 0 auto;
         text-align: center;
-        // justify-content: center;
-        
+
     }
 
-    &__h2{
+}
 
+.bunner{
+
+    &__h2{
+        @include font(700,40px,100%);
+        margin-bottom: 50px;
+        font-family: $work;
+        color: $header;
+    }
+
+    &__text{
+        @include font (500,18px,136%);
+        // max-width: 638px;
+        color: $text;
+    }
+}
+.card{
+    max-width: 570px;
+    max-height: 400px;
+    
+
+    &__box{
+        margin-top: 82px;
+        // position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+
+    }
+    &__data{
+        width: 400px;
+        height: 400px;
+        background-color: $databg;
+        border-radius: 50px;
+    }
+    &__size{
+        margin: 0 auto;
+        max-width: 230px;
+    }
+    &__name{
+        background-color: $databg;
+        @include font(400,24px,130%);
+        font-family:$work;
+        margin-top: 62px
+    }
+    &__text{
+        @include font(400,16px,160%);
+        margin: 20px 0px;
+    }
+    &__link{
+        width: 137px;
+        height: 27px;
+        color: $datalink;
+        border: 1px solid hidden;
     }
 }

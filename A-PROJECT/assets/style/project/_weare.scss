@@ -31,6 +31,7 @@
         @include font(700,40px,130%);
         font-family: $work;
         padding: 40px 0px;
+        color: $header;
         
     }
     @media screen and (max-width: 1024px){
@@ -48,7 +49,7 @@
 
     &__text{
         @include font(500,18px,160%);
-        // font-family: $mon;
+        color: $text;
     }
     @media screen and (max-width: 1024px){
         &__text{

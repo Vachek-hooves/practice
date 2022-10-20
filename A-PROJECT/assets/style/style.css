@@ -142,6 +142,7 @@ main {
   line-height: 165%;
   max-width: 601px;
   padding-bottom: 50px;
+  color: #212353;
 }
 @media screen and (max-width: 1024px) {
   .screen__h1 {
@@ -166,6 +167,7 @@ main {
   line-height: 160%;
   max-width: 370px;
   padding-bottom: 50px;
+  color: #4B5D68;
 }
 @media screen and (max-width: 1024px) {
   .screen__text {
@@ -282,6 +284,7 @@ main {
   line-height: 130%;
   font-family: "Work Sans", sans-serif;
   padding: 40px 0px;
+  color: #212353;
 }
 @media screen and (max-width: 1024px) {
   .weare__h2 {
@@ -298,6 +301,7 @@ main {
   font-weight: 500;
   font-size: 18px;
   line-height: 160%;
+  color: #4B5D68;
 }
 @media screen and (max-width: 1024px) {
   .weare__text {
@@ -331,9 +335,65 @@ main {
   max-width: 1183px;
   margin: 0 auto;
   margin-top: 120px;
+  position: relative;
 }
 .features__banner {
-  max-width: 638px;
+  max-width: 772px;
   margin: 0 auto;
   text-align: center;
+}
+
+.bunner__h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  margin-bottom: 50px;
+  font-family: "Work Sans", sans-serif;
+  color: #212353;
+}
+.bunner__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 136%;
+  color: #4B5D68;
+}
+
+.card {
+  max-width: 570px;
+  max-height: 400px;
+}
+.card__box {
+  margin-top: 82px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.card__data {
+  width: 400px;
+  height: 400px;
+  background-color: #F0FAF9;
+  border-radius: 50px;
+}
+.card__size {
+  margin: 0 auto;
+  max-width: 230px;
+}
+.card__name {
+  background-color: #F0FAF9;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  font-family: "Work Sans", sans-serif;
+  margin-top: 62px;
+}
+.card__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  margin: 20px 0px;
+}
+.card__link {
+  width: 137px;
+  height: 27px;
+  color: #212353;
+  border: 1px solid hidden;
 }/*# sourceMappingURL=style.css.map */
