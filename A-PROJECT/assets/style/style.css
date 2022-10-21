@@ -1,5 +1,6 @@
 /* COLORS*/
 /*CARDS COLOR*/
+/*testimonial*/
 main {
   font-family: "Montserrat";
   font-size: 18px;
@@ -351,6 +352,8 @@ main {
   .features {
     margin-top: 226px;
     max-width: 768px;
+    background: floralwhite;
+    border-radius: 50px;
   }
 }
 .bunner {
@@ -527,5 +530,106 @@ main {
   .card__printimg, .card__securityimg {
     right: 40px;
     top: 274px;
+  }
+}
+
+.test {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.test__h2 {
+  padding-top: 80px;
+  text-align: center;
+}
+.test__box {
+  height: 580px;
+  background-color: #CCDDFF;
+  border-radius: 50px;
+  margin-top: 120px;
+  position: relative;
+}
+.test__vector1 {
+  position: absolute;
+  top: 0;
+}
+.test__vector2 {
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .test {
+    max-width: 978px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .test {
+    max: width 768px;
+  }
+}
+.people {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 80px;
+}
+.people__man {
+  width: 465px;
+  height: 300px;
+  background: #fff;
+  border-radius: 50px;
+  display: flex;
+}
+.people__man__img {
+  padding: 50px 15px 160px 30px;
+}
+.people__lady {
+  width: 465px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 50px;
+  display: flex;
+  margin-bottom: 80px;
+}
+.people__lady__img {
+  padding: 50px 15px 160px 30px;
+}
+.people__details {
+  margin-top: 50px;
+  width: 300px;
+  height: 200px;
+}
+.people__details__h2 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #212353;
+}
+.people__details__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 160%;
+  color: #9C69E2;
+}
+.people__details__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #4B5D68;
+  padding-top: 18px;
+}
+
+@media screen and (max-width: 1024px) {
+  .people {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .people {
+    flex-direction: column;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
