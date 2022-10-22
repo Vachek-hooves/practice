@@ -88,8 +88,11 @@ main {
   font-size: 16px;
 }
 .header__demo__arrow {
+  width: 164px;
+  display: flex;
+  align-items: center;
   text-align: center;
-  margin-left: 20px;
+  justify-content: space-between;
 }
 @media screen and (max-width: 426px) {
   .header__demo {
@@ -127,6 +130,17 @@ main {
     justify-content: space-evenly;
   }
 }
+a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #4B5D68;
+}
+
+a:hover {
+  color: #8A40EE;
+}
+
 .screen {
   max-width: 1170px;
   margin: 0 auto;
@@ -701,6 +715,12 @@ main {
 .footer__navi {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
+}
+.footer__corp__text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 180%;
 }
 
 .contact {
@@ -728,4 +748,8 @@ main {
   flex-direction: column;
   align-items: flex-start;
   color: pink;
+}
+.about__links__adjust {
+  display: flex;
+  gap: 15px;
 }/*# sourceMappingURL=style.css.map */

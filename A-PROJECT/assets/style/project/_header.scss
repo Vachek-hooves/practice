@@ -72,10 +72,14 @@
             justify-content: center;
             border-color: #9C69E2;
             font-size: 16px;
+            
 
             &__arrow{
+                width: 164px;
+                display: flex;
+                align-items: center;
                 text-align: center;
-                margin-left: 20px;
+                justify-content: space-between;
                 
             }
 
@@ -120,5 +124,12 @@
         justify-content: space-evenly;
     }
     
+}
+a{
+    @include font (500,16px,160%);
+    color: $hl;
+}
+a:hover{
+    color: $hlhover
 }
 

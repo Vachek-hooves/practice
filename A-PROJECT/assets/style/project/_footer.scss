@@ -49,7 +49,13 @@
     &__navi{
         display: flex;
         justify-content: space-between;
+        margin-bottom: 100px;
         
+    }
+    &__corp{
+        &__text{
+            @include font(300,12px,180%);
+        }
     }
 
 }
@@ -85,6 +91,10 @@
             align-items: flex-start;
             color: pink;
 
+        }
+        &__adjust{
+            display: flex;
+            gap: 15px;
         }
 
     }
