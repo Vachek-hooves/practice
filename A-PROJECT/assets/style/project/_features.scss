@@ -19,8 +19,12 @@
         
     }
 }
+@media screen and (max-width: 768px){
+    .features{
+        max-width: 425px;
+    }
 
-
+}
 // @media screen and (max-width: 426px){
 //     .weare{
 //         max-width: 416px;
@@ -46,6 +50,12 @@
         color: $text;
     }
 }
+@media screen and (max-width: 768px){
+    .bunner{
+        padding-top: 30px;
+    }
+}
+
 
 
 .card{
@@ -81,11 +91,17 @@
 
     }
     &__link{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
         @include font(700,16px,130%);
         width: 137px;
         height: 27px;
         color: $datalink;
         border: 1px solid hidden;
+    }
+    &__link:hover{
+        color: $datalink;
     }
 
 }

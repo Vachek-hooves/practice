@@ -61,16 +61,29 @@
     }
 
     &__button{
-        align-items: center;
-        justify-content: center;
-        display: flex;
         @include buttonsize (210px,60px);
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         background-color: $button;
-        border-radius: 50px;
+        
 
         &__link{
+            display: flex;
+            width: 100%;
             text-decoration: none;
+            color: #FFFFFF;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
             color:$btext ;
+        }
+        &__link:hover{
+            background-color: $hlhover;
+            border-radius: 50px;
+            color:$btext;
         }
        
 

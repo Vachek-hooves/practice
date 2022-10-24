@@ -88,11 +88,17 @@ main {
   font-size: 16px;
 }
 .header__demo__arrow {
-  width: 164px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
   display: flex;
   align-items: center;
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+.header .header__demo__arrow:hover {
+  background-color: #9C69E2;
+  color: white;
 }
 @media screen and (max-width: 426px) {
   .header__demo {
@@ -107,6 +113,39 @@ main {
     border-color: #9C69E2;
     margin-right: 10px;
   }
+}
+.header__hover__press {
+  width: 210px;
+  height: 60px;
+  border-radius: 50px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: #9C69E2;
+  font-size: 16px;
+  background-color: #9C69E2;
+  position: absolute;
+  opacity: 0;
+  top: 19px;
+}
+.header__hover__press__ref {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.header__demo__arrow:hover {
+  background-color: #9C69E2;
+  color: white;
+}
+
+.href:hover {
+  color: #8A40EE;
 }
 
 @media screen and (max-width: 1024px) {
@@ -134,7 +173,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 160%;
-  color: #4B5D68;
+  color: #212353;
 }
 
 a:hover {
@@ -205,16 +244,28 @@ a:hover {
   }
 }
 .screen__button {
-  align-items: center;
-  justify-content: center;
-  display: flex;
   width: 210px;
   height: 60px;
-  background-color: #9C69E2;
   border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9C69E2;
 }
 .screen__button__link {
+  display: flex;
+  width: 100%;
   text-decoration: none;
+  color: #FFFFFF;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  color: #FFFFFF;
+}
+.screen__button__link:hover {
+  background-color: #8A40EE;
+  border-radius: 50px;
   color: #FFFFFF;
 }
 @media screen and (max-width: 768px) {
@@ -348,7 +399,7 @@ a:hover {
 }
 @media screen and (max-width: 426px) {
   .weare {
-    max-width: 416px;
+    max-width: 425px;
     top: 200px;
   }
 }
@@ -369,6 +420,11 @@ a:hover {
     max-width: 768px;
     background: floralwhite;
     border-radius: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features {
+    max-width: 425px;
   }
 }
 .bunner {
@@ -392,6 +448,11 @@ a:hover {
   color: #4B5D68;
 }
 
+@media screen and (max-width: 768px) {
+  .bunner {
+    padding-top: 30px;
+  }
+}
 .card__size {
   margin: 0 auto;
   max-width: 234px;
@@ -419,6 +480,9 @@ a:hover {
   color: #4B5D68;
 }
 .card__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   font-weight: 700;
   font-size: 16px;
   line-height: 130%;
@@ -426,6 +490,9 @@ a:hover {
   height: 27px;
   color: #212353;
   border: 1px solid hidden;
+}
+.card__link:hover {
+  color: #212353;
 }
 
 .features__group1 {
@@ -592,6 +659,13 @@ a:hover {
 @media screen and (max-width: 768px) {
   .test {
     max-width: 768px;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 424px) {
+  .test {
+    max-width: 400px;
+    margin-bottom: 50px;
   }
 }
 .people {
@@ -609,13 +683,15 @@ a:hover {
   border-radius: 50px;
   display: flex;
   margin-bottom: 80px;
+  border: 1px solid #9C69E2;
+  z-index: 2;
 }
 .people__man__img {
   padding: 50px 15px 160px 30px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .people__man {
-    max-width: 360px;
+    max-width: 346px;
   }
 }
 .people__lady {
@@ -625,13 +701,15 @@ a:hover {
   border-radius: 50px;
   display: flex;
   margin-bottom: 80px;
+  border: 1px solid #9C69E2;
+  z-index: 2;
 }
 .people__lady__img {
   padding: 50px 15px 160px 30px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .people__lady {
-    max-width: 360px;
+    max-width: 346px;
   }
 }
 .people__details {
@@ -679,6 +757,12 @@ a:hover {
   justify-content: space-between;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 426px) {
+  .footer__head {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .footer__form {
   display: flex;
   flex-direction: column;
@@ -691,10 +775,39 @@ a:hover {
   margin-bottom: 20px;
   color: #212353;
 }
+@media screen and (max-width: 426px) {
+  .footer__form {
+    align-items: center;
+  }
+}
 .footer__knob {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+.footer__knob__button {
+  width: 210px;
+  height: 60px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F063B8;
+}
+.footer__knob__button__link {
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  color: #FFFFFF;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.footer__knob__button__link:hover {
+  background-color: #EB4BAB;
+  border-radius: 50px;
+  color: white;
 }
 .footer__demo {
   width: 210px;
@@ -717,12 +830,25 @@ a:hover {
   justify-content: space-between;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 426px) {
+  .footer__navi {
+    flex-direction: column;
+  }
+}
 .footer__corp__text {
   font-weight: 300;
   font-size: 12px;
   line-height: 180%;
 }
+.footer__media__hover {
+  position: absolute;
+}
 
+@media screen and (max-width: 1024px) {
+  .footer {
+    max-width: 742px;
+  }
+}
 .contact {
   max-width: 300px;
   color: #212353;
@@ -752,4 +878,32 @@ a:hover {
 .about__links__adjust {
   display: flex;
   gap: 15px;
+  position: relative;
+}
+.about__media__hover {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+.about__media__hover-twitter {
+  position: absolute;
+  right: 65px;
+  opacity: 0;
+}
+.about__media__hover-insta {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+}
+
+.about__media__meta:hover .about__media__hover {
+  opacity: 1;
+}
+
+.about__media__twitter:hover .about__media__hover-twitter {
+  opacity: 1;
+}
+
+.about__media__insta:hover .about__media__hover-insta {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

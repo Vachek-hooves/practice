@@ -72,18 +72,27 @@
             justify-content: center;
             border-color: #9C69E2;
             font-size: 16px;
-            
+
 
             &__arrow{
-                width: 164px;
+                width: 100%;
+                height: 100%;
+                border-radius: 50px;
                 display: flex;
                 align-items: center;
                 text-align: center;
-                justify-content: space-between;
-                
+                justify-content: space-evenly;
             }
+            
+
+        
 
     }
+    .header__demo__arrow:hover{
+        background-color: #9C69E2;
+        color: white;
+    }
+
     @media screen and (max-width: 426px){
         &__demo{
             width: 100px;
@@ -98,9 +107,47 @@
             margin-right: 10px;
         }
     }
+
+    &__hover__press{
+        width: 210px;
+        height: 60px;
+        border-radius: 50px;
+        border: 1px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-color: #9C69E2;
+        font-size: 16px;
+        background-color: $button;
+        position: absolute;
+        opacity: 0;
+        top: 19px;
+    
+        &__ref{
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: space-evenly;
+        }
+    
+        
+    }
     
     
 }
+.header__demo__arrow:hover{
+    background-color: #9C69E2;
+    color: white;
+}
+
+.href:hover{
+    color:$hlhover;
+}
+
+
 
 @media screen and (max-width: 1024px){
     .header{
@@ -127,7 +174,7 @@
 }
 a{
     @include font (500,16px,160%);
-    color: $hl;
+    color: $header;
 }
 a:hover{
     color: $hlhover

@@ -8,6 +8,14 @@
         margin-bottom: 100px;
     }
 
+    @media screen and (max-width:426px){
+        &__head{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+        
+
     &__form{
         display: flex;
         flex-direction: column;
@@ -19,11 +27,42 @@
             color: $header;
         }
     }
+    @media screen and (max-width:426px){
+        &__form{
+            align-items: center;
+        }
+    }
 
     &__knob{
         display: flex;
         align-items: center;
         gap: 30px;
+
+        &__button{
+            @include buttonsize (210px,60px);
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $knob;
+            
+            &__link{
+                display: flex;
+                width: 100%;
+                text-decoration: none;
+                color: #FFFFFF;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+            }
+            &__link:hover{
+                background-color: $hoverbutton;
+                border-radius: 50px;
+                color: white;
+            }
+        }
+
     }
 
     &__demo{
@@ -52,12 +91,28 @@
         margin-bottom: 100px;
         
     }
+    @media screen and (max-width:426px){
+        &__navi{
+            flex-direction: column;
+        }
+    }
     &__corp{
         &__text{
             @include font(300,12px,180%);
         }
     }
 
+
+    &__media__hover{
+        position: absolute;
+    }
+
+}
+
+@media screen and (max-width:1024px){
+    .footer{
+        max-width: 742px;
+    }
 }
 
 .contact{
@@ -78,6 +133,7 @@
     &__links{
         width: 100%;
         text-align: center;
+        // position: relative;
 
 
         &__text{
@@ -95,7 +151,41 @@
         &__adjust{
             display: flex;
             gap: 15px;
+            position: relative;
         }
 
+        
+
+    }
+
+    &__media{
+
+        &__hover{
+            position: absolute;
+            left: 0;
+            opacity: 0;
+        }
+        &__hover-twitter{
+            position: absolute;
+            right: 65px;
+            opacity: 0;
+           
+        }
+        &__hover-insta{
+            position: absolute;
+            right: 0;
+            opacity: 0;
+        }
     }
 }
+.about__media__meta:hover .about__media__hover{
+    opacity: 1;
+}
+.about__media__twitter:hover .about__media__hover-twitter{
+    opacity: 1;
+}
+.about__media__insta:hover .about__media__hover-insta{
+    opacity: 1;
+}
+
+
