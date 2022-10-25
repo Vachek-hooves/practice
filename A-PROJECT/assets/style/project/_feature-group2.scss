@@ -35,6 +35,13 @@
             // margin-top: 10px;
         }
     }
+    @media screen and (max-width: 426px){
+        &__print,&__security{
+            margin-right: 0px;
+            width: 90%;
+
+        }
+    }
 
     &__printvector{
         position: absolute;

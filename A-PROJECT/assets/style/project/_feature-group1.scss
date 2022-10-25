@@ -31,7 +31,12 @@
     @media screen and (max-width: 768px){
         &__box,&__hours{
             margin-right: 168px;
-            // margin-top: 10px;
+        }
+    }
+    @media screen and (max-width: 426px){
+        &__box,&__hours{
+            margin-right: 0;
+            width: 90%;
         }
     }
 
