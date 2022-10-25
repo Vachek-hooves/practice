@@ -52,7 +52,6 @@
 }
 
 
-
 .card{
     
     &__size{
@@ -72,8 +71,6 @@
         @include font(400,24px,130%);
         margin: 62px 0px 20px;
         color: $header;
-
-      
     }
     &__text{
 
