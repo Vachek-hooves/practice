@@ -80,7 +80,7 @@
 
             &__arrow{
                 width: 100%;
-                height: 100%;
+                height: 61px;
                 border-radius: 50px;
                 display: flex;
                 align-items: center;
@@ -215,12 +215,15 @@
 
 .about__media__meta:hover .about__media__hover{
     opacity: 1;
+    transform: scale(1.5);
 }
 .about__media__twitter:hover .about__media__hover-twitter{
     opacity: 1;
+    transform: scale(1.5);
 }
 .about__media__insta:hover .about__media__hover-insta{
     opacity: 1;
+    transform: scale(1.5);
 }
 
 .footer__demo__arrow:hover{
