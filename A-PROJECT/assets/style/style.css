@@ -750,6 +750,9 @@ main {
   gap: 15px;
   position: relative;
 }
+.about__media__insta, .about__media__facebook, .about__media__twitter {
+  position: relative;
+}
 .about__media__hover {
   position: absolute;
   left: 0;
@@ -757,7 +760,7 @@ main {
 }
 .about__media__hover-twitter {
   position: absolute;
-  right: 65px;
+  right: 0;
   opacity: 0;
 }
 .about__media__hover-insta {

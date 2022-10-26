@@ -91,12 +91,6 @@
             }
     }
 
-    
-
-
-
-    
-
 
     &__logo{
         display: flex;
@@ -182,11 +176,15 @@
             position: relative;
         }
 
-        
-
     }
 
     &__media{
+
+        &__insta,
+        &__facebook,
+        &__twitter{
+            position: relative;
+        }
 
         &__hover{
             position: absolute;
@@ -195,7 +193,7 @@
         }
         &__hover-twitter{
             position: absolute;
-            right: 65px;
+            right: 0;
             opacity: 0;
            
         }
