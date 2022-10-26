@@ -3,44 +3,109 @@
     padding: 0px;
 }
 
-div img{
-    border-radius: 20px;
-}
-
 .main_container{
     width: 1440px;
    
 }
 :root{
     --gap-left: 30px;
-
 }
 
-.overlay{
-    position: absolute;
-    width: 370px;
-    height: 370px;
-    /*background: burlywood;*/
-    background: linear-gradient(360deg, #241F24 0%,
-    rgba(91, 91, 91, 0.447552) 34.11%,
-    rgba(187, 186, 192, 0.26) 62.5%);
+.img{
     border-radius: 20px;
 }
 
-.links-adjust{
+.image-div{
+    width: 100%;
+    height: 100%;
+    position: relative;
     display: flex;
-    opacity: .8;
+    align-items: flex-end;
+    /* border-radius: 20px; */
+}
+
+.img{
+    border-radius: 20px;
+    z-index: -1;
+    position: relative;
+}
+
+.overlay{
+    /* content: ''; */
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(360deg, #241F24 0%,
+    rgba(91, 91, 91, 0.447552) 34.11%,
+    rgba(187, 186, 192, 0.26) 62.5%);
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    /* z-index: 1; */
+}
+
+.overlay:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(360deg, #241F24 1.04%,
+    rgba(91, 91, 91, 0.26) 6.99%,
+    rgba(187, 186, 192, 0) 12.29%);
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    transition-timing-function: 200s;
 }
 
 
+.text{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.name,
+.date{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #E0E0E0;
+    margin: 20px
+}
+/* .date{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #E0E0E0;
+    margin: 20px;
+} */
 
 
+.icons{
+    width: 100%;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    top: 0;
+    opacity: 0;
+}
 
-
-
-
-
-
+.heart{
+    margin: 20px 0px 0px 20px;
+    opacity: 0.5;
+    margin-right: 250px;
+}
+.down{
+    margin: 20px 20px 0px 0px;
+}
+.icons:hover{
+    opacity: 1;
+}
 
 
 .heading-cities,
@@ -64,25 +129,23 @@ div img{
 }
 
 .gallery-grid{
-    
     display: grid;
     width: 1170px;
     height: 1170px;
-    grid-template-columns: repeat(3, 370px);
-    grid-template-rows: repeat(3, 370px);
+    grid-template-columns: 370px 370px 370px;
+    grid-template-rows: repeat(3, 370px); 
     grid-gap: 30px;
 
-   
 }
+
 .france{
     grid-area: 1/1/2/2;
 }
 .street{
-    grid-area: 2/2/1/4;
+    grid-column: span 2;
 }
 .back-yard{
     grid-area: 2/1/3/3;
-    
 }
 .italia{
     grid-area: 2/3/3/4;
@@ -92,7 +155,7 @@ div img{
 }
 .bridge{
     grid-area: 3/2/4/4;
-}
+} 
 
 
 .nature-container{
@@ -114,21 +177,20 @@ div img{
     grid-area: 1/1/2/2;
 }
 .sea{
-    grid-area: 1/2/2/4;
+    grid-column: span 2;
 }
 .rocks{
-    grid-area: 2/1/4/3;
+    grid-column: span 2;
+    grid-row: span 2;
 }
 .sunset{
     grid-area: 2/3/4/4;
-    
 }
 .flowers{
-    grid-area: 4/1/5/3;
+    grid-column: span 2;
 }
 .tree{
     grid-area: 4/3/5/4;
-    
 }
 
 .people-container{
@@ -154,7 +216,7 @@ div img{
     grid-area: 1/3/2/4;
 }
 .side{
-    grid-area: 2/1/2/3;
+    grid-area: 2/1/3/2;
 }
 .orange{
     grid-area: 2/3/4/4;
