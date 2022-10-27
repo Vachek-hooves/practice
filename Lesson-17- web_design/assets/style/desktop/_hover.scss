@@ -1,0 +1,46 @@
+.text{
+
+
+    &__about{
+        position: relative;
+    }
+
+    &__about-link{
+        position: absolute;
+        top: 54px;
+        left: 194px;
+        width: 100px;
+    }
+
+    &__about-hover{
+        position: absolute;
+        width: max-content;
+        top: 53px;
+        left: 220px;
+        // opacity: 0;
+    }
+    &__about-overlay{
+        text-decoration: none;
+        @extend %linkdecor;
+        font-family: $lato;
+        letter-spacing: 0.1em;
+        
+    }
+
+
+    &__about-link:hover{
+        display: none;
+    }
+    &__about-link:hover &__about-svg{
+        fill: red;
+    }
+
+
+
+
+
+}
+
+
+
+

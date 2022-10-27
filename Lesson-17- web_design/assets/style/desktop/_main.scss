@@ -118,40 +118,38 @@
             @extend %textdate;
         }
         & .text__about{
+            position: relative;
             @extend %textabout;
+            
             // margin: 0 auto;
 
         }
 
-        // & .text__arrow{
-        //     position: relative;
-
+        // & .text__link{
+        //     position: absolute;
         // }
-        & .text__link{
-            position: relative;
-        }
-        & .arrow__hover{
-            @extend %linkdecor;
-            font-family: $lato;
-            letter-spacing: 0.1em;
+        // & .arrow__hover{
+        //     @extend %linkdecor;
+        //     font-family: $lato;
+        //     letter-spacing: 0.1em;
             
-        }
+        // }
 
-        & .text__link-hover{
-            opacity: 0;
-            position: absolute;
-            top: 0;
-        }
+        // & .text__link-hover{
+        //     opacity: 0;
+        //     position: absolute;
+        //     top: 0;
+        // }
         
-        & .text__link:hover .text__link-hover{
-            opacity: 1;
-            // position: absolute;
+        // & .text__link:hover .text__link-hover{
+        //     opacity: 1;
+        //     // position: absolute;
 
-            & .text__arrow{
-                display: none;
-            }
+        //     & .text__arrow{
+        //         display: none;
+        //     }
             
-        }
+        // }
 
     }
     & .blog__lower{

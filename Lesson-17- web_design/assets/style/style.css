@@ -179,23 +179,8 @@ body {
 .main__content .blog__article {
   max-width: 450px;
 }
-.main__content .blog__article .text__link {
+.main__content .blog__article .text__about {
   position: relative;
-}
-.main__content .blog__article .arrow__hover {
-  font-family: "Lato", sans-serif;
-  letter-spacing: 0.1em;
-}
-.main__content .blog__article .text__link-hover {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-}
-.main__content .blog__article .text__link:hover .text__link-hover {
-  opacity: 1;
-}
-.main__content .blog__article .text__link:hover .text__link-hover .text__arrow {
-  display: none;
 }
 .main__content .blog__lower {
   width: 100%;
@@ -258,6 +243,35 @@ body {
   line-height: 32px;
   letter-spacing: 0.005em;
   color: #000000;
+}
+
+.text__about {
+  position: relative;
+}
+.text__about-link {
+  position: absolute;
+  top: 54px;
+  left: 194px;
+  width: 100px;
+}
+.text__about-hover {
+  position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  top: 53px;
+  left: 220px;
+}
+.text__about-overlay {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.1em;
+}
+.text__about-link:hover {
+  display: none;
+}
+.text__about-link:hover .text__about-svg {
+  fill: red;
 }
 
 .header .header__container .header__menu .link__decor {
@@ -371,7 +385,7 @@ body {
   color: #000000;
 }
 
-.main__content .blog__article .arrow__hover, .main__popular .popular__button .popular__link {
+.main__popular .popular__button .popular__link, .text__about-overlay {
   text-decoration: none;
   color: #000000;
 }/*# sourceMappingURL=style.css.map */
