@@ -6,7 +6,8 @@
 
 .heart__container,
 .diamond__container,
-.spade__container{
+.spade__container,
+.clover__container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
