@@ -35,12 +35,12 @@
 
 
     &__header{
-        min-width: 370px;
+        width: 370px;
 
     }
     @media (max-width:770px){
         &__header{
-            margin: 0 auto;
+            // margin: 0 auto;
             max-width: 372px;
             text-align: center;
         }
@@ -51,6 +51,7 @@
             max-width: 300px;
             text-align: center;
             margin-top: 50px;
+            width: 320px;
         }
     } 
 
@@ -59,6 +60,7 @@
         @include subtitle(400,48px,64px,0.05em);
         color: $black;
         margin-bottom: 30px;
+        width: 375px;
         
     }
     @media (max-width:770px){
@@ -74,8 +76,9 @@
             font-size: 32px;
             line-height: 42px;
             color: $black;
-            padding-right: 36px;
+            // padding-right: 36px;
             margin: 0px 0px 20px;
+            width: 320px
 
         }
     } 
@@ -137,7 +140,27 @@
         justify-content: center;
         align-items: center;
         color: grey;
+        
+
     }
+    &__instagram:hover,
+    &__facebook:hover,
+    &__twitter:hover,
+    &__linkedin:hover{
+        background-color: #565656;
+    }
+    &__instagram:hover &__svg-path,
+    &__facebook:hover &__svg-path,
+    &__twitter:hover &__svg-path,
+    &__linkedin:hover &__svg-path{
+        fill: #FFFFFF;
+    }
+   
+
+
+
+
+
 
     &__bottom{
         text-align: center;
@@ -191,7 +214,7 @@
     .footer{
         max-width: 320px;
         min-height: 421px;
-        
+        // margin: 0px 10px 0px 10px;
     }
 } 
 

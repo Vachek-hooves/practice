@@ -14,12 +14,12 @@
 
     }
     
-    @media (max-width:770px){
+    @media (max-width:769px){
         &__h1{
             @include subtitle(600,33px,50px,0.05em);
             font-family: $redhat;
             color: $black;
-            margin: 50px 0px 50px 0px;
+            margin: 68px 0px 50px 0px;
         }
     }
 
@@ -54,20 +54,37 @@
     height: 100px;
     @include subtitle (400,16px,150%,00.5em);
     color: $black;
-    
 
 }
-@media (max-width:426px){
+@media (max-width:769px){
     .header{
-        height: 60px;
+        height: 18px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.5em;
+        color: #000000;
+        margin-top: 18px;
     }
 }
 
-@media (max-width:770px){
+@media (max-width:426px){
+    .header{
+        // height: 60px;
+        max-width: 1170px;
+        display: flex;
+        align-items: center;
+        margin: 18px 0px;
+        
+    }
+}
+
+@media (max-width:769px){
     .container{
         font-family:$lato;
         @include subtitle (400,16px,150%,0.5em);
         color: $black;
+        
         
     }
 }
