@@ -1,6 +1,49 @@
 .header{
     // width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
+    margin-left: 200px;
+
+    &__hamburger{
+        // position: relative;
+        position: absolute;
+        // right: 380px;
+        // top: 42px;
+        width: 34px;
+        height: 2px;
+        background:black;
+        border-radius: 10px;
+        cursor: pointer;
+        z-index: 2;
+        transition: 0.3s;
+        opacity: 0;
+        margin-top: 5px;
+    }
+    @media screen and (max-width: 768px){
+        &__hamburger{
+            opacity: 1;
+            // display: block;
+        }
+    }
+
+    &__hamburger::before,
+    &__hamburger::after{
+        content: "";
+        position: absolute;
+        height: 2px;
+        right: 0;
+        background:black;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    &__hamburger::before{
+        top: -10px;
+        width: 34px;
+    }
+    &__hamburger::after{
+        top: 10px;
+        width: 34px;
+    }
     
 @media (max-width:1440px){
     .main{
@@ -26,21 +69,13 @@
 
 
     & .header__container{
-        // @include box-size(1170px,20px);
-        @include sizepercent(1170px,1440px);
+        // @include sizepercent(1170px,1440px);
+        width: 1170px;
         padding: 40px 135px;
         display:flex;
         align-items: center;
         justify-content: space-between;
-        // flex-direction: row;
-        // text-align: center;
-        // align-items: center;
-        // justify-content: center;
-        
-        // & .header__logo{
-        //     // margin-right: 428px;
-        //     padding-right: 428px;
-        // }
+        // margin-left: 80px;
 
         & .header__logo{
             padding: 0px 10px;
@@ -52,12 +87,22 @@
 
         }
 
+        @media screen and (max-width:768px){
+            & .header__box{
+                display: flex;
+                gap: 84px;
+                justify-content: flex-start;
+                flex-direction: row-reverse;
+            }
+        }
+
         & .header__menu{
             @include box-size(500px,18px);
             // max-width: 500px;
             display:inline-flex;
             gap:42px;
             // margin-right: 42px;
+
             
             & .link__decor{
                 @extend %headerlink;
@@ -65,33 +110,45 @@
             }
             
         }
+        @media screen and (max-width:768px){
+            & .header__menu{
+                display: none;
+            }
+        }
 
         
         
     } 
 
-
-    @media screen and (max-width: 1440px){
-        .header{
-            margin: 10px;
-        }
-
-    }
     @media screen and (max-width:768px){
-        .header{
-            margin: 5px;
+        & .header__container{
+            width: 700px;
+            height: 60px;
+            
+            padding: 0;
         }
     }
-    @media screen and (max-width:420px){
-        .header{
-            margin: 5px;
-        }
-    }
+
 
 
 
 }
+@media screen and (max-width: 1440px){
+    .header{
+        margin: 10px;
+    }
 
+}
+@media screen and (max-width:768px){
+    .header{
+        margin: 0px 34px 390px;
+    }
+}
+@media screen and (max-width:420px){
+    .header{
+        margin: 5px;
+    }
+}
 
 
 

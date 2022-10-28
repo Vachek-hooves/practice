@@ -3,48 +3,6 @@
     margin: 0 auto;
     padding: 0px 5px;
 
-@media (max-width:1440px){
-    .main{
-        max-width: 970px;
-    }
- }
-
-@media (max-width:992px){
-    .main{
-        max-width: 750px;
-    }
-}
-@media (max-width:767px){
-    .main{
-        max-width: none;
-    }
-}
-
-
-
-
-
-
-    // @media screen and (max-width: 1440px){
-    //     .main{
-    //         margin: 0 10px;
-    //     }
-    
-    // }
-    // @media screen and (max-width:768px){
-    //     .main{
-    //         margin: 0 10px;
-    //     }
-    // }
-    // @media screen and (max-width:420px){
-    //     .main{
-    //         margin: 0 10px;
-    //     }
-    // }
-    
-
-
-
 
     &__first{
         width: 100%;
@@ -54,13 +12,22 @@
         width: 100%;
         position: relative;
     }
+    @media screen and (max-width:768px){
+        &__bg{
+            display: none;
+        }
+    }
 
     &__heading{
         position: absolute;
         padding-left: 135px;
         top: 170px;
         
-        
+    }
+    @media screen and (max-width:768px){
+        &__heading{
+            display: none;
+        }
     }
 
     &__manifest{
@@ -72,9 +39,27 @@
         
     }
 }
+// @media (max-width:1440px){
+//     .main{
+//         max-width: 1440px;
+//     }
+//  }
+
+@media (max-width:992px){
+    .main{
+        max-width: 768px;
+        margin: 0px 34px;
+    }
+}
+@media (max-width:426px){
+    .main{
+        max-width: none;
+    }
+}
 
 .main__content{
-    @include sizepercent (1170px,1440px);
+    // @include sizepercent (1170px,1440px);
+    max-width: 1170px;
     margin: 0 auto;
     margin-top: 90px;
     // margin: 90px 0px;
@@ -162,6 +147,14 @@
     }
 
 }
+@media screen and (max-width:768px){
+    .main__content{
+        max-width: 700px;
+    }
+}
+
+
+
 
 .main__post{
     @include sizepercent (1170px,1440px);

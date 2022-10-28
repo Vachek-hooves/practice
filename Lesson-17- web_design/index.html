@@ -53,6 +53,8 @@
                         1.78037 7.42641 1.78037C4.81889 1.78037 2.70508 3.77262 2.70508 6.23017Z" fill="#000000"/>
                     </svg>
                 </div>
+                <div class="header__hamburger">                 
+                </div>
                 
             </div>
         </div>
@@ -61,6 +63,8 @@
         
 
     </header>
+
+
     <main class="main">
 
         <section class="main__first">
@@ -82,7 +86,12 @@
                 </div>
                 <div class="blog__box">
                     <div class="blog__img">
-                        <img src="./assets/img/main/image.png" alt="arrow">
+                        <picture class="blog__initial-img">
+                            <source media="(min-width: 769px)" type="image/png" srcset="./assets/img/main/image.png">
+                            <source media="(min-width: 425px)" type="image/png" srcset="./assets/img/768/arrow.png">
+                            <source media="(min-width: 100px)" type="image/png" srcset="./assets/img/320/arrow320.png">
+                            <img src="./assets/img/main/image.png" alt="arrow">
+                        </picture>
                     </div>
                     <div class="blog__article text">
                         <p class="text__name">
@@ -132,7 +141,13 @@
                 </div>
                 <div class="blog__lower">
                     <div class="blog__img">
-                        <img src="./assets/img/main/blog-image.png" alt="image">
+                        <picture class="blog__initial-img">
+                            <source media="(min-width: 769px)" type="image/png" srcset="./assets/img/main/blog-image.png">
+                            <source media="(min-width: 425px)" type="image/png" srcset="./assets/img/768/windows/blog-image.png">
+                            <source media="(min-width: 100px)" type="image/png" srcset="./assets/img/320/windows/image.png">
+                            <img src="./assets/img/main/blog-image.png" alt="window">
+                        </picture>
+                        <!-- <img src="./assets/img/main/blog-image.png" alt="image"> -->
                     </div>
                     <div class="blog__article text">
                         <p class="text__name">
@@ -183,7 +198,8 @@
 
                 </div>
         </section>
-        <section class="main__post post">
+
+        <!-- <section class="main__post post">
             <div class="post__content">
                 <div class="post__header">
                     <h2 class="post__h2">
@@ -249,10 +265,9 @@
                 </div>
  
             </div>
-            
+        </section> -->
 
-        </section>
-        <section class="main__popular popular">
+        <!-- <section class="main__popular popular">
             <div class="popular__header-aligment">
                 <div class="popular__header"> 
                     <h2 class="popular__h2">
@@ -326,8 +341,9 @@
                 </div>
             </div>
             
-        </section>
-        <section class="main__information information">
+        </section> -->
+
+        <!-- <section class="main__information information">
             <div class="information__about">
                 <div class="information__align">
                     <p class="text__about">
@@ -372,10 +388,11 @@
                     website design and development, and brand experiences.
                 </p>
             </div>
-        </section>
+        </section> -->
+
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer__arrangement">
             <div class="footer__header">
                 <h2 class="footer__h2">
@@ -477,6 +494,6 @@
 
 
 
-    </footer>
+    </footer> -->
 </body>
 </html>
