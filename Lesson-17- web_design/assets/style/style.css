@@ -379,10 +379,8 @@ body {
 }
 
 /* header links*/
-.header__underline {
-  width: 40px;
-  height: 1px;
-  color: black;
+.header__menu-href1:hover, .header__menu-href2:hover, .header__menu-href3:hover, .header__menu-href4:hover, .header__menu-href5:hover {
+  box-shadow: 0 1px 0 black;
 }
 
 .header .header__container .header__menu .link__decor {
