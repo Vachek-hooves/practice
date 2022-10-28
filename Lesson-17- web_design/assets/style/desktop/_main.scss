@@ -118,7 +118,6 @@
             @extend %textdate;
         }
         & .text__about{
-            position: relative;
             @extend %textabout;
             
             // margin: 0 auto;

@@ -179,9 +179,6 @@ body {
 .main__content .blog__article {
   max-width: 450px;
 }
-.main__content .blog__article .text__about {
-  position: relative;
-}
 .main__content .blog__lower {
   width: 100%;
   display: flex;
@@ -245,33 +242,40 @@ body {
   color: #000000;
 }
 
+/*text arrow */
 .text__about {
   position: relative;
 }
-.text__about-link {
+
+.box {
   position: absolute;
   top: 54px;
-  left: 194px;
-  width: 100px;
+  left: 178px;
 }
-.text__about-hover {
+.box__top-div {
+  position: relative;
+  z-index: 5;
+}
+.box__hover-div {
   position: absolute;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  top: 53px;
-  left: 220px;
+  top: -2px;
+  opacity: 0;
 }
-.text__about-overlay {
+.box__hover-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  text-align: normal;
+  font-family: "Lato";
+  color: #000000;
   text-decoration: none;
-  font-family: "Lato", sans-serif;
-  letter-spacing: 0.1em;
 }
-.text__about-link:hover {
-  display: none;
-}
-.text__about-link:hover .text__about-svg {
-  fill: red;
+.box__top-div:hover .box__hover-div {
+  opacity: 1;
+  background-color: white;
 }
 
 .header .header__container .header__menu .link__decor {
@@ -385,7 +389,7 @@ body {
   color: #000000;
 }
 
-.main__popular .popular__button .popular__link, .text__about-overlay {
+.main__popular .popular__button .popular__link {
   text-decoration: none;
   color: #000000;
 }/*# sourceMappingURL=style.css.map */

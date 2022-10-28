@@ -1,46 +1,35 @@
+/*text arrow */
 .text{
-
-
     &__about{
         position: relative;
     }
+}
+.box{
+    position: absolute;
+    top: 54px;
+    left: 178px;
 
-    &__about-link{
-        position: absolute;
-        top: 54px;
-        left: 194px;
-        width: 100px;
+    &__top-div{
+        position: relative;
+        z-index: 5;
     }
-
-    &__about-hover{
+    &__hover-div{
         position: absolute;
         width: max-content;
-        top: 53px;
-        left: 220px;
-        // opacity: 0;
+        top: -2px;
+        opacity: 0;
     }
-    &__about-overlay{
+
+    &__hover-link{
+        @include subtitle(400,16px,166%,normal);
+        font-family: 'Lato';
+        color: #000000;
         text-decoration: none;
-        @extend %linkdecor;
-        font-family: $lato;
-        letter-spacing: 0.1em;
-        
+
     }
 
-
-    &__about-link:hover{
-        display: none;
+    &__top-div:hover &__hover-div{
+        opacity: 1;
+        background-color: white;
     }
-    &__about-link:hover &__about-svg{
-        fill: red;
-    }
-
-
-
-
-
 }
-
-
-
-
