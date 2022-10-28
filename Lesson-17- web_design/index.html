@@ -26,16 +26,14 @@
             </div>
             <div class="header__box">
                 <div class="header__nav">
-                        <nav class="header__menu">
-                            <!-- <ul class="header__link link"> -->
-                                <a href="#" class="link__decor">HOME</a>
-                                <a href="#" class="link__decor">ABOUT</a>
-                                <a href="#" class="link__decor">WORKS</a>
-                                <a href="#" class="link__decor">BLOG</a>
-                                <a href="#" class="link__decor">CONTACT</a>
-                                
-                            <!-- </ul> -->
+                        <nav class="header__menu header__menu-href">
+                                <a href="#" class="header__menu-href link__decor ">HOME</a>
+                                <a href="#" class="header__menu-href link__decor" >ABOUT</a>
+                                <a href="#" class="header__menu-href link__decor" >WORKS</a>
+                                <a href="#" class="header__menu-href link__decor" >BLOG</a>
+                                <a href="#" class="header__menu-href link__decor" >CONTACT</a>
                         </nav>
+                        <div class="header__underline"></div>
                 </div>
                 <div class="header__search">
                     <svg width="18" height="16" viewBox="0 0 18 16" fill="none" >
@@ -146,21 +144,38 @@
                         <p class="text__date">
                             6 May, 2020
                         </p>
-                        <p class="text__about">
-                            Transformation has to be driven by everybody,
-                            not just by climate groups, and we have a 
-                            responsibility to use our influence to drive
-                            this. 
-                            
-                        </p>
-                        <div class="text__link">
-                            <a href="#"> 
-                                <img src="./assets/img/main/Arrow 1.png" alt="arrow small" class="text__arrow">
-                            </a>
-                            <div class="text__link-hover">
-                                <a href="#" class="arrow__hover">Read more <img src="./assets/img/main/Arrow 2.png" alt="arrow" ></a>
-                                
+                        <div class="text__about">
+                            <div class="text__about-arrange">
+                                <p >
+                                    Transformation has to be driven by everybody,
+                                    not just by climate groups, and we have a 
+                                    responsibility to use our influence to drive
+                                    this. 
+                                </p>
                             </div>
+                            <div class="box">
+                                <div class="box__top-div">
+                                    <a href="#" class="box__svg-link"> 
+                                        <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path class="hover__box-svg" d="M23.5303 6.53033C23.8232 6.23744 23.8232 5.76257 23.5303 5.46967L18.7574 
+                                            0.696701C18.4645 0.403808 17.9896 0.403807 17.6967 0.696701C17.4038 0.989594 17.4038 
+                                            1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 
+                                            17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM-6.55671e-08 
+                                            6.75L23 6.75L23 5.25L6.55671e-08 5.25L-6.55671e-08 6.75Z" fill="#7B7B7B"/>
+                                        </svg>   
+                                    </a>
+                                    <div class="box__hover-div">
+                                        <a href="#" class="box__hover-link">
+                                            Read more
+                                            <svg class="hover__box-svg-after" width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M24.5303 6.53033C24.8232 6.23744 24.8232 5.76257 24.5303 5.46967L19.7574 0.696701C19.4645 0.403807 18.9896 0.403807 18.6967 0.696701C18.4038 0.989594 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM-6.55671e-08 6.75L24 6.75L24 5.25L6.55671e-08 5.25L-6.55671e-08 6.75Z" fill="black"/>
+                                            </svg>
+                                                
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                     
@@ -244,21 +259,25 @@
                         The Most Popular
                     </h2>
                 </div>
-                <div class="popular__aligment">
-                    <p>
-                        View All 
-                    </p>
-                </div>
-                <div class="text__link">
-                    <a href="#"> 
-                        <img src="./assets/img/main/Arrow 1.png" alt="arrow small" class="text__arrow">
+                <div class="popular__box-link">
+                    <a href="#" class="popular__link">
+                        View All
+                        <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.5303 6.53033C23.8232 6.23744 23.8232 5.76257 23.5303 5.46967L18.7574 0.696701C18.4645 0.403807 17.9896 0.403807 17.6967 0.696701C17.4038 0.989594 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM-6.55671e-08 6.75L23 6.75L23 5.25L6.55671e-08 5.25L-6.55671e-08 6.75Z" fill="#7B7B7B"/>
+                        </svg>
                     </a>
-                    <!-- щоб застилізувати цей лінк треба переглянути підказку в lesson 19 на початку уроку 08.10.22-->
-                    <div class="text__link-hover">
-                        <a href="#" class="arrow__hover">Read more <img src="./assets/img/main/Arrow 2.png" alt="arrow" ></a>
-                        
+                    <div class="popular__hover-box">
+                        <a href="#" class="popular__hover-link">View All
+                            <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.5303 6.53033C23.8232 6.23744 23.8232 5.76257 23.5303 5.46967L18.7574 0.696701C18.4645 0.403807 17.9896 0.403807 17.6967 0.696701C17.4038 0.989594 17.4038 1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM-6.55671e-08 6.75L23 6.75L23 5.25L6.55671e-08 5.25L-6.55671e-08 6.75Z" fill="black"/>
+                                </svg>
+                                
+                        </a>
+
                     </div>
+
                 </div>
+                
             </div>
            <div class="popular__aligment">
             <div class="popular__mentor">
@@ -301,24 +320,54 @@
                 </div>
             </div>
            </div>
-            <div class="popular__button">
-                <a href="#" class="popular__link">Load More</a>
+            <div class="button__align">
+                <div class="popular__button">
+                    <a href="#" class="popular__link">Load More</a>
+                </div>
             </div>
             
         </section>
-        <section class="main__info info">
-            <div class="info__about">
-                <p class="text__about">
-                    Full-time UI/UX designer
-                    Head of Design at VeronaLabs.com
-                </p>
+        <section class="main__information information">
+            <div class="information__about">
+                <div class="information__align">
+                    <p class="text__about">
+                        Full-time UI/UX designer
+                    </p>
+                    <p class="text__about">
+                        Head of Design at VeronaLabs.com
+                    </p>
+                </div>
+                <div class="info__box">
+                    <div class="info__top-div">
+                        <a href="#" class="info__svg-link"> 
+                            <svg width="24" height="12" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="info__hover-svg" d="M23.5303 6.53033C23.8232 6.23744 23.8232 5.76257 23.5303 5.46967L18.7574 
+                                0.696701C18.4645 0.403808 17.9896 0.403807 17.6967 0.696701C17.4038 0.989594 17.4038 
+                                1.46447 17.6967 1.75736L21.9393 6L17.6967 10.2426C17.4038 10.5355 17.4038 11.0104 
+                                17.6967 11.3033C17.9896 11.5962 18.4645 11.5962 18.7574 11.3033L23.5303 6.53033ZM-6.55671e-08 
+                                6.75L23 6.75L23 5.25L6.55671e-08 5.25L-6.55671e-08 6.75Z" fill="#7B7B7B"/>
+                            </svg>   
+                        </a>
+                        <div class="info__hover-div">
+                            <a href="#" class="info__hover-link">
+                                Read more
+                                <svg class="info__box-svg-after" width="25" height="12" viewBox="0 0 25 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24.5303 6.53033C24.8232 6.23744 24.8232 5.76257 24.5303 5.46967L19.7574 0.696701C19.4645 0.403807 18.9896 0.403807 18.6967 0.696701C18.4038 0.989594 18.4038 1.46447 18.6967 1.75736L22.9393 6L18.6967 10.2426C18.4038 10.5355 18.4038 11.0104 18.6967 11.3033C18.9896 11.5962 19.4645 11.5962 19.7574 11.3033L24.5303 6.53033ZM-6.55671e-08 6.75L24 6.75L24 5.25L6.55671e-08 5.25L-6.55671e-08 6.75Z" fill="black"/>
+                                </svg>
+                                    
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="info__text">
-                <p>
+
+
+            <div class="info__text-align">
+                <p class="info__text">
                     We work with clients around the world from 
                     our headquarters in Charleston, South Carolina.
                 </p>
-                <p>
+                <p class="info__text">
                     We focus on naming, branding, brand narratives, 
                     website design and development, and brand experiences.
                 </p>
@@ -345,7 +394,7 @@
                 <div class="footer__instagram">
                     <div class="footer__instagram-svg">
                         <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.0029 5.8467C9.59691 5.8467 6.84962 8.594 6.84962 12C6.84962 15.406 9.59691 
+                            <path class="footer__svg-path" d="M13.0029 5.8467C9.59691 5.8467 6.84962 8.594 6.84962 12C6.84962 15.406 9.59691 
                             18.1533 13.0029 18.1533C16.4089 18.1533 19.1562 15.406 19.1562 12C19.1562 8.594 16.4089 
                             5.8467 13.0029 5.8467ZM13.0029 16.0004C10.8019 16.0004 9.00247 14.2064 9.00247 12C9.00247 
                             9.7936 10.7965 7.99955 13.0029 7.99955C15.2093 7.99955 17.0034 9.7936 17.0034 12C17.0034 
@@ -371,7 +420,7 @@
                 <div class="footer__facebook">
                     <div class="footer__facebook-svg">
                         <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.5845 13.5L13.251 9.15656H9.08338V6.33797C9.08338 5.14969 9.66557 3.99141 
+                            <path class="footer__svg-path" d="M12.5845 13.5L13.251 9.15656H9.08338V6.33797C9.08338 5.14969 9.66557 3.99141 
                             11.5321 3.99141H13.4268V0.293438C13.4268 0.293438 11.7074 0 10.0635 0C6.63135 0 4.38791 
                             2.08031 4.38791 5.84625V9.15656H0.572754V13.5H4.38791V24H9.08338V13.5H12.5845Z" 
                             fill="#565656"/>
@@ -380,8 +429,8 @@
                 </div>
                 <div class="footer__twitter">
                     <div class="footer__twitter-svg">
-                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19.9708 2.46378C19.4547 3.15213 18.8309 3.75258 18.1235 4.24195C18.1235 4.42177 
+                        <svg  width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="footer__svg-path" d="M19.9708 2.46378C19.4547 3.15213 18.8309 3.75258 18.1235 4.24195C18.1235 4.42177 
                             18.1235 4.60158 18.1235 4.79139C18.1292 8.0568 16.8249 11.1879 14.5029 13.4828C12.181 
                             15.7777 9.03567 17.0443 5.77211 16.9988C3.88538 17.0051 2.02281 16.5743 0.330301 
                             15.7401C0.239042 15.7003 0.18018 15.61 0.180527 15.5103V15.4005C0.180527 15.257 0.296758 
@@ -404,8 +453,8 @@
                 </div>
                 <div class="footer__linkedin">
                     <div class="footer__linkedin-svg">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.37226 24H0.396437V7.97643H5.37226V24ZM2.88167 5.79066C1.29056 5.79066 0 4.47278 
+                        <svg  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="footer__svg-path" d="M5.37226 24H0.396437V7.97643H5.37226V24ZM2.88167 5.79066C1.29056 5.79066 0 4.47278 
                             0 2.88167C1.13885e-08 2.1174 0.303604 1.38444 0.844022 0.844022C1.38444 0.303604 2.1174 0 
                             2.88167 0C3.64594 0 4.3789 0.303604 4.91932 0.844022C5.45974 1.38444 5.76334 2.1174 5.76334 
                             2.88167C5.76334 4.47278 4.47224 5.79066 2.88167 5.79066ZM23.9952 24H19.0301V16.1998C19.0301 

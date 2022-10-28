@@ -1,5 +1,6 @@
 .footer{
     background-color: $greyfooter;
+    margin-top: 90px;
     // position: relative;
 
     &__arrangement{
@@ -23,7 +24,7 @@
         }
 
     }
-
+  
     
 
     &__icons{
@@ -31,25 +32,52 @@
         display: flex;
         gap: 23px;
         padding-right: 135px;
-        
-
-
-        & .footer__instagram-svg,
-        .footer__facebook-svg,
-        .footer__twitter-svg,
-        .footer__linkedin-svg
-        {
-            width: 50px;
-            height: 50px;
-            border: solid 2px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: $grey500;
-            
-        }
-        
     }
+
+    &__instagram,
+    &__facebook,
+    &__twitter,
+    &__linkedin{
+        width: 50px;
+        height: 50px;
+        border: solid 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: grey;
+    
+    }
+    &__instagram:hover,
+    &__facebook:hover,
+    &__twitter:hover,
+    &__linkedin:hover{
+        background-color: #565656;
+    }
+    &__instagram:hover &__svg-path,
+    &__facebook:hover &__svg-path,
+    &__twitter:hover &__svg-path,
+    &__linkedin:hover &__svg-path{
+        fill: #FFFFFF;
+    }
+        
+
+
+    //     & .footer__instagram-svg,
+    //     .footer__facebook-svg,
+    //     .footer__twitter-svg,
+    //     .footer__linkedin-svg
+    //     {
+    //         width: 50px;
+    //         height: 50px;
+    //         border: solid 2px;
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         color: $grey500;
+            
+    //     }
+        
+    // }
 
     &__bottom{
         bottom: 30px;

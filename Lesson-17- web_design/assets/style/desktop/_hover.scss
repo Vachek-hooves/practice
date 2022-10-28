@@ -13,6 +13,10 @@
         position: relative;
         z-index: 5;
     }
+    &__popular-link{
+        @include subtitle(400,16px,166%,normal);
+        font-family: 'Lato';
+    }
     &__hover-div{
         position: absolute;
         width: max-content;
@@ -31,5 +35,16 @@
     &__top-div:hover &__hover-div{
         opacity: 1;
         background-color: white;
+    }
+}
+
+/* header links*/
+
+.header{
+
+    &__underline{
+        width: 40px;
+        height: 1px;
+        color: black;
     }
 }

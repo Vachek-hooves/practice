@@ -16,6 +16,7 @@ body {
 
 .footer {
   background-color: #F4F4F4;
+  margin-top: 90px;
 }
 .footer__arrangement {
   display: flex;
@@ -35,17 +36,20 @@ body {
   gap: 23px;
   padding-right: 135px;
 }
-.footer__icons .footer__instagram-svg,
-.footer__icons .footer__facebook-svg,
-.footer__icons .footer__twitter-svg,
-.footer__icons .footer__linkedin-svg {
+.footer__instagram, .footer__facebook, .footer__twitter, .footer__linkedin {
   width: 50px;
   height: 50px;
-  border: solid 2px;
+  border: solid 1px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #7B7B7B;
+  color: grey;
+}
+.footer__instagram:hover, .footer__facebook:hover, .footer__twitter:hover, .footer__linkedin:hover {
+  background-color: #565656;
+}
+.footer__instagram:hover .footer__svg-path, .footer__facebook:hover .footer__svg-path, .footer__twitter:hover .footer__svg-path, .footer__linkedin:hover .footer__svg-path {
+  fill: #FFFFFF;
 }
 .footer__bottom {
   bottom: 30px;
@@ -209,37 +213,126 @@ body {
 }
 .main__popular .popular__header-aligment {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__popular .popular__header-aligment .popular__box-link {
+  position: relative;
+  z-index: 5;
+}
+.main__popular .popular__header-aligment .popular__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  text-align: normal;
+  text-decoration: none;
+  font-family: "Lato";
+  color: #7B7B7B;
+}
+.main__popular .popular__header-aligment .popular__hover-box {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  opacity: 0;
+}
+.main__popular .popular__header-aligment .popular__hover-link {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: #000000;
+}
+.main__popular .popular__header-aligment .popular__box-link:hover .popular__hover-box {
+  opacity: 1;
+  background-color: white;
 }
 .main__popular .popular__aligment {
   display: flex;
   width: 48.7179487179%;
   gap: 30px;
 }
+.main__popular .button__align {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px 90px;
+}
 .main__popular .popular__button {
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 42px;
+  background-color: #565656;
+  color: white;
 }
-.main__info {
+.main__popular .popular__button .popular__link {
+  text-decoration: none;
+  color: white;
+  align-items: center;
+}
+
+.popular__button:hover {
+  background-color: black;
+}
+
+.main__information {
   width: 81.25%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   gap: 230px;
 }
-.main__info .info__about,
-.main__info .info__text {
-  width: 40.1709401709%;
+.main__information .information__about,
+.main__information .information__text,
+.main__information .information__align {
+  position: relative;
+  width: 470px;
+  height: 192px;
 }
-.main__info .text__about {
+.main__information .text__about {
+  margin: 0;
   color: #000000;
 }
-.main__info .info__text {
+.main__information .info__text {
   font-family: Lato;
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
   line-height: 32px;
   letter-spacing: 0.005em;
+  color: #565656;
+}
+
+.info__box {
+  position: absolute;
+  top: 86px;
+}
+.info__top-div {
+  position: relative;
+  z-index: 5;
+}
+.info__hover-div {
+  position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  top: -5px;
+  opacity: 0;
+}
+.info__hover-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  text-align: normal;
+  font-family: "Lato";
   color: #000000;
+  text-decoration: none;
+}
+.info__top-div:hover .info__hover-div {
+  opacity: 1;
+  background: white;
 }
 
 /*text arrow */
@@ -255,6 +348,13 @@ body {
 .box__top-div {
   position: relative;
   z-index: 5;
+}
+.box__popular-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  text-align: normal;
+  font-family: "Lato";
 }
 .box__hover-div {
   position: absolute;
@@ -276,6 +376,13 @@ body {
 .box__top-div:hover .box__hover-div {
   opacity: 1;
   background-color: white;
+}
+
+/* header links*/
+.header__underline {
+  width: 40px;
+  height: 1px;
+  color: black;
 }
 
 .header .header__container .header__menu .link__decor {
@@ -349,7 +456,7 @@ body {
   color: #000000;
 }
 
-.main__info .text__about {
+.main__information .text__about {
   font-family: "Red Hat Display";
   font-style: normal;
   font-weight: 400;
@@ -386,10 +493,5 @@ body {
   font-size: 12px;
   line-height: 166%;
   letter-spacing: 0.1em;
-  color: #000000;
-}
-
-.main__popular .popular__button .popular__link {
-  text-decoration: none;
   color: #000000;
 }/*# sourceMappingURL=style.css.map */

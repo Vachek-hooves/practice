@@ -207,12 +207,52 @@
 
     & .popular__header-aligment{
         display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         & .popular__h2{
             @extend %textheading;
         }
+
+        .popular__box-link{
+            position: relative;
+            z-index: 5;
+        }
+
+        .popular__link{
+            @include subtitle (400,16px,166%,normal);
+            text-decoration: none;
+            font-family: 'Lato';
+            color: $grey500;
+            // letter-spacing: 0.1em;
+        }
+        .popular__hover-box{
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: max-content;
+            opacity: 0;
+        }
+
+        .popular__hover-link{
+            font-family: $lato;
+            text-decoration: none;
+            color: $black;
+            // letter-spacing: 0.1em;
+
+        }
+
+        .popular__box-link:hover .popular__hover-box{
+            opacity: 1;
+            background-color: white;
+        }
     
     }
+
+
+
+
+
 
     & .popular__aligment{
         display: flex;
@@ -236,38 +276,101 @@
         }
     }
 
+    & .button__align{
+        display: flex;
+        justify-content: center;
+        margin: 50px 0px 90px;
+    }
 
     & .popular__button{
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 180px;
+        height: 42px;
+        background-color: #565656;
+        color: white;
 
         & .popular__link{
-            @extend %linkdecor;
+            // @extend %linkdecor;
+            text-decoration: none;
+            color: white;
+            align-items: center;
+
         }
+
+        
+
     }
 }
+.popular__button:hover{
+    background-color: black;
+}
 
-.main__info{
+
+
+.main__information{
+
     @include sizepercent (1170px,1440px);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     gap: 230px;
+    // position: relative;
 
-    & .info__about,
-    .info__text{
-        @include sizepercent (470px,1170px);
+    & .information__about,
+    .information__text,
+    .information__align{
+        position: relative;
+        width: 470px;
+        height: 192px;
+        // @include sizepercent (470px,1170px);
     }
 
     & .text__about{
+        margin: 0;
         @extend %infoheader;
         color: $black
     }
+
     & .info__text{
         // display:flex;
         @include text (Lato,normal,400,19px,32px,0.005em);
-        color: $black
+        color: $grey700;
         
     }
 
 }
 
+.info{
+
+   &__box{
+    position: absolute;
+    top: 86px;
+   }
+
+   &__top-div{
+    position: relative;
+    z-index: 5;
+   }
+
+   &__hover-div{
+        position: absolute;
+        width: max-content;
+        top: -5px;
+        opacity: 0;
+   }
+
+   &__hover-link{
+    @include subtitle(400,16px,166%,normal);
+    font-family: 'Lato';
+    color: #000000;
+    text-decoration: none;
+   }
+
+   &__top-div:hover &__hover-div{
+    opacity: 1;
+    background: white;
+   }
+}

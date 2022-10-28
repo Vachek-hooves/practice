@@ -116,18 +116,11 @@
     }
     @media (max-width:770px){
         &__icons{
-            // max-width: 768px;
-            // margin: 0 auto;
             padding: 40px 0px;
         }
     }
     
-    // @media (max-width:426px){
-    //     &__icons{
-    //         max-width: 320px;
-    //         margin: 0 auto;
-    //     }
-    // } 
+
 
     &__instagram,
     &__facebook,
@@ -140,8 +133,7 @@
         justify-content: center;
         align-items: center;
         color: grey;
-        
-
+    
     }
     &__instagram:hover,
     &__facebook:hover,
