@@ -14,16 +14,16 @@ console.log((driveSize*1024/file).toFixed(0),'files you can upload');
 
 
 
-let money = prompt ('how much money do you have');
+let money = prompt ('how much money do you have to buy chocolate');
     chocolate = prompt ('how much chocolate cost?');
 console.log((money/chocolate).toFixed(),'amout of chocolates you will buy' );
 console.log((money%chocolate).toFixed(2),'money remain in wallet)');
 
-let numb = prompt ('enter your number')
+let numb = prompt ('enter your number & find it reversed')
 console.log(numb.split("").reverse().join(""));
 
 
-let amount = prompt ('how much money do you put');
+let amount = prompt ('how much money do you put to bank');
     months = 2;
     yearPercent = 5;
 console.log((amount/100*(yearPercent/12)*2).toFixed(1),"$ in two months");
