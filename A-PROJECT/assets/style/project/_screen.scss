@@ -84,6 +84,7 @@
             background-color: $hlhover;
             border-radius: 50px;
             color:$btext;
+            transition: 0.5s;
         }
        
 
@@ -98,7 +99,7 @@
     }
     @media screen and (max-width: 426px){
         &__button{
-            width: 416px;
+            width: 424px;
         }
     }
     @media screen and (max-width: 376px){

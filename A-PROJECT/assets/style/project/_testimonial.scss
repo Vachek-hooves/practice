@@ -1,17 +1,27 @@
 .test{
     margin: 0 auto;
     max-width: 1170px;
-    margin-bottom: 120px;
+    margin: 120px 0;
+    // margin-bottom: 120px;
+    // margin-top: 120px;
 
     &__h2{
         padding-top: 80px;
         text-align: center;
+        color: $testh2;
+        position: relative;
+    }
+    &__h2-fit{
+        font-family: 'Work Sans';
+        font-size: 44px;
+        line-height: 100%;
+        font-weight: 700;
+    
     }
     &__box{
         height: 100%;
         background-color: $testbg;
         border-radius: 50px;
-        margin-top: 120px;
         position: relative;
     }
     @media screen and (max-width:426px){
@@ -44,6 +54,7 @@
 @media screen and (max-width:1024px){
     .test{
         max-width:978px;
+        margin: 40px 0;
     }
 }
 @media screen and (max-width:768px){
@@ -67,7 +78,8 @@
     display: flex;
     justify-content: center;
     gap: 100px;
-    padding-top: 80px;
+    padding: 80px 0;
+    // padding-top: 80px;
 
     &__man{
         max-width: 465px;
@@ -75,7 +87,7 @@
         background: $smallbg;
         border-radius: 50px;
         display: flex;
-        margin-bottom: 80px;
+        // margin-bottom: 80px;
         border: 1px solid $button;
         z-index: 2;
 
@@ -95,7 +107,7 @@
         background-color: $smallbg;
         border-radius: 50px;
         display:flex;
-        margin-bottom: 80px;
+        // margin-bottom: 80px;
         border: 1px solid $button;
         z-index: 2;
 

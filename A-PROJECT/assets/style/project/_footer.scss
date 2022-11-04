@@ -1,6 +1,7 @@
 .footer{
     max-width: 1170px;
     margin: 0 auto;
+    font-family: $mon;
     
     &__head{
         display: flex;
@@ -23,10 +24,14 @@
         flex-direction: column;
 
         &__h2{
-            @include font (700,40px,122%);
+            @include font (700,40px,110%);
             font-family: $work;
             margin-bottom: 20px;
             color: $header;
+        }
+        &__text-fit{
+            @include font(500,18px,144%);
+            color: $testh2;
         }
     }
     @media screen and (max-width:426px){
@@ -62,6 +67,7 @@
                 background-color: $hoverbutton;
                 border-radius: 50px;
                 color: white;
+                transition: 0.5s;
             }
         }
 
@@ -87,7 +93,7 @@
                 text-align: center;
                 justify-content: space-evenly;
                 
-                // position: relative;
+
             }
     }
 
@@ -110,6 +116,21 @@
         }
     }
 
+    &__navi-links{
+        display: flex;
+        justify-content: space-around;
+        gap: 169px;
+    }
+    @media screen and (max-width:1024px){
+        &__navi-links{
+            // display: flex;
+            gap: 40px;
+        }
+    }
+
+
+
+
     &__data{
         padding-top: 2px;
     }
@@ -122,7 +143,9 @@
 
     &__corp{
         &__text{
-            @include font(300,12px,180%);
+            @include font(300,12px,22px);
+            color: $corp;
+            letter-spacing: 0.01em;
         }
     }
 
@@ -161,13 +184,16 @@
         &__text{
             padding: 8px 30px 22px 0px;
             height: 40px;
+            color: $header;
+            @include font(600,16px,160%);
         }
         &__a{
             display: flex;
             gap: 10px;
             flex-direction: column;
             align-items: flex-start;
-            color: pink;
+            font-family: $mon;
+
 
         }
         &__adjust{
@@ -175,6 +201,18 @@
             gap: 15px;
             position: relative;
         }
+        & .href{
+            @include font(500,16px,160%);
+            color: $text;
+            // line-height: 26px;
+            // font-family: $mon;
+            // margin: 10px 0;
+        }
+        & .href:hover{
+            color: $hlhover;
+            transition: 0.2s;
+        }
+
 
     }
 
@@ -214,21 +252,26 @@
 .about__media__meta:hover .about__media__hover{
     opacity: 1;
     transform: scale(1.5);
+    transition: 0.3s;
 }
 .about__media__twitter:hover .about__media__hover-twitter{
     opacity: 1;
     transform: scale(1.5);
+    transition: 0.3s;
 }
 .about__media__insta:hover .about__media__hover-insta{
     opacity: 1;
     transform: scale(1.5);
+    transition: 0.3s;
 }
 
 .footer__demo__arrow:hover{
     background-color: #9C69E2;
     color: #FFFFFF; 
+    transition: 0.5s;
 }
 .footer__demo__arrow:hover .footer-svg{
     stroke: white;
+    transition: 0.5s;
 }
 

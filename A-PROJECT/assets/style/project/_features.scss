@@ -7,6 +7,7 @@
 @media screen and (max-width: 1024px){
     .features{
         max-width: 880px;
+        margin-top: 60px;
     }
 }
 
@@ -39,10 +40,21 @@
         font-family: $work;
         color: $header;
     }
+    @media screen and (max-width: 1024px){
+        &__h2{
+            margin-bottom: 20px;
+        }
+    }
+
 
     &__text{
         @include font (500,18px,136%);
         color: $text;
+    }
+}
+@media screen and (max-width: 1024px){
+    .bunner{
+        padding-bottom: 35px;
     }
 }
 @media screen and (max-width: 768px){
@@ -65,15 +77,27 @@
         height: 400px;
         background-color: $databg;
         border-radius: 50px;
+  
+    }
+    & .hours-bg{
+        background-color: $bghours;
+    }
+    & .print-bg{
+        background-color: $bgprint;
+    }
+    & .security-bg{
+        background-color: $bgsecutity;
     }
 
+    &__text-base{
+        position: relative;
+    }
     &__h2{
         @include font(400,24px,130%);
         margin: 62px 0px 20px;
         color: $header;
     }
     &__text{
-
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -82,6 +106,7 @@
         color: #4B5D68;
 
     }
+
     &__link{
         display: flex;
         align-items: center;
@@ -95,5 +120,7 @@
     &__link:hover{
         color: $datalink;
     }
+
+    
 
 }

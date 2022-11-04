@@ -54,19 +54,24 @@
             align-items: center;
             position: fixed;
             top: 0;
-            right: -300px;
+            right: -412px;
             background:$knob;
-            width: 300px;
-            height: 400px;
+            width: 390px;
+            height: 252px;
             padding-top: 65px;
+            border-radius: 30px;
+            margin-top: 10px;
+            margin-right: 20px;
+            opacity: 0.99;
+        }
     
         }
-    }
+    
     &__href{
         color: $hl;
         text-decoration: none;
         display: block;
-        padding: 37px 20px;
+        padding: 18px 20px;
         font-size: 16px;
         line-height: 1;
         transition: 0.3s;
@@ -75,6 +80,7 @@
 
     &__href:hover{
         color:$hlhover;
+        transition: 0.5s;
     }
 
     &__hamburger{
@@ -155,7 +161,12 @@
         right: 0;
     }
 
+}
 
+@media screen and (max-width:1024px){
+    .header{
+        max-width: 860px;
+    }
 }
 
 
@@ -175,6 +186,7 @@
         border-color: #9C69E2;
         font-size: 16px;
         position: relative;
+        box-shadow: 0px 5px 5px rgb(75 93 104 / 10%);
 
             &__arrow{
             width: 100%;
@@ -184,7 +196,8 @@
             align-items: center;
             text-align: center;
             justify-content: space-evenly;      
-            // position: relative;
+            color: $header;
+
         }
     }
 }
@@ -198,9 +211,11 @@
     .button__demo__arrow:hover {
         background-color: #9C69E2;
         color: white;
+        transition: 0.5s;
     }
     
     .button__demo__arrow:hover .button__arrow-hover{
         stroke: white;
+        transition: 0.5s;
     }
     
