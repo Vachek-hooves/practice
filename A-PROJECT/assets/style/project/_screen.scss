@@ -86,6 +86,11 @@
             color:$btext;
             transition: 0.5s;
         }
+
+        &__link:active{
+            background-color: #7425e3;
+        }
+
        
 
     }

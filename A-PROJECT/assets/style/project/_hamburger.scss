@@ -177,7 +177,7 @@
 
     &__demo{
         width: 210px;
-        height: 60px;
+        height: 61px;
         border-radius: 50px;
         border: 1px solid;
         display: flex;
@@ -218,4 +218,11 @@
         stroke: white;
         transition: 0.5s;
     }
+
+    .button__demo__arrow:active{
+        background-color: #7425e3;
+    }
+
+
+
     
