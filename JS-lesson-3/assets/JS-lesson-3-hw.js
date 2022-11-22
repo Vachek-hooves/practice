@@ -72,6 +72,22 @@
     
 /*NORMAL N1 */
 
+
+
+// let num = prompt('enter your number');
+//     reverse = num.split("").reverse().join("")
+
+// switch (reverse==num){
+//     case true:
+//     alert("it's a palindrome");
+//     break;
+
+//     case false:
+//     alert("it's not a polinrom");
+//     break;
+// }
+    
+
 /*NORMAL N2*/
 // let stuff = +prompt ('how much you pay')
 
@@ -84,30 +100,49 @@
 //     alert(((stuff/100)*7).toFixed(1)+' your discount');
 // }
 
-// let pey = +prompt('how much you pay')
+// let pey = +prompt('how much you pay');
 
-/*NORMAL #4  */
 
-// let day = 1;
+/*NORMAL #3*/
 
-// while (day < 7){
-//     alert(day);
-//     day++;
+// let day = ['Monday','Tuesday','Wednesday'];
+
+// for (let i = 0; day.length < 7; i++){
+//     alert(day[i]);
+//     // return i;
+
 // }
-function calcSum(numOne, numTwo) {
-    let result = 1;
-    for (let i = 0; i < numTwo; i++){
-        result *= numOne;
-        console.log(i);
-        console.log(result);
-    }
-    return result;
+
+
+
+/*NORMAL #4*/
+
+
+
+
+/*EVENTS */
+
+let element = document.getElementById('element');
+// element.onclick = function(event){
+//     clickTrigger(event)
+// }
+
+// function clickTrigger(){
+//     // console.log(event.target)
+//     console.log(el)
+// }
+
+element.onclick = function (event){
+    event.target.innerHTML = + event.target.innerHTML + 1
 }
-calcSum(2,3);
 
-// console.log(calcSum(2,3));
+let = document.getElementById('counter'),
+    counterBtn = document.getElementById('counterBtn');
 
 
+counterBtn.onclick = function(){
+    counter.innerHTML = +counter.innerHTML + 1
+}
 
 
 

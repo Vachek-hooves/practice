@@ -188,6 +188,7 @@ main {
   .weare__box {
     gap: 10px;
     padding: 10px;
+    flex-direction: column;
   }
 }
 .weare__h2 {
@@ -578,7 +579,7 @@ main {
 }
 @media screen and (max-width: 426px) {
   .people__man {
-    max-width: 346px;
+    max-width: 316px;
   }
 }
 .people__lady {
@@ -595,7 +596,7 @@ main {
 }
 @media screen and (max-width: 426px) {
   .people__lady {
-    max-width: 346px;
+    max-width: 316px;
   }
 }
 .people__details {
@@ -727,6 +728,7 @@ main {
   align-items: center;
   text-align: center;
   justify-content: space-evenly;
+  color: #212353;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
 }
 .footer__logo {
