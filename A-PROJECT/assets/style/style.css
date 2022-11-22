@@ -1005,6 +1005,7 @@ main {
 @media screen and (max-width: 496px) {
   .header__href {
     font-size: 12px;
+    padding: 16px 18px;
   }
 }
 .header__href:hover {
