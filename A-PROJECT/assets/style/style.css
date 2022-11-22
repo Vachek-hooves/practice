@@ -112,18 +112,8 @@ main {
   .screen__button {
     top: 378px;
     position: absolute;
-    width: 712px;
+    width: 100%;
     height: 42px;
-  }
-}
-@media screen and (max-width: 426px) {
-  .screen__button {
-    width: 424px;
-  }
-}
-@media screen and (max-width: 376px) {
-  .screen__button {
-    width: 318px;
   }
 }
 .screen__img {
@@ -266,7 +256,7 @@ main {
 }
 @media screen and (max-width: 768px) {
   .features {
-    max-width: 425px;
+    width: 100%;
   }
 }
 .bunner {
@@ -315,6 +305,11 @@ main {
   height: 400px;
   background-color: #F0FAF9;
   border-radius: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .card__data {
+    width: 100%;
+  }
 }
 .card .hours-bg {
   background-color: #F6F0FD;
@@ -527,6 +522,7 @@ main {
 @media screen and (max-width: 768px) {
   .test__vector1 {
     transform: scale(0.6);
+    right: 0;
   }
 }
 .test__vector2 {
@@ -536,7 +532,7 @@ main {
 }
 @media screen and (max-width: 768px) {
   .test__vector2 {
-    top: 440px;
+    top: 268px;
   }
 }
 
@@ -577,9 +573,19 @@ main {
 .people__man__img {
   padding: 50px 15px 160px 30px;
 }
+@media screen and (max-width: 1024px) {
+  .people__man {
+    max-width: 326px;
+  }
+}
 @media screen and (max-width: 426px) {
   .people__man {
     max-width: 316px;
+  }
+}
+@media screen and (max-width: 356px) {
+  .people__man {
+    max-width: 300px;
   }
 }
 .people__lady {
@@ -594,9 +600,19 @@ main {
 .people__lady__img {
   padding: 50px 15px 160px 30px;
 }
+@media screen and (max-width: 1024px) {
+  .people__lady {
+    max-width: 326px;
+  }
+}
 @media screen and (max-width: 426px) {
   .people__lady {
     max-width: 316px;
+  }
+}
+@media screen and (max-width: 356px) {
+  .people__lady {
+    max-width: 300px;
   }
 }
 .people__details {
@@ -623,6 +639,11 @@ main {
   color: #4B5D68;
   padding-top: 18px;
 }
+@media screen and (max-width: 356px) {
+  .people__details__text {
+    font-size: 14px;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .people {
@@ -645,7 +666,7 @@ main {
   justify-content: space-between;
   margin-bottom: 100px;
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
   .footer__head {
     display: flex;
     flex-direction: column;
@@ -746,7 +767,7 @@ main {
   justify-content: space-between;
   margin-bottom: 100px;
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
   .footer__navi {
     flex-direction: column;
   }
@@ -981,6 +1002,11 @@ main {
   transition: 0.3s;
   color: #4B5D68;
 }
+@media screen and (max-width: 496px) {
+  .header__href {
+    font-size: 12px;
+  }
+}
 .header__href:hover {
   color: #8A40EE;
   transition: 0.5s;
@@ -1071,6 +1097,7 @@ main {
   border-color: #9C69E2;
   font-size: 16px;
   position: relative;
+  color: #212353;
   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
 }
 .button__demo__arrow {
@@ -1082,6 +1109,13 @@ main {
   text-align: center;
   justify-content: space-evenly;
   color: #212353;
+}
+@media screen and (max-width: 768px) {
+  .button__demo {
+    width: 72px;
+    height: 98px;
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 426px) {

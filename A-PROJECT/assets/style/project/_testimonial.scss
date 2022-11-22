@@ -37,6 +37,7 @@
     @media screen and (max-width:768px){
         &__vector1{
             transform: scale(0.6);
+            right: 0;
         
         }
     }
@@ -47,7 +48,7 @@
     }
     @media screen and (max-width:768px){
         &__vector2{
-            top: 440px;
+            top: 268px;
         }
     }
 }
@@ -95,9 +96,19 @@
             padding: 50px 15px 160px 30px;
         }
     }
+    @media screen and (max-width:1024px){
+        &__man{
+            max-width: 326px;
+        }
+    }
     @media screen and (max-width:426px){
         &__man{
             max-width: 316px;
+        }
+    }
+    @media screen and (max-width:356px){
+        &__man{
+            max-width: 300px;
         }
     }
 
@@ -115,9 +126,19 @@
             padding: 50px 15px 160px 30px;
         }
     }
+    @media screen and (max-width:1024px){
+        &__lady{
+            max-width: 326px;
+        }
+    }
     @media screen and (max-width:426px){
         &__lady{
             max-width: 316px;
+        }
+    }
+    @media screen and (max-width:356px){
+        &__lady{
+            max-width: 300px;
         }
     }
 
@@ -140,6 +161,11 @@
             @include font(400,16px,160%);
             color: $text;
             padding-top: 18px;
+        }
+        @media screen and (max-width:356px){
+            &__text{
+                font-size: 14px;
+            }
         }
 
     }

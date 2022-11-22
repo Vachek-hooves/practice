@@ -98,20 +98,20 @@
         &__button{
             top: 378px;
             position: absolute;
-            width: 712px;
+            width: 100%;
             height: 42px;
         }
     }
-    @media screen and (max-width: 426px){
-        &__button{
-            width: 424px;
-        }
-    }
-    @media screen and (max-width: 376px){
-        &__button{
-            width: 318px;
-        }
-    }
+    // @media screen and (max-width: 426px){
+    //     &__button{
+    //         width: 424px;
+    //     }
+    // }
+    // @media screen and (max-width: 376px){
+    //     &__button{
+    //         width: 318px;
+    //     }
+    // }
 
     &__img{
         margin-top: 82px;

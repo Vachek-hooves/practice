@@ -78,6 +78,13 @@
         color: $text;
     }
 
+    @media screen and (max-width:496px){
+        &__href{
+            font-size: 12px;
+        }
+    }
+    
+
     &__href:hover{
         color:$hlhover;
         transition: 0.5s;
@@ -186,6 +193,7 @@
         border-color: #9C69E2;
         font-size: 16px;
         position: relative;
+        color: $header;
         box-shadow: 0px 5px 5px rgb(75 93 104 / 10%);
 
             &__arrow{
@@ -200,6 +208,14 @@
 
         }
     }
+    @media screen and (max-width:768px){
+        &__demo{
+            width: 72px;
+            height: 98px;
+            font-size: 12px;
+        }
+    }
+
 }
 @media screen and (max-width:426px){
     .button__setting{

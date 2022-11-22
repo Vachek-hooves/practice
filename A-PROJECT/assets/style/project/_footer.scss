@@ -9,7 +9,7 @@
         margin-bottom: 100px;
     }
 
-    @media screen and (max-width:426px){
+    @media screen and (max-width:768px){
         &__head{
             display: flex;
             flex-direction: column;
@@ -123,7 +123,7 @@
         margin-bottom: 100px;
         
     }
-    @media screen and (max-width:426px){
+    @media screen and (max-width:768px){
         &__navi{
             flex-direction: column;
         }
