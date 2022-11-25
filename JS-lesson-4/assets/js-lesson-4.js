@@ -102,6 +102,47 @@
 /*NORMAL 2 */
 
 
+function chekNumb (a,b){
+    for (a ; a <= b; a++){
+        console.log(a);
+        numb = a;
+        perfNumb (numb)
+        function perfNumb (numb){
+            zero = 0;
+        }
+            for ( i=1 ; i<= numb/2 ; i++){
+                if (numb % i ===0){
+                    zero +=i;
+                }
+            }
+            if (zero === numb && zero !==0){
+                console.log("it is perfect number");
+            }else if (console.log());
+        }
+    
+}
+
+chekNumb(+prompt('first numb'),+prompt('second numb'));
+
+// function range (a,b){
+//     i = 0;
+//     for( a; a <= b; a ++){
+//         numb = a;
+//         zero = 0;
+//         for(x =1; x <= numb/2 ; i++){
+//             if (numb % i === 0){
+//                 zero +=x;
+//             }
+//         }
+//         if ( zero === x && zero !==0){
+//                     console.log("it is perfect number");
+//                 }else if (console.log('it is not perfect number'));
+//     }
+// }
+//  range(+prompt('first number'), +prompt('second number'));
+
+
+
 
 
 // function calcSumm (numOne, numTwo){
