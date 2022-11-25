@@ -120,30 +120,6 @@
 
 
 
-/*EVENTS */
-
-let element = document.getElementById('element');
-// element.onclick = function(event){
-//     clickTrigger(event)
-// }
-
-// function clickTrigger(){
-//     // console.log(event.target)
-//     console.log(el)
-// }
-
-element.onclick = function (event){
-    event.target.innerHTML = + event.target.innerHTML + 1
-}
-
-let = document.getElementById('counter'),
-    counterBtn = document.getElementById('counterBtn');
-
-
-counterBtn.onclick = function(){
-    counter.innerHTML = +counter.innerHTML + 1
-}
-
 
 
 
