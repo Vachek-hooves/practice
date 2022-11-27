@@ -1,7 +1,7 @@
-/* MINIMUM #1  */
+/* MINIMUM #1  Напиши всі можливі варіанти створення функцій. */
 
 //function declaration
-// calcSumm(4,7)
+
 // function calcSumm (sum1, sum2){
 //     console.log(sum1 * sum2)
 // }
@@ -16,10 +16,14 @@
 // };
 // showMessage();
 
-// arrow function expression (=>)
+/* arrow function expression (=>) */
+
+// let calcSumm = (n1,n2) => n1 * n2 + n2;
+
+// console.log(calcSumm(+prompt('first number'),+prompt('second number')));
 
 
-/*MINIMUM #2 */
+/*MINIMUM #2 Створи функцію, яка буде виводити кількість переданих їй аргументів.*/
 
 
 // function argSumm (arg1,arg2,arg3){
@@ -27,11 +31,11 @@
 //     console.log("value of 'arg2' is :" + arg2);
 //     console.log("value of 'arg3' is :" + arg3);   
 // }
-// argSumm(+prompt("enter number"),+prompt("enter number"),+prompt("enter number"));
+// argSumm(+prompt("first argument"),+prompt("second argument"),+prompt("third argument"));
 
-/*MINIMUM 3*/
+/*MINIMUM 3 Напиши функцію, яка приймає 2 числа і повертає */
 
-// function comparison (a= , b=){
+// function comparison (a , b){
 //     if(a<b){
 //         console.log('-1');
 //     }else if (a>b){
@@ -41,9 +45,9 @@
 //     }
 // }
 
-// comparison(+prompt('enter'),+prompt('enter'));
+comparison(+prompt('enter'),+prompt('enter'));
 
-/*MINIMUM 4*/
+/*MINIMUM 4 Напиши функцію, яка обчислює факторіал переданого їй числа. */
 
 // function factorial (numb){
 //     let result =1;
@@ -58,53 +62,58 @@
 
 
 
-/*MINIMUM 5*/
+/*MINIMUM 5 Напиши функцію, яка приймає три окремі цифри і 
+перетворює їх в одне число. Наприклад: цифри 1, 4, 9 перетворяться в число 149.*/
 
-// function splitNumber(a,b,c){
-//     let number = `${a}${b}${c}`;
-//     console.log(number)
-// }
-// splitNumber(prompt("put numbe"),prompt("put numbe"),prompt("put numbe"));
-
-
-/* MINIMUM 6*/
-
-// function area (a,b){
-//     if (a == b){
-//         num=a * 4 ;
-//         console.log(num)
-//     } else if ( b < a || a < b){
-//         num = a * b;
-//         console.log(num);
-//     }
-// }
-
-// area(prompt('enter number'),prompt('enter number'));
+function splitNumber(a,b,c){
+    let number = `${a}${b}${c}`;
+    console.log(number)
+}
+splitNumber(prompt("put numbe"),prompt("put numbe"),prompt("put numbe"));
 
 
-/* NORMAL 1*/
+/* MINIMUM 6 Напиши функцію, яка приймає довжину і ширину прямокутника і 
+обчислює його площу. Якщо в функцію передали 1 параметр, то вона обчислює площу квадрата.*/
 
-// function perfNumb (a){
-//     let zero = 0;
-//     for ( i=1; i <= a/2 ; i++){
-//         if (a % i ===0){
-//             zero += i;
-//         }
-//     }
-//     if ( zero === a && zero !==0){
-//         console.log("it is perfect number");
-//     }else if (console.log('it is not perfect number'));
-// }
+function area (a,b){
+    if (a == b){
+        num=a * 4 ;
+        console.log(num)
+    } else if ( b < a || a < b){
+        num = a * b;
+        console.log(num);
+    }
+}
 
-// perfNumb(+prompt('enter number'));
+area(prompt('enter number'),prompt('enter number'));
 
 
-/*NORMAL 2 */
+/* NORMAL 1 Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”. 
+Досконале число - це число, яке дорівнює сумі всіх своїх дільників.*/
+
+function perfNumb (a){
+    let zero = 0;
+    for ( i=1; i <= a/2 ; i++){
+        if (a % i ===0){
+            zero += i;
+        }
+    }
+    if ( zero === a && zero !==0){
+        console.log("it is perfect number");
+    }else if (console.log('it is not perfect number'));
+}
+
+perfNumb(+prompt('enter number'));
+
+
+/*NORMAL 2 Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону, 
+і виводить тільки ті числа з діапазону, які є досконалими. Використовуй написану раніше 
+функцію, щоб дізнатися, чи є це число досконалим.*/
 
 
 function chekNumb (a,b){
     for (a ; a <= b; a++){
-        console.log(a);
+        // console.log(a);
         numb = a;
         perfNumb (numb)
         function perfNumb (numb){
@@ -116,65 +125,13 @@ function chekNumb (a,b){
                 }
             }
             if (zero === numb && zero !==0){
-                console.log("it is perfect number");
+                console.log(a+ ":" + " is a perfect number")
+                // console.log("it is perfect number");
+                
             }else if (console.log());
         }
     
 }
+// chekNumb(1,30);
+chekNumb(+prompt("first number to find 'perfet number' in range from"),+prompt("second number to find 'perfet number' in range to"));
 
-chekNumb(+prompt('first numb'),+prompt('second numb'));
-
-// function range (a,b){
-//     i = 0;
-//     for( a; a <= b; a ++){
-//         numb = a;
-//         zero = 0;
-//         for(x =1; x <= numb/2 ; i++){
-//             if (numb % i === 0){
-//                 zero +=x;
-//             }
-//         }
-//         if ( zero === x && zero !==0){
-//                     console.log("it is perfect number");
-//                 }else if (console.log('it is not perfect number'));
-//     }
-// }
-//  range(+prompt('first number'), +prompt('second number'));
-
-
-
-
-
-// function calcSumm (numOne, numTwo){
-//     if (numTwo === 3){
-//         return numOne;
-//     } else {
-//         return numOne * calcSumm(numOne, numTwo - 1);
-//     }
-// }
-
-// console.log(calcSumm(4,5));
-
-
-// function getSumm(numOne, numTwo){
-//     let numSumm = calcSumm(numOne,numTwo);
-//     console.log(numSumm);
-// }
-// function calcSumm(numOne, numTwo){
-//     return numOne + numTwo;
-
-// }
-// getSumm(2,6);
-
-
-
-
-
-// function calcSumm(numOne, numTwo){
-//     let result = 1;
-//     for (let i = 0; i < numTwo; i++){
-//         result *= numOne;
-//     }
-//     return result;
-// }
-// console.log (calcSumm(3,4));

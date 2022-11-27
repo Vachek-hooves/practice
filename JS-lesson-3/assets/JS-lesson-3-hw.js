@@ -105,13 +105,77 @@
 
 /*NORMAL #3*/
 
-// let day = ['Monday','Tuesday','Wednesday'];
+let day = ['Monday',"Tuesday","Wednasday","Thursday","Friday","Saturday","Sunday"];
+    
+for (i = 0; day.length = 7; i++){
+    confirm(day[i]);
+    
+}
 
-// for (let i = 0; day.length < 7; i++){
-//     alert(day[i]);
-//     // return i;
+
+// let weekDay = prompt("what day is it today? Chose the number where 0  is a Monday, 6 is a Sunday")
+
+// if(weekDay==0){
+//     first = 'monday';
+
+// }else if (weekDay==1){
+//     first = 'tuesday';
+
+// }else if (weekDay==2){
+//     first = 'Wednesday'
+
+// }else if (weekDay==3){
+//     first = 'Thursday'
+
+// }else if (weekDay==4){
+//     first = 'Friday'
+
+// }else if (weekDay==5){
+//     first = 'Saturday'
+
+// }else if (weekDay==6){
+//     first = 'Sunday'
 
 // }
+// console.log(first)
+
+
+// let today = new Date();
+// console.log(today)
+
+
+
+
+// first = day = ['Monday',"Tuesday","Wednasday","Thursday","Friday","Saturday","Sunday"];
+
+
+// let dates = new Date();
+
+// let currentDay = dates.getDay();
+
+// alert (`Сьогодні ${day[currentDay]}`)
+// let userDays = true;
+
+// while (userDays === true){
+//     userDays = confirm ("want to see next day?");
+//     if (userDays === true){
+//         if(currentDay === 6){
+//             currentDay = 0;
+//         } else {
+//             currentDay += 1;
+//         }
+//         alert (day[currentDay])
+//     } else if (userDays === false) {
+//     break 
+//     }
+// }
+
+
+
+
+
+
+
 
 
 
