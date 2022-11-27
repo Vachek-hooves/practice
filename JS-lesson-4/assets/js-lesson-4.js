@@ -18,9 +18,9 @@ showMessage();
 
 /* arrow function expression (=>) */
 
-let calcSumm = (n1,n2) => n1 * n2 + n2;
+let calcSummTwo = (n1,n2) => n1 * n2 + n2;
 
-console.log(calcSumm(+prompt('first number'),+prompt('second number')));
+console.log(calcSummTwo(+prompt('first number'),+prompt('second number')));
 
 
 /*MINIMUM #2 Створи функцію, яка буде виводити кількість переданих їй аргументів.*/
