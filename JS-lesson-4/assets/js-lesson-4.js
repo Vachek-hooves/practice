@@ -2,63 +2,63 @@
 
 //function declaration
 
-// function calcSumm (sum1, sum2){
-//     console.log(sum1 * sum2)
-// }
-// calcSumm(3,4)
+function calcSumm (sum1, sum2){
+    console.log(sum1 * sum2)
+}
+calcSumm(3,4)
 
 
 //function expression
-// let showMessage = function(){
-//     message = ("How are you?");
-//     calc = 3 + 3;
-//     console.log(calc + " " + message) ;
-// };
-// showMessage();
+let showMessage = function(){
+    message = ("How are you?");
+    calc = 3 + 3;
+    console.log(calc + " " + message) ;
+};
+showMessage();
 
 /* arrow function expression (=>) */
 
-// let calcSumm = (n1,n2) => n1 * n2 + n2;
+let calcSumm = (n1,n2) => n1 * n2 + n2;
 
-// console.log(calcSumm(+prompt('first number'),+prompt('second number')));
+console.log(calcSumm(+prompt('first number'),+prompt('second number')));
 
 
 /*MINIMUM #2 Створи функцію, яка буде виводити кількість переданих їй аргументів.*/
 
 
-// function argSumm (arg1,arg2,arg3){
-//     console.log("value of 'arg1' is :" + arg1);
-//     console.log("value of 'arg2' is :" + arg2);
-//     console.log("value of 'arg3' is :" + arg3);   
-// }
-// argSumm(+prompt("first argument"),+prompt("second argument"),+prompt("third argument"));
+function argSumm (arg1,arg2,arg3){
+    console.log("value of 'arg1' is :" + arg1);
+    console.log("value of 'arg2' is :" + arg2);
+    console.log("value of 'arg3' is :" + arg3);   
+}
+argSumm(+prompt("first argument"),+prompt("second argument"),+prompt("third argument"));
 
 /*MINIMUM 3 Напиши функцію, яка приймає 2 числа і повертає */
 
-// function comparison (a , b){
-//     if(a<b){
-//         console.log('-1');
-//     }else if (a>b){
-//         console.log('1')
-//     }else if (a===b){
-//         console.log('0')
-//     }
-// }
+function comparison (a , b){
+    if(a<b){
+        console.log('-1');
+    }else if (a>b){
+        console.log('1')
+    }else if (a===b){
+        console.log('0')
+    }
+}
 
 comparison(+prompt('enter'),+prompt('enter'));
 
 /*MINIMUM 4 Напиши функцію, яка обчислює факторіал переданого їй числа. */
 
-// function factorial (numb){
-//     let result =1;
-//     for (i=1 ; i <= numb; i++){
-//         result *= i;
-//         // console.log(i)
+function factorial (numb){
+    let result =1;
+    for (i=1 ; i <= numb; i++){
+        result *= i;
+        // console.log(i)
 
-//     }
-//     return result;
-// }
-// console.log(factorial(+prompt("enter number")))
+    }
+    return result;
+}
+console.log(factorial(+prompt("enter number")))
 
 
 
