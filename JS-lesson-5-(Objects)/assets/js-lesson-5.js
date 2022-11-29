@@ -16,6 +16,6 @@ if (carInfo.driver){
 }
 
 if ( "driver" in carInfo) {
-    console.log(carInfo.driver, " - another way method find the value");
+    console.log(carInfo.driver, " - another way to find the value");
 }
 
