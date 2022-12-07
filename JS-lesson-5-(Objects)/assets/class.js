@@ -65,6 +65,16 @@ if (test in user){
     console.log("not exist");
 } // Перевіряється наявність самого ключа а не його значення.
 
+//варіант перевірки значення ключа
+if ("role" in user){
+    if(user.role === "user"){
+
+    }else if (user.role === "manager"){
+
+    }else if (user.role === "manager"){
+        
+    }
+}
 
 
 /* ЦИКЛ для об'єкту. Якщо потрібно перебрати всі властивості об'єкту*/
