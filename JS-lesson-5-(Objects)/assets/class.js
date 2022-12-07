@@ -72,7 +72,7 @@ if ("role" in user){
     }else if (user.role === "manager"){
 
     }else if (user.role === "manager"){
-        
+
     }
 }
 
@@ -146,13 +146,111 @@ console.log(user3, costumer) //  name в обох об'єктах буде "Vasy
 let customer = {} // створюємо пустий об'єкт. 
 
 // Преший варіант через цикл.
-for (let key in user3){
+for (let key in user3){  // без let, key буде var. Якщо 
     costumer[key] = user3[key]
 }
+console.log(key)
 console.log(customer, user3)  // зараз costumer & user3 однакові.
 
 user3.name = "Vasyl"  // тепер змінюємо name user3 . 
 console.log(costumer, user3) // І тоді в такому випадку name змінюється тільки в user3.
 
+/* Інший метод Object.assign */
+Object.assign(costumer, user3) // спочатку вказується об'єкт куди треба копіювати, user3 те що буде копіюватись.
+console.log(costumer, user3) // Зараз вони однакові.
+user3.name="Igor"
+console.log(costumer,user3) // Ім'я в user3 зміниться а costumer залишиться не змінним.
+
+// для тесту створимо об'єкт user1
+let user1 = {
+    name: "Maria",
+}
+// Тепер копіюємо user1 & user3 в об'єкт costumer.
+Object.assign(costumer,user1,user3); // Якщо в об'єкті user1 & user3 є однаові ключі тоді останній об'єкт перепише значення.
+console.log(costumer,user1,user3); // Не важливо в якому порядку знаходяться обє'ти в JS (DOM), головне в якому порядку розташовані в самому Object.assign.
+
+// ПОРІВНЯННЯ знайти самостійно ?????????????????????????????????????????????????????????????????????????????????????????????????????????
+
+let a = {},
+    b = a
+
+console.log(a==b); // В цих випадках a і b є об'єктами і рівні між собою.
+console.log(a===b); // В цих випадках a і b є об'єктами і рівні між собою.
+// Але
+let c = {}
+    d = {}
+
+console.log(c===d); // - false. Тому що c і d посилаються на дві різні комірки пам'яті.Тому щоб поріняти об'єкти, треба порівняти ще ключі і довжину. 
 
 
+/* Оголошення об'єкту через const */
+
+const user = { // В об'єкті const властивості можна змінювати. Але не можна такий об'єкт переприсвоювати.
+    name:"",
+    age: 30,
+}
+//user = {} // так робити не можна.
+user.name = "Vasyl" // Але властивості можна змінювати або видаляти.
+delete user.name
+delete user.age
+console.log(user)// видаляться всі ключі але об'єкт всеодно лишиться const.
+
+user.name = "Igor"
+user.role = "manager"
+console.log(user);
+
+/* Методи об'єкта - іншими словами  функції які є в середині об'єкту */
+
+
+let user = {
+    name:"Ivan",
+    age:30,
+} // додамо йому метод.
+
+// Створення - 1-ше пишемо об'єкт в якому буде метод, 2-ге назва функції.
+user.sayHi = function (){  // створення через функціональний вираз. sayHi - назва змінної, function () - анонімна функція.
+    console.log("Hi")
+}
+user.sayHi() // зверненя до функції.
+
+// можна оголосити через function declaration.
+function sayHi (){ // в дужках можуть бути якісь параметри
+    console.log("Hi")
+}
+
+user.sayHi = sayHi // Звертаючись до об'єкту user, робиться ідентифікатор- sayHi, і потім туди присвоюється назва функції sayHi.
+user.sayHi() // Викликається так само, по ключу sayHi.
+
+/* Додавання методу у вже існуючий об'єкт, також метод може бути оголошенний в об'єкті і при створені */
+let user = {
+    name:"Ivan",
+    age:30,
+    // sayHi: function (){
+    //     console.log("hi")
+    // }
+} 
+user.sayHi()// викликається так само.
+
+/* T H I S */
+// T H I S - містить в собі в залежності від типу функціії, посилання на контекст з якого її було викликано.
+
+function sayHi(){  // коли є function declaration, тоді можливо всередині функціії звернутися до this. 
+    console.log(this) // для функціїї яка оголошена через function declaration, this буде рівний window (глобальному об'єкту), при не строгому режимі. При strict воно рівне undefined.
+}
+sayHi()
+
+let sayHello = () => { //  Якщо стрілкова функція буде мати фігурі дужки, тоді теж все буде ок. 
+    console.log(this)
+} 
+sayHello();
+
+// Викликається в методі, консоль лог this
+
+let user = {
+    name:"Ivan",
+    age:30,
+    sayHi: function (){
+        console.log(this) // тут this це посилання на об'єкт.
+        
+    }
+}
