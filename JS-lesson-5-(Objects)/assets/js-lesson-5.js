@@ -25,7 +25,9 @@ if ("driver" in carInfo){
     }
 }
 
-
+function distance (){
+    
+}
 
 
 
