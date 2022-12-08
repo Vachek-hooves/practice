@@ -80,7 +80,7 @@ showTime();
 /* Зміни часу на передану кількість секунд. */
 
 function plusSecond (){
-    console.log(this.hours)+(100);
+    console.log(time.sec+(100));
 }
 time.sec= plusSecond();
 
