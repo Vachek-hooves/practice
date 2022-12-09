@@ -265,7 +265,6 @@ customer.name = "Dmytro"
 console.log(costumer,user) // тепер costumer має ім'я Dmytro, а в user залишився Ivan.
 customer.sayHi() // викликаємо функцію в customer.
 
-
 /* Варіант коли є функція окремо від методу і її треба присвоїти об'єкту */
 
 let user = {
@@ -282,8 +281,8 @@ function sayHi(){ // створили незалежну функцію function
     console.log(this.name)
 }
 
-user.sayHi = sayHi(); // пресвоєння фукціїї sayHi() в об'єкт user
+user.sayHi = sayHi; // пресвоєння фукціїї sayHi() в об'єкт user
 user.sayHi() // Ivan. // Виклик функції sayHi() в середині об'єкту user.
 
-customer.sayHi = sayHi(); // пресвоєння фукціїї sayHi() в об'єкт customer.
+customer.sayHi = sayHi; // пресвоєння фукціїї sayHi() в об'єкт customer.
 customer.sayHi() // Dmytro. // Виклик функції sayHi() в середині об'єкту customer.

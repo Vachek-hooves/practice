@@ -38,22 +38,25 @@ let carInfo = {
     "fuel tank (ltr's)": 56,
     avarage: 11,
     driver: null,
-    distance: function(dist){
-        fuelPerKm = ((this.avarage) / 100) * (dist);
-        console.log(fuelPerKm +" required litters per your distance");
-        time = (dist) / (this.speed);
-        if (time > 4){
-        hoursCorrection = time / 4;
-        console.log("you need"+" "+ (time + hoursCorrection ).toFixed(1) + "(every 4 hrs, 1 hr break already included )"+" "+"& you will consume"+" "+`${fuelPerKm}`+" ltr's of fuel")
-        } else if(time <= 4) {
-        console.log("you need"+" "+ (time).toFixed(1) + " hrs to reach finish point without break"+" "+"& you will consume"+" "+`${fuelPerKm}`+" ltr's of fuel");
-        }
-    }
     
 }
-carInfo.distance(+prompt("enter your distance"));
-*/
+console.log(carInfo);
 
+function distance (dist){
+    fuelPerKm = ((this.avarage) / 100) * (dist);
+    // console.log(fuelPerKm +" required litters per your distance");
+    time = (dist) / (this.speed);
+    if (time > 4){
+    hoursCorrection = time / 4;
+    console.log("you need"+" "+ (time + hoursCorrection ).toFixed(1) + "(every 4 hrs, 1 hr break already included )"+" "+"& you will consume"+" "+`${fuelPerKm}`+" ltr's of fuel")
+    } else if(time <= 4) {
+    console.log("you need"+" "+ (time).toFixed(1) + " hrs to reach finish point without break"+" "+"& you will consume"+" "+`${fuelPerKm}`+" ltr's of fuel");
+    }
+}
+
+carInfo.distance=distance;
+// carInfo.distance(+prompt("enter your distance"));
+*/
 
 /* NORMA */
 
@@ -65,29 +68,51 @@ let time = {
     sec: "",
 }
 console.log(time)
-
 /* Для виведення часу на екран. */
+let today = new Date();
+time.hours= today.getHours();
+time.min=today.getMinutes();
+time.sec=today.getSeconds();
+// console.log(today)
 
-time.hours=new Date().getDate()+1;
-time.min=new Date().getMinutes();
-time.sec=new Date().getSeconds();
-
-function showTime (){
-    console.log(time.hours,time.min,time.sec);
+function showTime(){
+    // console.log((this.hours)+":"+(this.min)+":"+(this.sec));
+    newTime= ((this.hours)+":"+(this.min)+":"+(this.sec));
 }
-showTime();
+time.showTime=showTime;
+time.showTime();
+console.log(newTime)
 
 /* Зміни часу на передану кількість секунд. */
 
-function plusSecond (){
-    console.log(time.sec+(100));
-}
-time.sec= plusSecond();
+// function addSeconds( newSec){
+//     today.setSeconds(this.sec + newSec)
+//     console.log(today);
+// }
+// time.newSec=addSeconds;
+// time.newSec(+prompt("enter seconds"))
 
-/* Зміни часу на передану кількість хвилин. */
+/* Зміни часу на передану кількість хвилин.*/
+
+// function addMinutes(newMins) {
+//     today.setMinutes(this.min+ newMins);
+//     // return today
+//     console.log(today)
+// }
+// time.newMins=addMinutes;
+// time.newMins(+prompt("how many minutes do you want to add"))
 
 /* Зміни часу на передану кількість годин. */
 
+function addHours(newHours) {
+    today.setHours(this.hours+ newHours);
+    // return today
+    let newToday = today;
+    console.log(newToday.getHours()+":"+newToday.getMinutes()+":"+newToday.getSeconds()+"-"+"you have adjust hours");
+    // console.log(today);
+}
+time.newHours=addHours;
+time.newHours(+prompt("how many minutes do you want to add"))
 
 
 
@@ -99,14 +124,4 @@ time.sec= plusSecond();
 
 
 
-// carInfo['driver 2']="Tamara"; // adding new key (driver2) & value ("Tamara");
-// Object.assign(carInfo,{driver:"Slava"}); //add name to key (driver).
-
-// if (carInfo.driver){
-//     console.log(carInfo.driver," - driver name is available");
-// }
-
-// if ( "driver" in carInfo) {
-//     console.log(carInfo.driver, " - another way to find the value");
-// }
 
