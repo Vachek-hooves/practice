@@ -48,12 +48,12 @@ if ("driver" in carInfo){
 function distance (dist){
     fuelPerKm = ((this.avarage) / 100) * (dist);
     // console.log(fuelPerKm +" required litters per your distance");
-    time = (dist) / (this.speed);
-    if (time > 4){
-    hoursCorrection = time / 4;
-    console.log("you need"+" "+ (time + hoursCorrection ).toFixed(1) + "(every 4 hrs, 1 hr break already included )"+" "+"& you will consume"+" "+`${fuelPerKm}`+" ltr's of fuel")
-    } else if(time <= 4) {
-    console.log("you need"+" "+ (time).toFixed(1) + " hrs to reach finish point without break"+" "+"& you will consume"+" "+`${fuelPerKm}`+" ltr's of fuel");
+    timing = (dist) / (this.speed);
+    if (timing > 4){
+    hoursCorrection = timing / 4;
+    console.log("you need"+" "+ (timing + hoursCorrection ).toFixed(1) + "(every 4 hrs, 1 hr break already included )"+" "+"& you will consume"+" "+`${fuelPerKm}`+" ltr's of fuel")
+    } else if(timinge <= 4) {
+    console.log("you need"+" "+ (timing).toFixed(1) + " hrs to reach finish point without break"+" "+"& you will consume"+" "+`${fuelPerKm}`+" ltr's of fuel");
     }
 }
 
@@ -70,7 +70,8 @@ let time = {
     min: "",
     sec: "",
 }
-console.log(time)
+console.log(time);
+
 /* Для виведення часу на екран. */
 let today = new Date();
 time.hours= today.getHours();
@@ -92,7 +93,7 @@ function addSeconds( newSec){
     today.setSeconds(this.sec + newSec)
     // console.log(today);
     let newToday=today;
-    console.log(newToday.getHours()+":"+newToday.getMinutes()+":"+newToday.getSeconds()+"-"+"you have made time correction in "+(newSec)+ " seconds");
+    console.log(newToday.getHours()+":"+newToday.getMinutes()+":"+newToday.getSeconds()+"-"+"you have made time correction  "+(newSec)+ " seconds");
 }
 time.newSec=addSeconds;
 time.newSec(+prompt("how many seconds do you want to add"))
@@ -104,7 +105,7 @@ function addMinutes(newMins) {
     // return today
     // console.log(today)
     let newToday2 =today;
-    console.log(newToday2.getHours()+":"+newToday2.getMinutes()+":"+newToday2.getSeconds()+"-"+"you have made time correction in "+(newMins)+ " minutes");
+    console.log(newToday2.getHours()+":"+newToday2.getMinutes()+":"+newToday2.getSeconds()+"-"+"you have made time correction  "+(newMins)+ " minutes");
 }
 time.newMins=addMinutes;
 time.newMins(+prompt("how many minutes do you want to add"))
@@ -115,7 +116,7 @@ function addHours(newHours) {
     today.setHours(this.hours+ newHours);
     // return today
     let newToday3 = today;
-    console.log(newToday3.getHours()+":"+newToday3.getMinutes()+":"+newToday3.getSeconds()+"-"+"you have made time correction in "+(newHours)+ " hours");
+    console.log(newToday3.getHours()+":"+newToday3.getMinutes()+":"+newToday3.getSeconds()+"-"+"you have made time correction  "+(newHours)+ " hours");
     // console.log(today);
 }
 time.newHours=addHours;
