@@ -1,6 +1,6 @@
 /* MINIMUM */
 
-/*
+
 let carInfo = {
     maker: "ZAZ",
     model: "zapor",
@@ -9,38 +9,41 @@ let carInfo = {
     "fuel tank (ltr's)": 56,
     avarage: 11,
     driver: null,
-}*/
+}
 
 /* 1. Метод, який виводить на екран ігформацію про авто */
-// console.log(carInfo);
+
+console.log(carInfo);
 
 /* 2. Зміна імені водія */
-// carInfo.driver = "Bro";
-// console.log(carInfo.driver+" "+"driver name changed");
+
+carInfo.driver = prompt("What driver name do you want to add");
+console.log("driver name changed to"+" "+carInfo.driver);
+
 /* 3.Метод перевірки імені водія */
 
-// if ("driver" in carInfo){
-//     let find = prompt("enter driver name")
-//     if (carInfo.driver === find ){
-//         console.log("driver"+" "+find +" for car  "+"'"+ carInfo.model+"'" + " is available")
-//     }else if(carInfo.driver !== find  ){
-//         console.log("driver"+" "+find +" for car  "+"'"+ carInfo.model+"'" + " is not available")
-//     }
-// }
+if ("driver" in carInfo){
+    let find = prompt("enter driver name what you want to check is it available")
+    if (carInfo.driver === find ){
+        console.log("driver"+" "+find +" for car  "+"'"+ carInfo.model+"'" + " is available")
+    }else if(carInfo.driver !== find  ){
+        console.log("driver"+" "+find +" for car  "+"'"+ carInfo.model+"'" + " is not available")
+    }
+}
 
 /* 4. Підрахунок необхідного часу та кількості палива для подолання переданої відстані з середньою швидкістю. Враховуй, що через кожні 4 години дороги водієві необхідно робити перерву на 1 годину. */
-/*
-let carInfo = {
-    maker: "ZAZ",
-    model: "zapor",
-    year: 1978,
-    speed: 60,
-    "fuel tank (ltr's)": 56,
-    avarage: 11,
-    driver: null,
+
+// let carInfo = {
+//     maker: "ZAZ",
+//     model: "zapor",
+//     year: 1978,
+//     speed: 60,
+//     "fuel tank (ltr's)": 56,
+//     avarage: 11,
+//     driver: null,
     
-}
-console.log(carInfo);
+// }
+// console.log(carInfo);
 
 function distance (dist){
     fuelPerKm = ((this.avarage) / 100) * (dist);
@@ -55,8 +58,8 @@ function distance (dist){
 }
 
 carInfo.distance=distance;
-// carInfo.distance(+prompt("enter your distance"));
-*/
+carInfo.distance(+prompt("enter your distance"));
+
 
 /* NORMA */
 
@@ -81,38 +84,42 @@ function showTime(){
 }
 time.showTime=showTime;
 time.showTime();
-console.log(newTime)
+console.log(newTime+"-"+" this is result of function, show time generated from object 'time'")
 
 /* Зміни часу на передану кількість секунд. */
 
-// function addSeconds( newSec){
-//     today.setSeconds(this.sec + newSec)
-//     console.log(today);
-// }
-// time.newSec=addSeconds;
-// time.newSec(+prompt("enter seconds"))
+function addSeconds( newSec){
+    today.setSeconds(this.sec + newSec)
+    // console.log(today);
+    let newToday=today;
+    console.log(newToday.getHours()+":"+newToday.getMinutes()+":"+newToday.getSeconds()+"-"+"you have made time correction in "+(newSec)+ " seconds");
+}
+time.newSec=addSeconds;
+time.newSec(+prompt("how many seconds do you want to add"))
 
 /* Зміни часу на передану кількість хвилин.*/
 
-// function addMinutes(newMins) {
-//     today.setMinutes(this.min+ newMins);
-//     // return today
-//     console.log(today)
-// }
-// time.newMins=addMinutes;
-// time.newMins(+prompt("how many minutes do you want to add"))
+function addMinutes(newMins) {
+    today.setMinutes(this.min+ newMins);
+    // return today
+    // console.log(today)
+    let newToday2 =today;
+    console.log(newToday2.getHours()+":"+newToday2.getMinutes()+":"+newToday2.getSeconds()+"-"+"you have made time correction in "+(newMins)+ " minutes");
+}
+time.newMins=addMinutes;
+time.newMins(+prompt("how many minutes do you want to add"))
 
 /* Зміни часу на передану кількість годин. */
 
 function addHours(newHours) {
     today.setHours(this.hours+ newHours);
     // return today
-    let newToday = today;
-    console.log(newToday.getHours()+":"+newToday.getMinutes()+":"+newToday.getSeconds()+"-"+"you have adjust hours");
+    let newToday3 = today;
+    console.log(newToday3.getHours()+":"+newToday3.getMinutes()+":"+newToday3.getSeconds()+"-"+"you have made time correction in "+(newHours)+ " hours");
     // console.log(today);
 }
 time.newHours=addHours;
-time.newHours(+prompt("how many minutes do you want to add"))
+time.newHours(+prompt("how many hours do you want to add"))
 
 
 
