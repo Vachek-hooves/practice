@@ -287,3 +287,4 @@ user.sayHi() // Ivan. // Виклик функції sayHi() в середині
 
 customer.sayHi = sayHi; // пресвоєння фукціїї sayHi() в об'єкт customer.
 customer.sayHi() // Dmytro. // Виклик функції sayHi() в середині об'єкту customer.
+
