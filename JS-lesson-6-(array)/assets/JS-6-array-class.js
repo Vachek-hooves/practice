@@ -66,6 +66,7 @@ console.log(newFruit[3].age)  // вивести значення ключя age.
 /* ПОРІВНЯННЯ  */
 // Так само як і в об'єктах. Тобто масиви не можна порівнювати через дорівнює. 
 // тому що змінна яка зберігає масив або об'єкт містять його не фізично а зберігають посилання на комірку пам'яті де зберігається масив.
+// перше що перевіряють на рівність масивів це length, а наступна ітерація це значення.
 
 // let arr = fruits; // тільки в такому випадку вони будуть рівні. Тому що зберігають посилання на одну комірку пам'яті.
 // console.log( arr == fruits);
@@ -75,12 +76,16 @@ let fruits = ["apple","orange","banana","pear"];
 
 for (let i=0; i < fruits.length; i++){
     console.log(fruits[i]) // отримується індекс з масиву (зі змінної fruits).
-    console.log(i, fruits[i]) // в операторі for i  виводиться як числове значення. 
+    console.log(i, fruits[i]) // в операторі for i  виводиться як числове значення.
+    console.log(fruits[i].toUpperCase()); // через цикл зробити слова з великими літерами.
 }
 
 /* for of */
 for (let fruit of fruits ){
     console.log(fruit)  // доступу до ітератора немає,виводиться просто значення. 
+    console.log(typeof fruit === "number");
+    console.log(typeof fruit !==Number)// перевірка чи fruit не є числов.
+    // console.log(typeof fruit === number) // перевірка fruit є числом
 }
 
 /* for in */
