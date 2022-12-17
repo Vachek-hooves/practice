@@ -11,7 +11,7 @@ let carInfo = {
     driver: null,
 }
 
-/* 1. Метод, який виводить на екран ігформацію про авто */
+/* 1. Метод, який виводить на екран всю інформацію про авто */
 
 console.log(carInfo);
 
@@ -70,7 +70,7 @@ let time = {
     min: "",
     sec: "",
 }
-console.log(time);
+// console.log(time);
 
 /* Для виведення часу на екран. */
 let today = new Date();
@@ -81,7 +81,7 @@ time.sec=today.getSeconds();
 
 function showTime(){
     // console.log((this.hours)+":"+(this.min)+":"+(this.sec));
-    newTime= ((this.hours)+":"+(this.min)+":"+(this.sec));
+    newTime = ((this.hours)+":"+(this.min)+":"+(this.sec));
 }
 time.showTime=showTime;
 time.showTime();

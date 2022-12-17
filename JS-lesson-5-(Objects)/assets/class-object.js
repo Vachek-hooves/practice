@@ -28,7 +28,6 @@ let user = {   // всередині об'єкта міститься "key:value
 }
 console.log(user);
 
-
 /* отриманя значення та звернення */
 console.log(user["user city"]) // коли key має 2 і більше так звертатися обов'язково.
 console.log(user["city"]) // так теж можна звертатися до key з лдним словом.
@@ -59,12 +58,12 @@ let key = "name"
 console.log( key in user); // якщо ключ не огортається в лапки то це вказує, що вона є змінна.
 
 
-let test = prompt("enter key name") // варіант перевірки коли користувач може ввети назву ключа і тоді виведеться один з варінтів консолі.
+/*let test = prompt("enter key name") // варіант перевірки коли користувач може ввети назву ключа і тоді виведеться один з варінтів консолі.
 if (test in user){
     console.log("exist");
 }else {
     console.log("not exist");
-} // Перевіряється наявність самого ключа а не його значення.
+}*/ // Перевіряється наявність самого ключа а не його значення.
 
 //варіант перевірки значення ключа
 if ("role" in user){
@@ -134,11 +133,11 @@ console.log(userName, customerName) // userName- змінить значення
 
 // Робимо змінну costumer і присвоїти йому user3.
 
-let costumer = copyObject
-console.log(user3, costumer) //  в такому випадку обидва об'єкти будуть однаковими.Але якщо ми хочемо змінити ім'я тоді...
+let costumer = user3;
+// console.log(user3, costumer) //  в такому випадку обидва об'єкти будуть однаковими.Але якщо ми хочемо змінити ім'я тоді...
 
-user.name = "Vasyl"
-console.log(user3, costumer) //  name в обох об'єктах буде "Vasyl", тому що обидва об'єкти посилаються на одну і ту саму адресу (комірку) пам'яті де зберігається об'єкт.
+// user.name = "Vasyl"
+// console.log(user3, costumer) //  name в обох об'єктах буде "Vasyl", тому що обидва об'єкти посилаються на одну і ту саму адресу (комірку) пам'яті де зберігається об'єкт.
 // Для того щоб присвоїти змінній costumer нове значення а user3 залишився без змін, використовують Object.assign.
 // Object.assign - дозволяє не тільки клонувати об'єкт а і зливати різні об'єкти в єдиний.
 
@@ -151,7 +150,7 @@ for (let key in user3){  // без let, key буде var. Якщо
     costumer[key] = user3[key]
 }
 console.log(key)
-console.log(customer, user3)  // зараз costumer & user3 однакові.
+// console.log(customer, user3)  // зараз costumer & user3 однакові.
 
 user3.name = "Vasyl"  // тепер змінюємо name user3 . 
 console.log(costumer, user3) // І тоді в такому випадку name змінюється тільки в user3.
@@ -191,10 +190,10 @@ console.log(c===d); // - false. Тому що c і d посилаються на
 
 /* Оголошення об'єкту через const */
 
-const user = { // В об'єкті const властивості можна змінювати. Але не можна такий об'єкт переприсвоювати.
-    name:"",
-    age: 30,
-}
+// const user = { // В об'єкті const властивості можна змінювати. Але не можна такий об'єкт переприсвоювати.
+//     name:"",
+//     age: 30,
+// }
 //user = {} // так робити не можна.
 user.name = "Vasyl" // Але властивості можна змінювати або видаляти.
 delete user.name
@@ -208,16 +207,16 @@ console.log(user);
 /* Методи об'єкта - іншими словами  функції які є в середині об'єкту */
 
 
-let user = {
+let user11 = {
     name:"Ivan",
     age:30,
 } // додамо йому метод.
 
 // Створення - 1-ше пишемо об'єкт в якому буде метод, 2-ге назва функції.
-user.sayHi = function (){  // створення через функціональний вираз. sayHi - назва змінної, function () - анонімна функція.
+user11.sayHi = function (){  // створення через функціональний вираз. sayHi - назва змінної, function () - анонімна функція.
     console.log("Hi")
 }
-user.sayHi() // зверненя до функції.
+user11.sayHi() // зверненя до функції.
 
 // можна оголосити через function declaration.
 function sayHi (){ // в дужках можуть бути якісь параметри
@@ -228,14 +227,14 @@ user.sayHi = sayHi // Звертаючись до об'єкту user, робит
 user.sayHi() // Викликається так само, по ключу sayHi.
 
 /* Додавання методу у вже існуючий об'єкт, також метод може бути оголошенний в об'єкті і при створені */
-let user = {
+let user22 = {
     name:"Ivan",
     age:30,
     // sayHi: function (){
     //     console.log("hi")
     // }
 } 
-user.sayHi()// викликається так само.
+// user22.sayHi;// викликається так само.
 
 /* T H I S */
 // T H I S - містить в собі в залежності від типу функціії, посилання на контекст з якого її було викликано.
@@ -252,33 +251,34 @@ sayHello();
 
 // Викликається в методі, console.log(this)
 
-let user = {
+let userThis = {
     name:"Ivan",
     age:30,
     sayHi: function (){
         console.log(this) // тут this це посилання на об'єкт.
-        console.log(user.name) 
+        console.log(userThis.name) 
         console.log(this.name) // отримання доступу до властивості  name і виведеться Ivan в console.log
     }
 }
 
 let customer ={} // створюеться пустий об'єкт
 
-Object.assign(costumer,user) // в  costumer клонуємо user.
-console.log(costumer,user) // тепер вони однаково наповнені і мають методи sayHi.
+Object.assign(costumer,userThis) // в  costumer клонуємо user.
+console.log(costumer,userThis) // тепер вони однаково наповнені і мають методи sayHi.
 
 customer.name = "Dmytro" 
-console.log(costumer,user) // тепер costumer має ім'я Dmytro, а в user залишився Ivan.
-customer.sayHi() // викликаємо функцію в customer.
+console.log(costumer,userThis) // тепер costumer має ім'я Dmytro, а в user залишився Ivan.
+customer.sayHi=sayHi; // викликаємо функцію в customer.
+customer.sayHi();
 
 /* Варіант коли є функція окремо від методу і її треба присвоїти об'єкту */
 
-let user = {
+let user4 = {
     name: "Ivan",
     age:30,
 }
 
-let customer ={
+let customer2 ={
     name: "Dmytro",
     city:"Lviv"
 }
@@ -287,9 +287,9 @@ function sayHi(){ // створили незалежну функцію function
     console.log(this.name)
 }
 
-user.sayHi = sayHi; // пресвоєння фукціїї sayHi() в об'єкт user
-user.sayHi() // Ivan. // Виклик функції sayHi() в середині об'єкту user.
+user4.sayHi = sayHi; // пресвоєння фукціїї sayHi() в об'єкт user
+user4.sayHi() // Ivan. // Виклик функції sayHi() в середині об'єкту user.
 
-customer.sayHi = sayHi; // пресвоєння фукціїї sayHi() в об'єкт customer.
-customer.sayHi() // Dmytro. // Виклик функції sayHi() в середині об'єкту customer.
+customer2.sayHi = sayHi; // пресвоєння фукціїї sayHi() в об'єкт customer.
+customer2.sayHi() // Dmytro. // Виклик функції sayHi() в середині об'єкту customer.
 
