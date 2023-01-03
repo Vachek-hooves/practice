@@ -35,7 +35,7 @@ console.log(user.name); // виводиться ключ(key) - name.
 console.log(user.age); // вивести ключ - age.
 
 /* ДОДЯВАННЯ */
-user.sex = "male"//додавання key. додається key "role" зі значенням "user".
+user.sex = "male"//додавання key. додається key "sex" зі значенням "user".
 console.log(user);
 
 /* ВИДАЛЕННЯ */
@@ -68,19 +68,28 @@ if (test in user){
 //варіант перевірки значення ключа
 if ("role" in user){
     if(user.role === "user"){
-
+        // якась дія
     }else if (user.role === "manager"){
-
+        // якась дія
     }else if (user.role === "manager"){
-
+        // якась дія
     }
 }
 
-
 /* ЦИКЛ для об'єкту. Якщо потрібно перебрати всі властивості об'єкту*/
+let userFor = {   // всередині об'єкта міститься "key:value,"
+    name: "Ivan",
+    age: 30,
+    city: "Lviv",
+    "test city": "Lviv", //коли key складається з декількох слів , то він огортається в лапки.
+//  "test.city": "Lviv", // зустрічається і такий варіант.  
+    test: undefined,
+    role: "manager",
+}
+console.log(user);
 
-for (key in user) {    // Синтаксис - for ( key in object ). key(властивіть) -умовне , мoже бути будь яке ім'я. 
-    // перша іттерація user[key] буде рівний 'Ivan'.
+for (key in userFor) {    // Синтаксис - for ( key in object ). key(властивіть) -умовне , мoже бути будь яке ім'я. 
+    // перша іттерація userFor[key] буде рівний 'Ivan'.
     // друга key рівна 30б
     // key = 'Lviv',
     // key = undefined,
@@ -90,10 +99,10 @@ for (key in user) {    // Синтаксис - for ( key in object ). key(вла
         // user.name = "Vasyl"
         // user["name"] = "Vasyl"
         // user [key] = "Vasyl"
-        user[key] = "Vasyl"
-        console.log(user);
+        // user[key] = "Vasyl"
+        console.log(userFor);
     }
-    console.log(key, user[key]);
+    console.log(key, userFor[key]);
 }
 
 console.log('----------');

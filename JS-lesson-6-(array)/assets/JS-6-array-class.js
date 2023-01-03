@@ -80,7 +80,7 @@ console.log(fruitsF.at(0)) // поверне 1-й елемент.
 let fruitsFor = ["apple","orange","banana","pear"];
 
 for (let i=0; i < fruitsFor.length; i++){
-    console.log(fruitsFor[i]) // отримується індекс з масиву (зі змінної fruits).  
+    console.log(fruitsFor[i]) // отримується індекс з масиву (зі змінної fruitsFor).  
 };
 
 for (let i=0; i < fruitsFor.length; i++){
@@ -103,7 +103,7 @@ for (let i = 0; i < forFruits.length; i++){
 // Якщо потрібно отримати тільки "value"
 let fruitForOf = ["apple","orange","banana","pear"];
 
-for (let fruitNew of fruitForOf ){ // комбінація "let fruitNew"- створення змінної, яка буде в собі містити кожне значення масиву "fruits"
+for (let fruitNew of fruitForOf ){ // комбінація "let fruitNew"- створення змінної, яка буде в собі містити кожне значення масиву "fruitForOf"
     console.log(fruitNew)  // доступу до ітератора немає,виводиться просто значення. 
     // console.log(typeof fruit === number) // перевірка чи є fruit  числом
 };
@@ -165,15 +165,15 @@ let fruitsFunctionVar = function(){
 // console.log(fruits);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/* SPLICE  - універсальний метод роботи з масивами !!!*/
+/* SPLICE  - універсальний метод роботи з масивами !!!!!!!*/
 // splice - вміє додавати, вилучати і замінювати елементи.
 // цей метод працює з будь-яким відрізком об'єкту.
 // синтаксис: array.splice().
-let fruitsSlice = ["apple","orange","banana","pear","kiwi"];
-// console.log(fruitsSlice.splice(1,1)) // видаляється (вилучається) елемент з індуксом 1 і він же повертається.
-// console.log(fruitsSlice.splice(2,2)) // видаляється 2 елементи починаючи з другого. (2, 2)- (з другого елементу, наступні 2 елементи)
-console.log(fruitsSlice.splice(2)) // видалиться з вказаного індексу і до кінця.
-console.log(fruitsSlice)
+let fruitsSplice = ["apple","orange","banana","pear","kiwi"];
+// console.log(fruitsSplice.splice(1,1)) // видаляється (вилучається) елемент з індексом 1 і він же повертається.
+// console.log(fruitsSplice.splice(2,2)) // видаляється 2 елементи починаючи з другого. (2, 2)- (з другого елементу, наступні 2 елементи)
+console.log(fruitsSplice.splice(2)) // видалиться з вказаного індексу і до кінця.
+console.log(fruitsSplice)
 
 /* додавання (вставлення) в об'єкт  */
 // console.log(fruits.splice(1,2, "test 1", "test 2")) // (1-на який індекс додається, 2 - скільки елементів видаляється, test 1- додається, test 2- додається)
@@ -197,7 +197,7 @@ console.log(fruitsSlice)
 let array = [3,4]
 let fruitConcat = ["apple","orange","banana","pear","kiwi"];
 
-let arr1 = fruitConcat.concat(array, [5,6]); // створюється новий масив "arr" який перекопіює "fruits" і нові масиви.
+let arr1 = fruitConcat.concat(array, [5,6]); // створюється новий масив "arr1" який перекопіює "fruits" та інщі нові масиви.
 // можливий і такий варіант
 let arr = fruitConcat.concat(array, fruitConcat.slice(2), 5,6); // буде так само як і з масивом "arr1"
 console.log(fruitConcat); // масив fruits не змінився.
@@ -218,7 +218,6 @@ fruitConcat.forEach(function(item, index, array) {
 // якщо не потрібно ні index, ні array.
 // синтаксис: array.forEach((item, index, array) => {console.log(item, index, array)});
 fruitConcat.forEach((fruit, index, array) => {console.log(fruit,index,array)});
-
 
 // розібрати зазначені нижче методи, які шукають index.
 // lastIndexOf.
@@ -269,7 +268,7 @@ let fruta = ["apple","orange","banana","pear"];
 
 console.log(fruta.find(function(item,index,array){ // в результаті пишеться умова і якщо умова виконується, тоді повертається поточний елемент.
     // якщо умова не виконалась для жодного елемента, тоді повертається undefined.
-    // return item === 1;
+    // return item === 0;
     return item === "apple"
 }));
 
@@ -286,7 +285,7 @@ console.log(fruta);
 /* filter */
 // filter - працює за схожим принципом як і splice.
 /* синтаксис -  
-arr.find(function(item,index,array){
+arr.filter(function(item,index,array){
     true - елемент додається до результату, і перевірка продовжується
     -  повертає порожній масив, також якщо нічого не знайдено.
 })
