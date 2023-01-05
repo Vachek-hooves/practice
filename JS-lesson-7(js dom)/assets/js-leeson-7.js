@@ -69,19 +69,194 @@
 // let idQuery = document.querySelectorAll('#paragraph') // ФІГНЯ, так не роблять.
 
 // Пошук по class.
-let classQuery = document.querySelectorAll('.section'); // Вказується який класс (крапка перед назвою классу).
+let classQuery = document.querySelectorAll('.section'); // Вказується який класс (крапка перед назвою классу!!!!).
 console.log(classQuery);
 // дадали в HTML модифікатор section--big-space.
-let classQuery2 = document.querySelectorAll('.section.section--big-space'); // пошук классу section, який (які) має додатково класс section--big-space.
+let classQuery2 = document.querySelectorAll('.section.section--big-spaces'); // пошук классу section, який (які) має додатково класс section--big-space.
 console.log(classQuery2);
-
 // Варіант коли різні теги мають однаковий класс.
 // Тоді в перевірці потрібно вказати додаткову умову.
 let classQuery3= document.querySelectorAll('ul > li > a'); // Буде шукати всі <ul>, в середині яких є <li>, в середині яких є <а>.
 console.log(classQuery3);
 
-let classQuery4= document.querySelectorAll('ul  li  a'); // в такому випадку повертається 3 <a>? том у що він огорнений в <div>. (на першому рівні вкладенності має бути обов'язково тег а)
+let classQuery4 = document.querySelectorAll('ul  li  a'); // в такому випадку повертається 3 <a>? том у що він огорнений в <div>. (на першому рівні вкладенності має бути обов'язково тег а)
 console.log(classQuery4);
 
-let classQuery5= document.querySelectorAll('ul  li  a.link--red'); // знайде всі теги а, який мають class link--red.
+let classQuery5 = document.querySelectorAll('ul  li  a.link--red'); // знайде всі теги а, який мають class link--red.
 console.log(classQuery5);
+ 
+/* Випадок коли треба знайти декілька таких елементів */
+let classQuery6 = document.querySelectorAll('ul  li  a.link--red, .section--big-spaces a.link--red'); // знайде всі теги а, який мають class link--red.
+console.log(classQuery6);
+
+/*Пошук по atribute*/
+let atribute =document.getElementById('list');
+console.log(atribute.querySelectorAll('a[data-text]')); // (' в якому тезі йде пошук [назва атрибуту ]').
+console.log(atribute.querySelectorAll('img[alt]')); // знайде всі атрибути alt. (наприклад знайти всі зображення, що мають або не мають alt)
+
+/* Перевірка чи querySelectorAll, працює тільки до document, або ще й до element  */
+// let insideUl = document.getElementById('list');
+// console.log(insideUl.querySelectorAll('a.link')); // Можливо так використовувати (працює).  
+// console.log(insideUl.querySelectorAll('a.link').length + " - just shows length of variable"); // Так можна повернути довжину NodeList
+
+// NodeList - це коллекція елементів які прийшли в результаті.
+// NodeList в собі містить length (хоча це не є масив). 
+
+// NodeList, можна ітерувати через For Each.
+// let insideUl = document.getElementById('list');
+//     links =insideUl.querySelectorAll('a.link'); // Знаходить всі теги a.link
+//     links =insideUl.querySelectorAll('a.link12'); //Випадок коли до querySelector додамо не існуючу умову. Тоді поверне путий масив.
+//     link = insideUl.querySelector('a.link'); // Знаходить перший a.link і зупиняється.
+//     linksArray = Array.from(links); // Створити змінну в котрій присвоюється претвороеня в масив, щоб в подальшому просто викликати змінну.
+
+// console.log(links) // поверне путий масив, тому що такого елементу не існує.
+// console.log(links[0]); // undefined, томпу що такого елементу не існує.
+// ТОді потрібно спочатку зробити перевірку на існування такого елементу.
+// if(links[0]){
+//     console.log(links[0])
+// }
+
+// Краще зробити перевірку на довжину.
+// if(links.lengh > 0){
+//     console.log("exist")
+// }
+
+// Array.from(links).filter(el =>console.log(el)); // Тому,що такий варіант буде сильно гальмувати сам JS.
+// querySelector працює так само як і querySelectorAll, як із document так і з певною прив'язкою до якогось елементу, тільки в результаті повертається оин елемент.
+
+// linksArray.filter(el => console.log(el))
+// links.forEach(link=> console.log(link)); // У forEach, не завжди повертається в повному вигляді, а як частина верстки.
+
+//  Інший метод через for;
+// for (let i=0; i< links.length; i++){ // таким чином виведеться всі теги <a> з классом "link"
+//     // console.log(links[i]); // та створився доступ до link.
+//     // console.log(links[i].text) // виводить весь текст,що міститься в середині кожного лінку з классом "link"
+//     console.log(links[i], links[i].text);
+// };
+
+/* Перевірка через додаткові методи */
+// links.filter(el => console.log(el)); // filter - працювати не буде.
+// links.sort((a,b)=> a-b) // sort - працювати не буде.
+
+/* Array.from() */
+// console.log(links, Array.from(links))// зробити з NodeList - l
+
+
+/////////// інші НЕ  популярні пошуки елементу.
+/*Пошук по tag*/
+console.log(document.getElementsByTagName('a')); // цей пошук буде швидше ніж querySelectorAll.
+// getElementsByTagName - буде працювати з element та document.
+
+/*Пошук по class*/
+console.log(document.getElementsByClassName('link')); // пепредається заданий класс, який треба шукати ( без крапки).Поверта всі елементи з вкакзаним класом.
+//getElementsByClassName - буде працювати з element та document.
+
+/*Пошук по name*/
+console.log(document.getElementsByClassName('name')); // Вказуєьбся name самого field (input, textarea...).
+//getElementsByClassName - буде працювати з element та document.
+
+/* пошук БАТЬКА елементу */
+
+let insideUl = document.getElementById('list');
+    link = insideUl.querySelector('a.link--red');
+
+console.log(link)
+
+// Потрібно знайти тег li для link. В тегу li, немає ні "id" ні "class".
+// метод, що повертає батька.
+// if(link){
+//     console.log(link.closest('li'))
+//     console.log(link.closest('ul'))
+//     console.log(link.closest('body'))
+// }
+
+
+// if(link){ // якщо існує link, заходить пошук в if
+//     let parent = link.closest('ul#list'); // пошук в ul,з id "list", і якщо він є заходить в наступний if.
+//     if(parent){
+//         let li = parent.querySelectorAll('li') // знаходить всі li в батькові.
+//         console.log(li)
+//     }
+// }
+
+/* Пошук наступного або попереднього (сусіднього елементу) */
+if (link){
+    let parent = link.closest('li');
+    console.log(parent.previousElementSibling); // Дає змогу працювати з попередніми елементами.
+    console.log(parent.nextElementSibling); // Дає змогу працювати з наступними елементами.
+};
+
+/* Отримати доступ до значення тегу.*/
+// tagName - повертає значення тегу елемента до якого звертаємось. І всі пишуться з великої літери.
+if (link){
+    let parent = link.closest('li');
+    console.log(parent.previousElementSibling.tagName); // особливість в тому,що повертається тег з великою літерою.
+    console.log(parent.previousElementSibling.tagName.toLowerCase());
+};
+// tagName -корисний коли треба відфільтрувати.
+
+/* Тепер коли було знайдено тег або елемент, тоді можна змінити значення */
+
+if (link){
+    let parent = link.closest('li');
+        nextEl = parent.nextElementSibling;
+        // console.log(nextEl.innerHTML) // innerHTML -повертає верстку верстку всередині елементу. 
+        // console.log(nextEl.outerHTML)  // outerHTML - повертає верстку та сам елемент
+//з'являється можливість переприсвоїти значення в будь-яке інше.
+    // nextEl.innerHTML ='' // для nextEl, innerHTML -зробити його пустим. Видаляється весь елемент і повертає його
+    // nextEl.outerHTML ='' // видаляється повністю і повертає його.
+    console.log(nextEl.innerHTML);
+    console.log(nextEl.outerHTML);
+    // Можна створити іншу верстку:
+    nextEl.innerHTML = '<div class="test-div">321</div>' // таким чином можна налаштовувати вміст елементу.
+    console.log(document.querySelector('.test-div'));
+
+    /* значення класу*/
+    // клжен елемент в середині має властивість яка зберігає всі класи:
+    // classList  - масив,що містить в собі значення класів.
+    console.log(link.classList); // - це є повноцінний масив.
+    // Тепер можна перевірити чи значення класу є в цьому масиві.
+    // Використовуємо вбудований метод.
+    if (link.classList.contains('link')){ // contains - повертає true або false, в залежності від того чи значення яке в дужках, міститься у classList.
+        console.log('Exist');
+    }else {
+        console.log('not exist');
+    }
+
+    /*Додавання або заберання класу */
+// contains - метод перевірка.
+// add - метод додавання.
+// remove - метод видалення.
+    if (link.classList.contains('link-123')){ // перевірка,чи в масиві classList, міститься значення link-123. 
+        link.classList.add('link-321') // Якщо такий класс є, тоді додається класс link-321. (через вбудований метод add).
+        link.classList.remove('link-red')
+    }else{
+        link.classList.add('link-empty', 'link-emptyTwo'); // Декілька класів додається через кому.
+    }
+    console.log(link.classList);
+
+/* варіант без перевірки */
+// toggle - метод який додає якщо немає і забирає якщо є.
+    link.classList.toggle('link-another');
+    console.log(link.classList);
+};
+
+// let addid = document.createElement('div');
+// addid.id = 'test-id'
+// console.log(addid)
+// addid.classList.add('test-class')
+
+/* якщо потрібно додати на початок або кінець списку (є окремі методи)*/
+// На початок.
+
+let list = document.getElementById('list'), //значення id, буде list.
+    firstLi = list.querySelector('li'); // звертаємось до 'list' і шукаємо перший 'li'
+    element = document.createElement('li');
+element.id = 'test-id'
+element.classList.add('test-class','test-class-2');
+element.innerHTML = 'New li'
+
+list.insertBefore(element,firstLi) // додає елемент , перед вказаним елементом. Всередині insertBefore () мають бути два аргументи. 1-й новий елемент, 2-й це елемент перед яким вставля\ться.
+console.log(element)
+
+// додавання в кінець
