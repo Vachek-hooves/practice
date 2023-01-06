@@ -7,15 +7,20 @@
     <title>lesson-7-js</title>
 
     <style>
-        .div {
-            margin: 100px;
+        .li {
+            margin: 10px;
+        }
+
+        .li {
+            color: red;
+            border-color: green;
         }
     </style>
 </head>
 <body>
     <ul id="list">
-        <li>
-            <a class="link" data-text="123"> Text  111</a>
+        <li class="li">
+            <a class="link" data-text="123" onclick="liClicked()"> Text  111</a>
         </li>
         <li>
             <span class="link">Text</span>
@@ -23,8 +28,8 @@
         <li>
             <span class="link ">Text</span>
         </li>
-        <li> 
-            <a class="link link--red"> Text</a>
+        <li class="li-class"> 
+            <a class="link link--red"> Text with "li-class"</a>
         </li>
         <li>
             <div>

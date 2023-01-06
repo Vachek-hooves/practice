@@ -123,7 +123,7 @@ console.log(userTwo)
 
 let userName = "Ivan"
 let customerName = userName;
-console.log(userName, customerName); // в такому випадку в обох змінних буде значкення Іван.
+console.log(userName, customerName); // в такому випадку в обох змінних буде значення Іван.
 
 userName = "Vasyl"
 customerName = userName

@@ -15,7 +15,7 @@
 ///////////////////////////////////////////////////////
 /* Об'єкти, що додають інформакцію про браузер */
 
-// console.log(window.navigator) // Показує інфо про браузер та операційну систему.
+// console.log(window.navigator) // Показує інфо про браузер та оп ераційну систему.
 // console.log(window.navigator.userAgent) // отримати інформацію про браузер та доступ до налаштувань браузера.
 // Знайти як превірити який браузер!!!!!!!!!!!!
 // console.log(window.navigator.platform) // Інфа про платформу.
@@ -200,13 +200,13 @@ if (link){
 if (link){
     let parent = link.closest('li');
         nextEl = parent.nextElementSibling;
-        // console.log(nextEl.innerHTML) // innerHTML -повертає верстку верстку всередині елементу. 
+        // console.log(nextEl.innerHTML) // innerHTML -повертає верстку всередині елементу. 
         // console.log(nextEl.outerHTML)  // outerHTML - повертає верстку та сам елемент
 //з'являється можливість переприсвоїти значення в будь-яке інше.
     // nextEl.innerHTML ='' // для nextEl, innerHTML -зробити його пустим. Видаляється весь елемент і повертає його
     // nextEl.outerHTML ='' // видаляється повністю і повертає його.
-    console.log(nextEl.innerHTML);
-    console.log(nextEl.outerHTML);
+    // console.log(nextEl.innerHTML);
+    // console.log(nextEl.outerHTML);
     // Можна створити іншу верстку:
     nextEl.innerHTML = '<div class="test-div">321</div>' // таким чином можна налаштовувати вміст елементу.
     console.log(document.querySelector('.test-div'));
@@ -251,12 +251,83 @@ if (link){
 
 let list = document.getElementById('list'), //значення id, буде list.
     firstLi = list.querySelector('li'); // звертаємось до 'list' і шукаємо перший 'li'
-    element = document.createElement('li');
-element.id = 'test-id'
-element.classList.add('test-class','test-class-2');
+    element = document.createElement('li'); // далі element буде команда -створити елемент в li.
+    console.log(element)
+// element.id = 'test-id'
+// element.classList.add('test-class','test-class-2');
 element.innerHTML = 'New li'
 
 list.insertBefore(element,firstLi) // додає елемент , перед вказаним елементом. Всередині insertBefore () мають бути два аргументи. 1-й новий елемент, 2-й це елемент перед яким вставля\ться.
 console.log(element)
 
-// додавання в кінець
+// Ще варіант
+// знайти останій елемент з list.
+// Нижче, це продовження коду, що зверху...
+let listLi=Array.from(list.querySelectorAll('li')); // listLi - нова змінна, Array.from- перетворення в масив всього list з його li.
+// list.insertBefore(element, listLi.at(-1).nextElementSiblings); // listLi.at(-1)- це осанній елемент 
+
+/* Додати елемент виключно в кінець */
+// append - додавання елементу в кінець.
+list.append(element,"text-test") // list- куди треба додати, сам метод append ( що додати).
+
+/* стилізація */
+// Відносно всієї цієї логіки можна додавати правила з CSS.
+// style - об'єкт, що містить в собі всі правила які можна змінити або додати.
+// Ця властивість стилю додається як атрибут до вказаного HTML тегу.
+element.style.backgroundColor = '#423' ; // для element задаємо колір і через оператор присвоєня "=" колір.
+list.append(element) // element додається.
+
+/* Перегляд висот та широт (innerHeight, innerWidth, innerHeight, outerWidth) */
+
+console.log(firstLi); // зараз немає властивостей outerHeight, outerWidth. Тому,що ці властивості будуть видні тільки через window.
+// offsetHeight - містить висоту включаючи бордери та внутрішні відступи по висоті.
+// scrollHeight - Висота не видимого контенту.
+// innerHeight - 
+// innerWidth -
+// clientHeight - повертає чисту висоту в котрій є контент, без внутрішніх відступів,без бордерів без марженів без висоти скрол-бару.
+// outerHeight -
+// innerWidth -
+
+/* Метод getComputedStyle */
+window.getComputedStyle(firstLi) // метод getComputedStyle (елемент для якого отримується стиль). Знаходимо в списку margin-top.
+// і дописується ще метод getPropertyValue('margin-top') - ( в лапках вказується значення) - результат повертається в пікселях.
+window.getComputedStyle(firstLi).getPropertyValue('margin-top'); // так виглядає повний запис.
+
+firstLi.offsetHeight // отримаємо значення в px.
+// parseInt() - приймає стрічку в якості аргументу і повертає ціле число.
+// parseFloat () - приймає стрічку в якості аргументу і повертає десятичне число ( число з плаваючою точкою).
+let styles = window.getComputedStyle(firstLi)
+console.log(firstLi.offsetHeight + parseInt(styles.getPropertyValue('margin-top')) + parseInt(styles.getPropertyValue('margin-bottom')));
+
+/*EVENT*/
+// Початок роботи  /
+
+/* click */
+// Є 2 варіанти додати події кліку.(старий та новий);
+/* Перший метод */
+// Старий - що не використовується.
+// До ТЕГУ В HTML написати onclick. І всередину пишеться назва функції 
+// onclick="liClicked()"- поточний випадок. Наступний крок, робота в JS.
+function liClicked (){ // в JS назва функції пишеться така сама як і в HTML.
+    console.log(123); // логіка яка буде відпрацьовувати на цей клік.
+}; // Такий метод існує але не використовується.
+
+/* Другий метод */ 
+// Коли в JS шукається елемент.
+let li = document.querySelector('li.li-class'); // шукається по li з классом li-class
+
+// onclick - називається слухачем.
+if (li){ // превірка чи такий li є...
+    li.onclick =function(){ // заходимо в функцію.
+        console.log("- times pressed")
+    }
+}
+
+
+
+
+
+
+
+
+
