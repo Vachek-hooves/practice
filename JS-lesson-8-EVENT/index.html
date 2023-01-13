@@ -5,16 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event</title>
+    <style>
+     #move { 
+            /* display: inline-block; */
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            
+        };
+    </style>
 </head>
 <body>
-    <div onclick="clickTrigger">
-        Test text
+    <!-- <div style="background-color: red;" onclick="clickTrigger(event,1,2,3)"> 
+        такий варіант не застосовується
+    </div> -->
+    <div id="move">
+    90
     </div>
-    
     <div id="element">
-        another text
+        TEXT for onclick
     </div>
-    
+    <div>
+        Click on element to increase
+    </div>
+    <div id="counter">
+        0
+    </div>
+    <button id="counterBtn">Press to increase</button>
+
     <script src="../JS-lesson-8-EVENT/assets/event.js"></script>
 </body>
 </html>
