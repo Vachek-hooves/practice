@@ -62,7 +62,7 @@ element.onclick = function(event){ // вказується event в атрибу
 /* Варіант коли на клік потрібно робити дві дії(два івенти кліку )*/
 // let element= document.getElementById('element');
 
-//onclick (onchange...)- може бути прописаний лише один раз. Якщо ще раз, тоді вона перезапишеться на нижню
+//onclick (onchange,...)- може бути прописаний лише один раз. Якщо ще раз, тоді вона перезапишеться на нижню
 
 // element.onclick= function(){ // в такому випадку забрати слухача(listener) неможливо.
 //     console.log("first");
