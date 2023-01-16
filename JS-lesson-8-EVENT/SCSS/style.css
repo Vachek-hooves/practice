@@ -29,4 +29,18 @@
 .main {
   margin: 0 auto;
   padding: 0;
+}
+
+#table {
+  margin: 0 auto;
+  border: solid 3px #b7b7b7;
+}
+
+th {
+  border: solid 2px grey;
+  background-color: hsl(240deg, 62%, 82%);
+}
+
+td {
+  background-color: hsla(60deg, 94%, 37%, 0.694);
 }/*# sourceMappingURL=style.css.map */
