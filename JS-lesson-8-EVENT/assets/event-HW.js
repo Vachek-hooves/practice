@@ -22,8 +22,9 @@ document.addEventListener('DOMContentLoaded',()=>{
 //         let textarea=document.getElementById('textarea');
 //         textarea.style.opacity='1'
 //     }
-// });// так все працює, для експеременту спробую інший метод.
+// });  // так все працює, для експеременту спробую інший метод.
 // Другий варінт (виглядає легшим).
+
 let textarea=document.getElementById('textarea');
 let textdiv=document.getElementById('text-div');
 let newText=''
@@ -51,8 +52,8 @@ function textareaText(){
 // let areatext=document.getElementById('textarea').innerHTML;
 // areatext=divtext;
 // areatext=areatext.innerHTML='changed text';
-// divtext.innerHTML=areatext.innerHTML;//ok
-// console.log(document.getElementById('textarea').innerHTML)//ok.
+// divtext.innerHTML=areatext.innerHTML;    //ok
+// console.log(document.getElementById('textarea').innerHTML);  //ok.
 
 /*написати дію для комбінації клавіш Ctrl+E. */
 function saveChange(){
