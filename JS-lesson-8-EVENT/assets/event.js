@@ -1,5 +1,5 @@
 /*Event (події)*/
-//event - це інформація про дію, в залежності якою вона буде (clcik, focus), наповненя змінної буде різним.
+//event - це інформація про дію, в залежності якою вона буде (click, focus), наповненя змінної буде різним.
 // подія - це сигнал від браузера, що щось сталося.
 // основні події, це події з мишкою-(клік ,фокус, зміна, введення, контекст меню-( це клік правою кнопкою миші)), події з користувачем (друку).
 // onclick, onchange, onfocus..
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             console.log("first");
         };
         element.addEventListener('click', clickFunction);// далі просто додається слухач а функція може бути поза межою eaddEventListener.
-        // element.removeEventListener('click', clickFunction)
+        element.removeEventListener('click', clickFunction)
         toogleElement();
 });
 function clickFunction(){
@@ -131,3 +131,35 @@ document.addEventListener('keydown', event =>{    // використати тр
     }
 });
 
+// Події mouse.
+
+// прості і комплексні.
+
+/* 
+//прості:
+mousedown (which=1) / mouseup- Кнопка миші натиснута/ відпущена над елементом.
+mouseover / mouseout - Курсор миші з'являється над елементом і прибирається з нього.
+mousemove - кожний рух миші над елементом генерує ці події.
+contextmenu - Викликає при спробі відкриття контекстного меню.(але може буди викликане і клавіатурою).
+
+// Комплексні: 
+click- виклик при mousedown та mouseup
+dblclick- подвійне натискання кнопкою миші.
+
+*/
+
+
+/*
+mousemove- відбувається коли рухається курсор миші.
+координавти clentX/Y, pageX/Y.
+
+const blockForMouse= document.getElementById('section-block')
+console.log(blockForMouse);
+blockForMouse.addEventListener('mousemove', event=>{
+    if(event.movementX && event.movementY){
+        // console.log("mouse is herre")
+        // blockForMouse.innerHTML=`clientX-${event.clientX}, clientX- ${event.clientY}`
+        console.log(`clientX-${event.clientX}, clientX- ${event.clientY}`)
+    }
+})
+*/

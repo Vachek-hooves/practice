@@ -43,4 +43,23 @@ th {
 
 td {
   background-color: hsla(60deg, 94%, 37%, 0.694);
+}
+
+#section-block {
+  margin: 0px;
+  position: relative;
+  width: 250px;
+  height: 150px;
+  border: solid 1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  overflow: auto;
+}
+
+#marker {
+  width: 5px;
+  height: 5px;
+  background-color: rgb(22, 230, 230);
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }/*# sourceMappingURL=style.css.map */
