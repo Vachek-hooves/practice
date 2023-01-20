@@ -21,22 +21,10 @@ console.log(div.getBoundingClientRect());
 //         // console.log(div.getBoundingClientRect().left)
 //     })
 // });
-/*
+
 document.addEventListener('mousedown',event=>{ // all working
     let mouseX = parseInt(event.clientX - div.getBoundingClientRect().x)+'px';
     let mouseY = parseInt(event.clientY - div.getBoundingClientRect().y)+'px';
     div.style.width=mouseX;
     div.style.height=mouseY;
-    // додати дію,коли mousedown на сам div, тоді div візьме координати курсора миші.
 });
-*/
-
-marker.addEventListener('mousedown',event=>{
-    let mouseX= parseInt(event.clientX)+'px';
-    let mouseY= parseInt(event.clientY)+'px';
-    console.log(mouseX, mouseY)
-    // div.style.width=mouseX;
-    // div.style.height=mouseY
-
-})
-
