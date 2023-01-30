@@ -1,0 +1,36 @@
+.visible-el{
+    background-color: pink;
+    height: 100vh;
+    margin-top: 20px;
+}
+.hidden-el{
+    /* background-color: aqua; */
+    height: 1000vh; 
+}
+
+li{
+    list-style:none ;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    /* background-color: aqua; */
+    display: none;
+};
+.content-block{
+    width: 400px;
+    /* background-color: red; */
+    padding: 30px;
+}
+.section{
+    background-color: pink;
+    padding: 30px;
+}
+.custom-slider{
+    background-color: yellow;
+    color: blue;
+};
+
+.slider-box{
+    padding: 30px;
+    background-color: aqua;
+};
