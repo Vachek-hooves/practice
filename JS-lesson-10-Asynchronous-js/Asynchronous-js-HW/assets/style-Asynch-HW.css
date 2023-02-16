@@ -1,0 +1,46 @@
+main{
+    /* background-color: aquamarine; */
+    border-radius: 10px;
+    border: solid 1px grey;
+}
+body{
+    background-color: antiquewhite;
+    display:inline-block ;
+}
+.result{
+    background-color: bisque;
+    border-radius: 10px;
+}
+#textarea{
+    background-color:beige;
+}
+.movie-style{
+/* display: inline-block; */
+height: fit-content;
+border:solid 1px grey ;
+overflow: hidden;
+border-radius: 10px;
+background-color:#bdb76b;
+}
+#pages{
+    display: flex;
+
+}
+.page{
+    padding-bottom: 2px;
+    border: solid 1px black;
+    width: 25px;
+    height: 15px;
+    border-radius: 10px;
+    background-color:#ff7f50;
+    text-align: center;
+}
+
+/* beetroot */
+
+.film-item{
+    padding-bottom: 20px;
+    margin-bottom: 20px ;
+    border-bottom: 1px solid #000;
+
+}

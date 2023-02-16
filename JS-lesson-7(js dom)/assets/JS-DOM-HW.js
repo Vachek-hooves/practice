@@ -17,12 +17,12 @@ let song= '';
     ul = section.querySelector('ul'); // в середині ul , який знаходиться в середині секціїї з id Music-section.
     // console.log(ul);
     newLi ='';
-    div = '';
+    // div = '';
 for (let i=0; i<playList.length; i++){
     song = "author: "+playList[i].author +" song: " + playList[i].song;
     // console.log(song); // виводить весь список пісень.
     newLi=document.createElement('li');// команда на створення нового li.
-    console.log(newLi);
+    // console.log(newLi);
     newLi.innerHTML=song;
     ul.append(newLi)
 };

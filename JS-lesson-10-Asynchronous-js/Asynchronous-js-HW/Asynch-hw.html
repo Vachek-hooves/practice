@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style-Asynch-HW.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <main>
+            <section>
+                <section id="search">
+                    <nav>
+                        <ul id="movie">Ajax </ul>
+                    </nav>
+                    <textarea name=""  id="textarea" style="width: 300px; height: 50px; border-radius: 10px;"  cols="30" rows="10">Avengers</textarea>
+                    <div id="btn" style="width: 60px; height: 25px; border: solid 1px grey; background-color: blanchedalmond; border-radius: 20%; text-align: center; padding: 5px;">
+                        Search
+                    </div>
+                    
+                </section>
+                <section id="result">
+                    
+                </section>
+                <section id="test">
+                    <ul id="pagination">
+    
+                    </ul>
+                </section>
+                <section id="pages">
+                    
+                </section>
+            </section>
+            
+
+            <form 
+            autocomplete="off" 
+             action="https://www.omdbapi.com/?i=tt3896198&apikey=88af89ab"
+            method="get"
+            id="search-form">
+                <input name="title" type="search" placeholder="film name">
+                <select name="type" id="">
+                    <option value="movie">movie</option>
+                    <option value="series">series</option>
+                    <option value="episode">episode</option>
+                </select>
+                <button type="submit">
+                    Search
+                </button>
+            </form>
+            <div id="search-results">
+                
+            </div>
+            <ul id="search-page"></ul>
+
+        </main>
+    </section>
+
+    <section id="script">
+        <!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="../Asynchronous-js-HW/assets/Asynch-HW.js"></script>
+    </section>
+    
+</body>
+</html>

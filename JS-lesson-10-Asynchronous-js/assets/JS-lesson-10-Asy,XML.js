@@ -28,7 +28,7 @@ function showFalse(){
 checkTrueOrFalse(confirm('press ok or cancel'), showTrue, showFalse);
 */
 
-// Асинхронний JS, це підхід до розробки інтерфейсів який передбачає фоновий обмін даних.(Без перезавантаження сторінки підвантажуютьлся якісь данні.)
+// Асинхронний JS, це підхід до розробки інтерфейсів який передбачає фоновий обмін даних.(Без перезавантаження сторінки підвантажуються якісь данні.)
 // Недоліки-це те що код є доступним для всіх. Та не зберігається історія відвідування сторінки.Відсутність індексації сторінки.
 
 /* Робота з Get */
@@ -81,14 +81,14 @@ loadPage();
 
 function loadPage(){
     // другий метод.
-    // fetch('pages/main.html') //тут важливо згадати asinc, await, promise, asinc await, zen catch. При використанні fetch, потрібно знати тип response (текст або данні). 
+    // fetch('pages/main.html') //тут важливо згадати asinc, await, promise, asinc await, then catch. При використанні fetch, потрібно знати тип response (текст або данні). 
         // Для того щоб отримати данні, потрібно викликати один з двох методів.
         // res.text()
         // res.json()
         /*
         .then((res)=>{ // .then - коли метод пройшов успішно, з параметром resonse- (назва може бути будь-якою)  
-            // console.log(res.text())
-            return res.text(); // або res.json()
+            // console.log(res.text())-???
+            return res.text(); // або return res.json()
         })
         .then(data =>{ // ще одна callback функція яка буде приймати data ( яким буде res.text() або res.json(), в залежності від типу данних,щоь приймаються ) як аргумент.
             console.log(data)
@@ -119,11 +119,13 @@ function loadPage(){
         // })
     //     }) // для того щоб опрацювати стан помилки з різним status( наприклад неправильний url (error 404)), створюється callback функція для .catch
 
-    /////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////
 
     /* Axios - готова бібліотека яка має ядро XML, HttpRequest в основі, і дозволяє на основі методу ( fetch та XMLHttpRequest) робити запити.
 
-    підключається без jquery, перед <script> на js.
+    Axios is a Javascript library used to make HTTP requests from node. js or XMLHttpRequests from the browser and it supports the Promise API that is native to JS ES6
+
+    підключається без jquery, перед <script> на js всередині html.
     */
 
     // Використання методу loadPage() через axios.
@@ -231,9 +233,9 @@ function loadPage(){
 3- десяткові числа пишуться з крапкою "0.4"
 4 - унікальне кодуввання unicod символи.
 
-Для чого JSON , на практиці верстка приходить рідко, в основному приходить данні в результаті яких мається сформувати дом структуру або зробити якісь дії.
+Для чого JSON , на практиці верстка приходить рідко, в основному приходять данні в результаті яких мається сформувати дом структуру або зробити якісь дії.
 
-JSON - (окрема натація в js) має два методи які дозволить перетворити данні у стрічку і навпаки перетворити стрічку JSON для подальшої роботи.
+JSON - (окрема натація в js) має два методи які дозволить перетворити данні у стрічку і навпаки, перетворити стрічку JSON для подальшої роботи.
 Для того щоб розуміти,що в xhr.response будуть приходити просто данні а не стрічка.
 
 */
@@ -251,7 +253,7 @@ function loadJson(){
     let requestURL= 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json'; // посилення на Json.
     
     xhr.open('GET', requestURL); // ініціалізація запиту (але не відправляє(не виконує))
-    // для роботи з JSON, то у всіх запитах потрібно передати response Type.
+    // для роботи з JSON, то у всіх запитах потрібно передати responseType.
     // Тому перед тим як надіслати запит , треба додати це значення.
     xhr.responseType='json' // !!!!!!! тепер response став об'єктом, з которим можна працювати повноцінно як з об'єктом.
     xhr.send();
@@ -268,7 +270,7 @@ function loadJson(){
 
 
 /* В JavaScript будь яке значення можна конвертувати в JSON і навпаки з JSON отримати значення
-Для цього існуж два методи:
+Для цього існуєдва методи:
 JSON.stringify() - конвертує JavaScript значення до JSON стрічки.
 JSON.parse() - перетворення з рядка в об'єкт.
 */
@@ -303,10 +305,10 @@ document.addEventListener('DOMContentLoaded',()=>{
             for(let i=0; i<response.data.length; i++){
                 let li= document.createElement('li');
                 li.innerHTML=`<a class="menu__link" href="${response.data[i].url}">${response.data[i].name}` // як посилання,дається значення яке міститься в url. в (menu.json).
-                str += li; 
-                // ЗРОБИТИ!!!!!!!!!!!
-                // Так щоб не в циклі робити append(), а присвоювалось до якоїсь стрічки та разово додавалось.
-                menu.append(li);
+                str=li
+                // console.log(str)
+                menu.append(str);
+                // menu.append(li);
 
             }
             // знайти link.
