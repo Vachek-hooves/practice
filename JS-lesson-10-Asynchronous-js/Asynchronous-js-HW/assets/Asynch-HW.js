@@ -34,13 +34,8 @@ document.addEventListener('DOMContentLoaded',()=>{
                     
                 })
             }
-            
-
         });
-        
-
 })
-
 
 /*працює, але пагінація не залежить від списку фільмів
 
@@ -84,7 +79,6 @@ function startFetch(API){
     }
 
 */
-
 
 
 /* AXIOS  */
@@ -146,6 +140,7 @@ function findFilms(page =1, form){
         }
 
         resultBlock.innerHTML='';
+        
         if(res.data.Error){ // в разі помилки, то сповіщення прийде в HTML.
             resultBlock.innerHTML=res.data.Error
         } else if(res.data.Search && res.data.totalResults) {  
@@ -166,26 +161,26 @@ function findFilms(page =1, form){
 function createFilmItem(item){
 
     let el=document.createElement('div'),
-                            elTitle=document.createElement('h4'),
-                            elYear=document.createElement('h4'),
-                            elButton=document.createElement('span');
+        elTitle=document.createElement('h4'),
+        elYear=document.createElement('h4'),
+        elButton=document.createElement('span');
 
-                        el.classList.add('film-item')
-                        elTitle.classList.add('film-item__title')
-                        elYear.classList.add('film-item__year')
-                        elButton.classList.add('film-item__btn')
+        el.classList.add('film-item')
+        elTitle.classList.add('film-item__title')
+        elYear.classList.add('film-item__year')
+        elButton.classList.add('film-item__btn')
 
-                        elTitle.innerHTML= "Title: " + item.Title
-                        elYear.innerHTML="Year: " + item.Year ?? "-" // якщо року не буде, тоді буде прочерк.
-                        elButton.innerHTML= 'Details';
+        elTitle.innerHTML= "Title: " + item.Title
+        elYear.innerHTML="Year: " + item.Year ?? "-" // якщо року не буде, тоді буде прочерк.
+        elButton.innerHTML= 'Details';
 
-                        el.append(elTitle)
-                        el.append(elYear)
-                        el.append(elButton)
+        el.append(elTitle)
+        el.append(elYear)
+        el.append(elButton)
 
-                        // console.log(el)
+        // console.log(el)
 
-                        return el
+        return el
 }
 
 function createPagin(amount){

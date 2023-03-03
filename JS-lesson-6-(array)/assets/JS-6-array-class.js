@@ -1,6 +1,8 @@
 /* ARRAY */
 // Масиви це впорядкована коллекція данних.
 // Масиви НЕ Є окремим типоп данних в js і відносяться до об'єктів.
+// JavaScript methods are actions that can be performed on objects. A JavaScript method is a property containing a function definition.
+
 // Оголошуються:
 // 1-й варіант через конструктор Array.
 let Arr = new Array();

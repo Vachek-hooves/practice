@@ -1,0 +1,15 @@
+.section{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: aliceblue;
+    width:max-content;
+    height: 100px;
+    border-radius: 20px;
+}
+#result{
+    border-radius: 20px;
+    background-color:aquamarine;
+    width: 250px;
+    height: 100px;
+}

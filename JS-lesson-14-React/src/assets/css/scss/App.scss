@@ -1,0 +1,9 @@
+@import './general.scss';
+
+.App{
+    &-header{
+        background-color: #6bbdcd;
+        color: $white; 
+        border-radius: 20px;
+    }
+}

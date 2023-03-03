@@ -10,12 +10,13 @@ console.log(wind);
 if (div){
     div.toopen=function(){
         let newStyle=wind.style.opacity=1;
-        div.style.opacity=0;
+        // div.style.opacity=0;
+        div.style.dispay='none';
     }
 };
 
 let divClose= document.querySelector('.close');
-console.log(close);
+// console.log(close);
 
 if (divClose){
     divClose.toclose=function(){
