@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 .section{
     display: flex;
     align-items: center;
@@ -8,8 +12,22 @@
     border-radius: 20px;
 }
 #result{
+    padding: 5px;
     border-radius: 20px;
     background-color:aquamarine;
-    width: 250px;
-    height: 100px;
+    width:max-content;
+    height:max-content;
+    /* mat */
 }
+.details{
+    /* margin-left: 50px; */
+    padding: 2px;
+    border-radius: 10px;
+    width: max-content;
+    height: fit-content;
+    background-color:rgb(114, 228, 248);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* .image{
+    width: fit-content;
+} */

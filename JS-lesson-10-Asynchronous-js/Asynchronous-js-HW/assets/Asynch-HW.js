@@ -1,17 +1,11 @@
 // API for HW from https://www.omdbapi.com/
 // http://www.omdbapi.com/?i=tt3896198&apikey=88af89ab
 
-// const { default: axios } = require("axios");
-
-// const { default: axios } = require("axios")
-
-
-
 
 // const API='https://www.omdbapi.com/?i=tt3896198&apikey=88af89ab'
 // const API1='https://api.themoviedb.org/3/movie/550?api_key=691dcac8237e8c909d5680894f452152'
 
-document.addEventListener('DOMContentLoaded',()=>{
+document.addEventListener('DOMContentLoaded',()=>{ // сам амагався зробити
 
     let btn=document.getElementById('btn');
         textarea=document.getElementById('textarea');
@@ -77,12 +71,9 @@ function startFetch(API){
             }
         })
     }
-
 */
 
-
 /* AXIOS  */
-
 // action в HTML означає звідки йде запит
 
 window.addEventListener('DOMContentLoaded',()=>{
@@ -147,7 +138,6 @@ function findFilms(page =1, form){
             for(let i=0; i< res.data.Search.length; i++){
                 // console.log(res.data.Search)
                 resultBlock.append(createFilmItem(res.data.Search[i]))
-                
             }
             addListenerToDeteilsBtn(resultBlock); //в resultBlock додаються item і в межах resultBlock  пошук кнопки details.
             createPagin(res.data.totalResults);

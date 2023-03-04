@@ -3,15 +3,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let btn=document.getElementById('btn');
     let textarea=document.getElementById('textarea');
     
-
     btn.addEventListener('click', ()=>{
 
         let location=textarea.value;
         
 
         const API=`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=63d689eb42ea5d0375664ab1719e9fae`
-
-
         geocode(API)
 
         function geocode(API){
@@ -25,6 +22,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 console.log('temperature data')
                 for(let temp in data.main){
                     console.log(`${temp} : ${data.main[temp]}`)
+                    console.log(`${data.main["temp"]}`) // only data view
+                    console.log(`${data.main["temp"]}`)
                 }
                 console.log('wind data')
 
@@ -41,16 +40,24 @@ document.addEventListener('DOMContentLoaded', ()=>{
                     icon.classList.add('weather-icon');
                     
                     let resultDiv=document.getElementById('result');
-                    resultDiv.innerHTML=''; // перезапис даних
-
-                    icon.innerHTML=`<div>
-                                        <img src=${iconURL} alt="png">
-                                    <div>`
+                    // resultDiv.innerHTML=''; // перезапис даних
+                    console.log(resultDiv)
+                    console.log(`${data.main["temp"]}`)
+                    resultDiv.innerHTML= `<div>
+                        <h3>${data.name}</h3>
+                            <div class="details">
+                            <p>temp: ${data.main["temp"]} C</p>
+                            <p>wind speed: ${data.wind["speed"]} m/s</p>
+                            <p>humidity: ${data.main["humidity"]} %</p>
+                            </div>
+                        <div>
+                            <img class=image src=${iconURL} alt="clouds"></img>
+                            <p>${data.weather[i].description}</p>
+                        </div>
+                    </div>`
 
                     resultDiv.append(icon)
                 }
-
-
                 // console.log()
                 // let name=data.name
                 // let main=data.main
