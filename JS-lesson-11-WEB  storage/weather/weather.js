@@ -17,33 +17,43 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 return response.json()
             })
             .then(data=>{
-                console.log(data)
-
+                // console.log(data)
+                let str='GenGenesisTech';
+                console.log(str.slice(3,10),str.substr(3,10),str.substring(3,10))
+                
                 console.log('temperature data')
                 for(let temp in data.main){
-                    console.log(`${temp} : ${data.main[temp]}`)
-                    console.log(`${data.main["temp"]}`) // only data view
-                    console.log(`${data.main["temp"]}`)
+                    // console.log(`${temp} : ${data.main[temp]}`)
+                    // console.log(`${data.main["temp"]}`) // only data view
+                    // console.log(`${data.main["temp"]}`)
                 }
-                console.log('wind data')
 
+                console.log('wind data')
                 for(let wind in data.wind){
-                    console.log(`${wind} : ${data.wind[wind]}`)
+                    // console.log(`${wind} : ${data.wind[wind]}`)
                 }
 
                 for (let i=0; i<data.weather.length; i++){
-                    console.log(data.weather[i])
+                    // console.log(data.weather[i])
+
+                    // let prognose= document.getElementById('prognose')
 
                     let iconPic=data.weather[i].icon
                     let iconURL=`http://openweathermap.org/img/wn/${iconPic}@2x.png`
-                    let icon=document.createElement('div');
-                    icon.classList.add('weather-icon');
+                    // let icon=document.createElement('div');
+                    // icon.classList.add('weather-icon');
+                    li=document.createElement('li')
+                    // li.classList.add('city-weather')
+                    li.id='city-weather'
                     
-                    let resultDiv=document.getElementById('result');
+                    let show=document.getElementById('show');
+                    let result=document.getElementById(('result'))
+
                     // resultDiv.innerHTML=''; // перезапис даних
-                    console.log(resultDiv)
-                    console.log(`${data.main["temp"]}`)
-                    resultDiv.innerHTML= `<div>
+                    console.log(show)
+                    
+
+                    li.innerHTML= `<div>
                         <h3>${data.name}</h3>
                             <div class="details">
                             <p>temp: ${data.main["temp"]} C</p>
@@ -54,35 +64,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
                             <img class=image src=${iconURL} alt="clouds"></img>
                             <p>${data.weather[i].description}</p>
                         </div>
-                    </div>`
+                    </div><br>`
 
-                    resultDiv.append(icon)
+                    show.append(li)
+                    // let str;
+                    // let i=0;
+                    // console.log(str+i)
+                    // show.append(icon)
+
                 }
-                // console.log()
-                // let name=data.name
-                // let main=data.main
-                // let feel=data.main.feels_like
-                // let humidity=data.main.humidity
-                // let pressure=data.main.pressure
-                // let temp=data.main.temp
-                // let tempMax=data.main.temp_max
-                // let tempMin=data.main.temp_min
-                // console.log(name,feel,humidity,pressure,temp,tempMax,tempMin)
-
-                // let API1=`https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitude}&appid=5b1d100a7c113c31f1c1159098ab6deb`
-                // weather(API1)
             })
-
-            // function weather(API1){
-            //     fetch(API1)
-            //     .then(response=>{
-            //         return response.json()
-            //     })
-            //     .then(data=> console.log(data))
-
-                
-            // }
-
         }
     })
 })

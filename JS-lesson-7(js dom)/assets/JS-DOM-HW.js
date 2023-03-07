@@ -25,6 +25,7 @@ for (let i=0; i<playList.length; i++){
     // console.log(newLi);
     newLi.innerHTML=song;
     ul.append(newLi)
+    
 };
 
 
