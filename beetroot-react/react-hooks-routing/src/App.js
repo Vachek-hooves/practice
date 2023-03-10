@@ -1,20 +1,28 @@
 import './App.css';
-import Parent from './components/Parent';
-import ParentHooks from './components/ParentHooks';
-import Resize from './components/Resize';
-import Square from './components/Square';
 
+import Navigation from './components/Navigation';
+
+import Home from './pages/Home';
+import About from './pages/About';
+import Blog from './pages/Blog';
+import Blogitem from './pages/Blogitem';
+
+
+import {BrowserRouter as Router,Route, Routes} from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <Parent/>
-      <ParentHooks/>
-      <Resize/>
-      {/* В square додамо дві пропси а-сторона квадрату. title-просто тайтл */}
-      <Square a={4} title={'Square title'}/>
-    </div>
-  );
+  return <Router>
+            <div className="App">
+              <Navigation/>
+
+              <Routes>
+                <Route path='/' element={<Home/>}></Route>
+                <Route path='/about' element={<About/>}></Route>
+                <Route path='/blog' element={<Blog/>}></Route>
+                <Route path='/blog/:id' element={<Blogitem/>}></Route>
+              </Routes>
+            </div>
+          </Router>
 }
 
 export default App;
