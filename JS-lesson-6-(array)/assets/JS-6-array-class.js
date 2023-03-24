@@ -127,6 +127,7 @@ for (let key in fruitForIn){
     console.log(key,fruitForIn[key]) // виводиться як стрічка.
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 /* створення функції в масиві */
 // перевіремо чи є можливість створити метод в масиві як і в об'єкті.
 // через function declaration
@@ -167,9 +168,11 @@ let fruitsFunctionVar = function(){
 // console.log(fruits);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/* SPLICE  - універсальний метод роботи з масивами !!!!!!!*/
+
+/* SPLICE  - універсальний метод роботи з масивами !!!!!!! */
 // splice - вміє додавати, вилучати і замінювати елементи.
 // цей метод працює з будь-яким відрізком об'єкту.
+
 // синтаксис: array.splice().
 let fruitsSplice = ["apple","orange","banana","pear","kiwi"];
 // console.log(fruitsSplice.splice(1,1)) // видаляється (вилучається) елемент з індексом 1 і він же повертається.
@@ -383,3 +386,15 @@ console.log(Array.isArray(fruta));
 /* Як зробити першу стрічки з великою  */
 let string = "test"; 
 console.log(string.charAt().toUpperCase()+string.slice(1)); 
+
+let r =( Math.random()*10).toFixed()
+
+console.log(r)
+
+let root=Math.sqrt(16)
+console.log(root)
+
+const fruits = ["Apple", "Banana", "Orange"];
+for (item of fruits){
+    console.log(item)
+}

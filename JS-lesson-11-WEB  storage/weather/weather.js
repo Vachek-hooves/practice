@@ -18,8 +18,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             })
             .then(data=>{
                 // console.log(data)
-                let str='GenGenesisTech';
-                console.log(str.slice(3,10),str.substr(3,10),str.substring(3,10))
+                
                 
                 console.log('temperature data')
                 for(let temp in data.main){

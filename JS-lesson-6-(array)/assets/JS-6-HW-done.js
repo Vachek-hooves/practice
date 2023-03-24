@@ -86,6 +86,7 @@ function deleteProd(){
     }
 }
 shoppingList.unshift(deleteProd)// запхав функцію на початок масиву.
+
 for (let t=0; t<=shoppingList.length; t++){
     if(confirm("Do you want to delete some product?")== true){
         deleteProd()

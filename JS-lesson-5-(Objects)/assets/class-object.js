@@ -303,3 +303,24 @@ user4.sayHi() // Ivan. // Виклик функції sayHi() в середин�
 customer2.sayHi = sayHi; // пресвоєння фукціїї sayHi() в об'єкт customer.
 customer2.sayHi() // Dmytro. // Виклик функції sayHi() в середині об'єкту customer.
 
+// let aa = {x:1, y:2};
+
+// let bb= aa;
+// bb.x=10;
+// console.log(aa.x)
+
+// var cc = {};
+// var dd = {};
+// console.log(c === d);
+let num=0
+
+for (let i=1995; i<= 2021; i++){
+    num +=i
+    // console.log(num)
+    let digit= num/27;
+    console.log(digit)
+}
+// console.log(num)
+// let final=num/27
+// console.log(final)
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <header>
+        <h1>string</h1>
+    </header>
+    <p>
+        \n =>break. - це символ нового рядка. 
+        \n-має довжину 1.
+    </p>
+    <h2>Methods</h2>
+    <h4>charAt()</h4>
+    <p>charAt(index)- повертає вказанний символ стрічки</p>
+    <p>Якщо символ відсутній,тоді charAt() поверне порожній рядок</p>
+
+    <h3>Пошук підрядка</h3>
+    <h4>indexOf()</h4>
+    <p>Пошук підрядка.  str.indexOf(substr, pos)- шукає підрядок substr в рядку str, починаючи з позиції pos, і повертає позицію, де є збіг, або -1 немає збігів.</p>
+    <p>робота в циклі</p>
+    <p>let str = "Віджет з ідентифікатором";
+    <p>if (str.indexOf("Віджет") != -1) {</p>
+            alert("Є співпадіння"); // тепер працює!
+        }</p>
+        
+    <h4>includes, startsWith, endsWith</h4>
+    <p> str.includes(substr, pos) - повертає true/false в залежності від того чи є substr в рядку str.</p>
+    <p><strong>str.startsWith</strong> та <strong>str.endsWith</strong>  перевіряють, чи починається і чи закінчується рядок певним підрядком.</p>
+    <p><strong>pos-</strong>Необовʼязковий другий аргумент, це позиція з якої почнеться пошук</p>
+
+    <script src="./string.js"></script>
+</body>
+</html>
