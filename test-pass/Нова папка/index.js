@@ -1,3 +1,7 @@
+let testing= document.head.nextSibling
+console.log((testing))
+
+
 // const { resolvePath } = require("react-router-dom")
 
 const arr=[]
@@ -265,7 +269,7 @@ function find(i){
     console.log(i)
 }(25);
 console.log(find())
-console.log(window.i)
+// console.log(window.i)
 
 class Astronaut {
   constructor(weight = '90kg', age) {
@@ -399,4 +403,202 @@ console.log('2'+'2')
 
 console.log(true-'hello')
 
+
+// console.log(message);
+// var message='hello'
+/////////////////////
+
+// (function(a){
+//     arguments[0]=10;
+//     return a
+// })(5);
+////////////////////
+printMessage();
+
+function printMessage(){
+    console.log('hello')
+}
+////////////////////
+// var name='John';
+
+// function printName(){
+//     console.log(name);
+//     var name='Peter';
+//     console.log(name);
+// }
+// printName()
+/////////////////////
+
+// let name='john';
+// function printName(){
+//     console.log(name)
+// }
+
+// setTimeout(()=>{
+//     let name='peter';
+//     printName();
+// }, 1000);
+////////////////////
+// 'use strict'
+// function getThis(){
+//     return this
+// }
+// console.log(getThis()) // will show Object Window;
+///////////////////////////
+
+// let nam= "John";
+
+// function printName(){
+//     let nam ="Peter";
+//     console.log(nam)
+// }
+// printName()
+///////////////////////////
+
+// function foo(){
+//     console.log(arguments);
+// }
+
+// foo(1,2,3);
+/////////////////////////
+function foo(a,b){
+    // return a * b;
+    console.log(a*b)
+}
+// foo(1,5)
+
+const bar = foo.bind(null,2);
+bar(2)
+////////////////////////
+
+// let f = function g(){
+//     console.log(23)
+// }
+// console.log(typeof(f) )
+
+////////////////////////////
+// console.log(message)
+// let message="hello"
+///////////////////////////
+
+// for (let i=0; i<10; i++){
+// }
+// console.log(i)
+////////////////////////////
+
+// let first=1;
+// let second = function a(x){
+// x && a(--x);
+// };
+// console.log(first)
+////////////////////////////
+
+// const details= {
+//     name:"John",
+// }
+// function getMessage(message){
+//     return `${message} ${this.name}`;
+// }
+// console.log(getMessage.apply(details,["Hello"]))
+/////////////////////////////
+
+// var name="John";
+// var user ={
+//     name:"Peter",
+//     printMessage(){
+//         console.log(`Hello,${this.name}!`)
+//     }
+// }
+// var printMessage=user.printMessage;
+// printMessage();
+//////////////////////////////
+
+// const details={
+//     message:"Hello!",
+// }
+// function getMessage(){
+//     return (this.message)
+// }
+
+// console.log(getMessage.call(details))
+// ////////////////////////////////
+// function foo(){
+//     console.log(this)
+// }
+// foo.call(null)
+////////////////////////////////
+
+// for(var i=0; i<3; i++){
+//     setTimeout(function(){
+//         console.log(i)
+//         console.log('interval')
+//     }, 1000)
+// }
+/////////////////////////////
+
+// let f=(a,b)=>{console.log(a+b)};
+
+/////////////////////////////
+
+// for (let i=0; i<3; i++){
+//     setTimeout(function(){
+//         console.log(i)
+//     },1000)
+// }
+/////////////////////////////
+
+// function foo(){
+//     return{bar:1};
+// }
+// console.log(typeof foo().bar);
+/////////////////////////////
+
+// function getThis(){
+//     return this;
+// }
+// console.log(getThis());
+console.log("4"+"8"-"6");
+
+console.log("---codewars---")
+
+
+const date= new Date()
+
+console.log('---------')
+const year=new Date().getFullYear();
+console.log(year)
+console.log(date)
+console.log('---------')
+
+let dayName= date.toLocaleDateString('en-us',{weekday:"long"}) // today day name
+let dayNumb= date.getDate() // today day number in a month
+
+console.log(dayName,dayNumb)
+
+const dayNameToFind='Friday';
+const dayNumbToFind= 13
+
+console.log(new Date('january 13').getDate())
+
+const month = date.getMonth()
+console.log(month)
+console.log(date.getDate()+ " today")
+
+console.log("--------------- ");
+
+// let brightest = ["#00FF00", "#FFFF00", "#01130F"];
+let brightest =["#001000", "#010000","#002300"];
+// let brightest = ["#ABCDEF", "#123456"];
+// let brightest = ["#00FF00", "#FFFF00"];
+// let brightest = ["#FFFFFF", "#1234FF"];
+// let brightest = ["#123456", "#FFFFFF", "#000000"];
+// let brightest = ["#Слава", "#Алевтина", "#Тамара"];
+
+// console.log(brightest.sort());
+
+function findBright(array){
+    let find=array.sort();
+    console.log(find[0])
+}
+findBright(brightest);
 

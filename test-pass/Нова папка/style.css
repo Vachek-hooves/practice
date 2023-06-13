@@ -1,0 +1,32 @@
+::before{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
+
+.test{
+    position: relative;
+    top: 20px;
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 30px;
+    border: 5px solid #040;
+}
+/* .display{
+    display: flex;
+} */
+
+/* .grid-create{ */
+    /* display: grid; */
+    /* grid-template-columns: 100px 200px 100px; */
+    /* grid-auto-rows: 100px; */
+    /* grid-template-rows: 100px; */
+    /* gap: 1px; */
+/* } */
+.grid-create{
+    display: grid;
+    /* grid-template-columns: minmax(200px, 1fr); */
+    gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr ;
+}
